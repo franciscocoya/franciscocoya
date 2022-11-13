@@ -1,16 +1,31 @@
-### Hi there 👋
+# I'm Francisco Coya
+## Web Applications Developer
 
-<!--
-**franciscocoya/franciscocoya** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Programming languages
 
-Here are some ideas to get you started:
+- Java
+- JavaScript
+- Markup languages: HTML, XML
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Passionate about UI & UX
+
+- Figma
+- Adobe Xd
+- Application of colour psychology
+- Responsive design and accesibility content
+
+### Databases 
+
+- Relational
+  - Oracle
+  - MySQL
+  
+- NoSQL
+  - MongoDB
+  - Firebase
+  
+ ### CMS
+ 
+ - Joomla
+ - Wordpress
+ - Webflow

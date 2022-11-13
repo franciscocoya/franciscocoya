@@ -1,31 +1,16 @@
-# I'm Francisco Coya
-## Web Applications Developer
+# I'm Francisco Coya 📍 Web Applications Developer
+## Software Engineering Student
 
-### Programming languages
+I consider myself a lover of ✨ web design and everything related to the front-end side of applications and websites.
 
-- Java
-- JavaScript
-- Markup languages: HTML, XML
+### 💎 Tecnologies I'm used everytime
 
-### Passionate about UI & UX
+Java · JavaScript · PHP · HTML/CSS/JSON · Figma · MySQL/Oracle DB · Wordpress · Joomla · TDD/SOLID · SCRUM
 
-- Figma
-- Adobe Xd
-- Application of colour psychology
-- Responsive design and accesibility content
+### 🔑 Front-End concepts I'm couldn't live with
 
-### Databases 
+Responsive Design · Color phycologist · Usability · Accesibility
 
-- Relational
-  - Oracle
-  - MySQL
-  
-- NoSQL
-  - MongoDB
-  - Firebase
-  
- ### CMS
- 
- - Joomla
- - Wordpress
- - Webflow
+### 💊 Other interests
+Python · Design patterns · Spring Boot · React/NextJS · VueJS
+

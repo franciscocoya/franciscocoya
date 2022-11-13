@@ -3,7 +3,7 @@
 
 I consider myself a lover of ✨ web design and everything related to the front-end side of applications and websites.
 
-### 💎 Tecnologies I'm used everytime
+### 💎 Tecnologies I'm using everytime
 
 Java · JavaScript · PHP · HTML/CSS/JSON · Figma · MySQL/Oracle DB · Wordpress · Joomla · TDD/SOLID · SCRUM
 

@@ -1,3 +1,27 @@
-.title{
-    font-weight: 400;
+@use "@/app/_styles/mixins.scss" as mixins;
+
+.main {
+  width: 55%;
+  padding-top: 100px;
+  margin: 0 auto;
+
+  & > .aboutWrapper{
+    @include mixins.flex("vertical", "start", "start", 50px);
+
+    & > .resumeContainer{
+      @include mixins.flex("vertical", "start", "start", 20px);
+
+      & > p{
+        line-height: 2;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+} // end main
+
+
+.title {
+  font-weight: 400;
 }

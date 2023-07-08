@@ -1,0 +1,49 @@
+@use '@/app/_styles/variables.scss' as vars;
+@use '@/app/_styles/_mixins.scss' as mixins;
+
+.hamburgerButton {
+    @include mixins.flex('vertical', 'end', end, 8px);
+    align-self: flex-end;
+    z-index: vars.$z-index-navbar;
+    transition: 0.4s ease-in-out 0.2s;
+
+    &:hover{
+        cursor: pointer;
+
+        & > .hamburgerButtonLine{
+            background-color: vars.$color-primary;
+
+            &:nth-child(1){
+                width: 50px;
+            }
+    
+            &:nth-child(2){
+                width: calc(50px / 3 * 2);
+            }
+    
+            &:nth-child(3){
+                width:calc(50px / 3);
+            }
+        }
+
+    }
+
+    & > .hamburgerButtonLine{
+        height: 5px;
+        background-color: vars.$color-tertiary;
+        border-radius: 30px;
+        transition: 0.4s;
+
+        &:nth-child(1){
+            width: 40px;
+        }
+
+        &:nth-child(2){
+            width: calc(40px / 3 * 2);
+        }
+
+        &:nth-child(3){
+            width:calc(40px / 3);
+        }
+    }   
+}

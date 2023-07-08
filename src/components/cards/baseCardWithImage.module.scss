@@ -1,0 +1,22 @@
+@use "@/app/_styles/mixins.scss" as mixins;
+
+.card{
+    @include mixins.flex("horizontal", "start", "center", 15px);
+
+    &:hover > img{
+        opacity: 1;
+    }
+
+    & > img{
+        width: 200px;
+        height: auto;
+        object-fit: contain;
+        filter: grayscale(100%) invert(100%);
+        opacity: .75;
+        transition: opacity 0.5s ease-in-out;        
+    }
+
+    & > .cardBody{
+        @include mixins.flex("vertical", "center", "start", 5px);
+    }
+}

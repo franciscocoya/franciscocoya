@@ -1,3 +1,9 @@
+:export {
+  breakpoint-mobile: 768px;
+  breakpoint-tablet: 1024px;
+  breakpoint-desktop: 1440px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,21 +16,52 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3 {
+  color: #f4f4f4;
+}
+h1::after,
+h2::after,
+h3::after {
+  content: ".";
+  color: #fb2576;
+}
+
 h1 {
   font-size: 5rem;
   font-weight: 500;
+  margin-bottom: 50px;
 }
 
-h1, h2 {
-  color: #F4F4F4;
+h2 {
+  font-weight: 400;
+  margin-bottom: 50px;
 }
-h1::after, h2::after {
-  content: ".";
-  color: #FB2576;
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #f4f4f4;
 }
 
 a {
   text-decoration: none;
+}
+
+::-moz-selection {
+  background-color: #fb2576;
+  color: #f4f4f4;
+}
+
+::selection {
+  background-color: #fb2576;
+  color: #f4f4f4;
 }
 
 @media (prefers-color-scheme: dark) {

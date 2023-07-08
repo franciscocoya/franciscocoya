@@ -1,0 +1,22 @@
+{
+  "studies": [
+    {
+      "id": "S1",
+      "denomination": "Degree in Software Engineering",
+      "organization": "University of Oviedo",
+      "place": "Oviedo, Spain",
+      "status": "in progress",
+      "dateStart": "-",
+      "dateEnd": "Jun. 2024"
+    },
+    {
+      "id": "S2",
+      "denomination": "High level training cycle in Web Application Development",
+      "organization": "C.I.F.P. Ponferrada",
+      "place": "León, Spain",
+      "status": "finished",
+      "dateStart": "Sept. 2020",
+      "dateEnd": "Jun. 2022"
+    }
+  ]
+}

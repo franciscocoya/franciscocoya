@@ -1,0 +1,15 @@
+@use "./_styles/variables.scss" as vars;
+
+.bodyWrapper {
+    position: relative;
+
+    & > .header {
+        height: fit-content;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+
+        z-index: vars.$z-index-navbar;
+    }
+}

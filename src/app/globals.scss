@@ -1,4 +1,4 @@
-@use './_styles/variables.scss' as vars;
+@use "./_styles/variables.scss" as vars;
 
 * {
   box-sizing: border-box;
@@ -13,22 +13,46 @@ body {
 }
 
 // Headings
-h1{
-  font-size: 5rem;
-  font-weight: 500;
-}
-
-h1, h2{
+h1,
+h2,
+h3 {
   color: vars.$color-light;
 
-  &::after{
-    content: '.';
+  &::after {
+    content: ".";
     color: vars.$color-primary;
   }
 }
 
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+h2{
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p{
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: vars.$color-light;
+}
+
 a {
   text-decoration: none;
+}
+
+::selection {
+  background-color: vars.$color-primary;
+  color: vars.$color-light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,5 +61,3 @@ a {
     background-color: vars.$color-dark;
   }
 }
-
-

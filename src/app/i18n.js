@@ -1,21 +1,17 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
 
-i18n
-  .use(initReactI18next)
-  .init({
-    debug: true,
-    fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false, 
+i18n.use(initReactI18next).init({
+  debug: true,
+  fallbackLng: 'en',
+  interpolation: {
+    escapeValue: false,
+  },
+  resources: {
+    en: {
+      translation: {},
     },
-    resources: {
-      en: {
-        translation: {
+  },
+})
 
-        }
-      }
-    }
-  });
-
-export default i18n;
+export default i18n

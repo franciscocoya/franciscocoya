@@ -1,0 +1,1 @@
+{"version":3,"sources":["_styles/variables.scss","layout.module.css","layout.module.scss"],"names":[],"mappings":"AAiBA;EACI,wBALgB;EAMhB,yBALgB;EAMhB,0BALiB;ACXrB;;ACFA;EACI,kBAAA;ADKJ;ACHI;EACI,wBAAA;EAAA,mBAAA;EACA,kBAAA;EACA,SAAA;EACA,WAAA;EACA,uBAAA;EAEA,WFHS;ACOjB","file":"layout.module.css"}

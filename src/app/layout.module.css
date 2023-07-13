@@ -5,14 +5,21 @@
 }
 
 .bodyWrapper {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
 }
 .bodyWrapper > .header {
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
   background: transparent;
   z-index: 10;
+}
+.bodyWrapper > .bodyContent, .bodyWrapper > .bodyContentNoMargin {
+  margin: 0;
 }/*# sourceMappingURL=layout.module.css.map */

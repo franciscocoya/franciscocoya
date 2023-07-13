@@ -8,9 +8,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: "center";
+  align-items: center;
   gap: 15px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url(/assets/images/home_background_mixed_layer.jpg);
   background-position: center center;
@@ -22,7 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: "center";
+  align-items: center;
   gap: 15px;
   height: 100%;
   padding-left: 20%;
@@ -53,8 +53,13 @@
   margin-bottom: 20px;
 }
 .main > #profileImageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 15px;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -62,7 +67,7 @@
   z-index: 1;
 }
 .main > #profileImageWrapper img {
-  width: 733px;
+  width: 90vh;
   height: auto;
 }
 
@@ -122,7 +127,7 @@
   .main > #profileImageWrapper {
     width: -moz-fit-content;
     width: fit-content;
-    transform: translateX(0) translateY(20px);
+    transform: translateX(0) translateY(-55%);
     z-index: 0;
   }
   .main > #profileImageWrapper img {

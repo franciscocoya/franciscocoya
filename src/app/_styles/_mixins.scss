@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: setDirection($direction);
   justify-content: setJustify($justify);
-  align-items: $align;
+  align-items: setAlign($align);
   gap: $gap;
 }
 
@@ -31,6 +31,22 @@
   } @else if $just == 'evenly' {
     @return space-evenly;
   } @else if $just == 'between' {
+    @return space-between;
+  } @else {
+    @error 'Not a valid direction';
+  }
+}
+
+@function setAlign($align) {
+  @if $align == 'center' {
+    @return center;
+  } @else if $align == 'start' {
+    @return flex-start;
+  } @else if $align == 'end' {
+    @return flex-end;
+  } @else if $align == 'evenly' {
+    @return space-evenly;
+  } @else if $align == 'between' {
     @return space-between;
   } @else {
     @error 'Not a valid direction';

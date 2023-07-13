@@ -1,5 +1,5 @@
 export const JOB_STATUS = {
-    current: 'current',
-    finished: 'finished'
+  current: 'current',
+  in_progress: 'in progress',
+  finished: 'finished',
 }
-

@@ -1,0 +1,18 @@
+.main{
+    & > ul {
+        list-style-type: none;
+        line-height: 3;
+        & > li{
+            font-size: 1.2rem;
+
+            // Email with @ icon before
+            &:nth-child(1), &:nth-child(2) {
+                &::before {
+                    content: '@';
+                    font-size: 1.5rem;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

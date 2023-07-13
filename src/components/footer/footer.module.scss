@@ -1,0 +1,14 @@
+@use "@/app/_styles/variables.scss" as vars;
+@use "@/app/_styles/_mixins.scss" as mixins;
+
+.footer {
+    @include mixins.flex("vertical", "center", "center", 15px);
+    height: 60px;
+    background-color: vars.$color-secondary;
+
+    & > p {
+        text-align: center;
+        font-size: 14px;
+        color: vars.$color-light;
+    }
+}

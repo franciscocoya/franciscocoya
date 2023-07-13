@@ -1,4 +1,4 @@
-@use "./_styles/variables.scss" as vars;
+@use './_styles/variables.scss' as vars;
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ h3 {
   color: vars.$color-light;
 
   &::after {
-    content: ".";
+    content: '.';
     color: vars.$color-primary;
   }
 }
@@ -30,17 +30,17 @@ h1 {
   margin-bottom: 50px;
 }
 
-h2{
+h2 {
   font-weight: 400;
   margin-bottom: 50px;
 }
 
-h3{
+h3 {
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-p{
+p {
   font-size: 1.2rem;
   font-weight: 300;
   color: vars.$color-light;

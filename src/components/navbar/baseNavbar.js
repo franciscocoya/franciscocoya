@@ -13,9 +13,7 @@ function BaseNavbar() {
   const currentPathname = usePathname()
 
   useEffect(() => {
-    window.addEventListener('load', () => {
-
-    })
+    window.addEventListener('load', () => {})
 
     window.addEventListener(
       'resize',

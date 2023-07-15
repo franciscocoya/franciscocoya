@@ -27,18 +27,18 @@ function FullPageMenu() {
         <ul>
           {currentPathname !== '/' && (
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={handleCloseMobileMenu}>Home</Link>
             </li>
           )}
 
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about" onClick={handleCloseMobileMenu}>About</Link>
           </li>
           <li>
-            <Link href="/work">Work</Link>
+            <Link href="/work" onClick={handleCloseMobileMenu}>Work</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" onClick={handleCloseMobileMenu}>Contact</Link>
           </li>
         </ul>
       </nav>

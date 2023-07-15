@@ -1,11 +1,11 @@
 @use '@/app/_styles/variables.scss' as vars;
 
 .header {
-    height: fit-content;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: transparent;
+  height: fit-content;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
 
-    z-index: vars.$z-index-navbar;
+  z-index: vars.$z-index-navbar;
 }

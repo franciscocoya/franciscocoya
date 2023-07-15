@@ -2,7 +2,7 @@
 @use './_styles/_mixins.scss' as mixins;
 
 .main {
-  @include mixins.flex('vertical', 'start', 'center', 15px);
+  @include mixins.flex('vertical', 'start', 'start', 15px);
   width: 100vw;
   height: 100vh;
 
@@ -14,7 +14,7 @@
   // overflow: hidden;
 
   & > .homeContent {
-    @include mixins.flex('vertical', 'center', 'center', 15px);
+    @include mixins.flex('vertical', 'center', 'start', 15px);
     height: 100%;
     padding-left: 20%;
 
@@ -51,6 +51,24 @@
       font-size: 1.4rem;
       margin-bottom: 20px;
     }
+
+    & > .socialNetworkContainer{
+      @include mixins.flex('horizontal', start, center, 15px);
+      overflow: hidden;
+
+      & a{
+        color: vars.$color-light;
+        font-size: 2rem;  
+        
+        & > svg{
+          transition: fill 0.5s ease-in-out;
+
+          &:hover{
+           fill: vars.$color-tertiary;
+          }
+        }
+      }
+    }
   }
 
   // Profile image
@@ -74,6 +92,7 @@
 
 @media (max-width: vars.$breakpoint-tablet) {
   .main {
+    @include mixins.flex('vertical', center, center, 15px);
     & > .homeContent {
       text-align: center;
       align-items: center;
@@ -104,7 +123,8 @@
       width: 100vw;
       left: 0;
       top: 0;
-      transform: translateX(calc(50vw / 2)) translateY(20px);
+      bottom: 0;
+      transform: translateX(0) translateY(-60%);
 
       z-index: 0;
 
@@ -143,7 +163,7 @@
 
     & > #profileImageWrapper {
       width: fit-content;
-      transform: translateX(0) translateY(-55%);
+      transform: translateX(0) translateY(-53%);
 
       z-index: 0;
 

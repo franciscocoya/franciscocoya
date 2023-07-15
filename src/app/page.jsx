@@ -4,6 +4,8 @@ import BaseButton from '@/components/buttons/baseButton'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import styles from './page.module.scss'
+import { SiGithub, SiLinkedin } from 'react-icons/si'
+import Link from 'next/link'
 
 function Home() {
   const router = useRouter()
@@ -28,6 +30,15 @@ function Home() {
         <h2>Software Engineering Student</h2>
         <span id="profile-role">Web Applications Developer</span>
         <p>Based in Oviedo, Spain</p>
+        <div className={styles.socialNetworkContainer}>
+          <Link href="https://www.linkedin.com/in/franciscocoya/" target='_blank'>
+            <SiLinkedin size={32} />
+          </Link>
+
+          <Link href="https://github.com/franciscocoya" target="_blank">
+            <SiGithub size={32} />
+          </Link>
+        </div>
         <BaseButton text="View more" onClick={() => router.push('/about')} />
       </div>
     </main>

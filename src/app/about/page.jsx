@@ -116,8 +116,7 @@ function AboutPage() {
             <h2>Skills</h2>
             <div className={styles.skillSection}>
               {cvData?.skills.map((skill) => {
-                return (
-                  <p key={skill.id}>{skill.denomination}</p>)
+                return <p key={skill.id}>{skill.denomination}</p>
               })}
             </div>
           </section>

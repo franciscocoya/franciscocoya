@@ -9,6 +9,7 @@ import BaseHeader from '@/components/headers/BaseHeader'
 import Head from 'next/head'
 import styles from './layout.module.scss'
 import Footer from '@/components/footer/Footer'
+import { useEffect } from 'react'
 
 const lexend = Lexend({ subsets: ['latin'] })
 
@@ -19,7 +20,13 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  const { showMobileMenu, isMobile } = useDeviceStore()
+  const { showMobileMenu, isMobile, setShowMobileMenu } = useDeviceStore()
+
+  useEffect(() => {
+    if (isMobile) {
+      setShowMobileMenu(false)
+    }
+  }, [])
 
   return (
     <html lang="en">

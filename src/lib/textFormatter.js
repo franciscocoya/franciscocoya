@@ -9,7 +9,6 @@ import { JOB_STATUS } from './constants.js'
  * @returns
  */
 const formatCvExperienceDates = (dateStart, dateFinish, status) => {
-
   return status === JOB_STATUS.current
     ? `${dateStart} - Present`
     : `${dateStart} - ${dateFinish}`

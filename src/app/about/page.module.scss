@@ -12,16 +12,16 @@
       }
     }
 
-    & > section{
-      & > .cardSection{
+    & > section {
+      & > .cardSection {
         @include mixins.flex('vertical', start, start, 20px);
       }
 
-      & > .skillSection{
+      & > .skillSection {
         @include mixins.flex('horizontal', start, start, 50px);
         flex-wrap: wrap;
 
-        & > p{
+        & > p {
           position: relative;
           // Separate each skill with a dot
           &:not(:last-child):after {

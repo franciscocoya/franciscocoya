@@ -27,8 +27,9 @@
   height: 100%;
   padding-left: 20%;
 }
-.main > .homeContent > h1::after, .main > .homeContent > h2::after {
-  content: "";
+.main > .homeContent > h1::after,
+.main > .homeContent > h2::after {
+  content: '';
 }
 .main > .homeContent > h1 {
   font-size: 6rem;
@@ -41,7 +42,7 @@
 .main > .homeContent > h2 {
   font-size: 2rem;
   font-weight: 200;
-  margin-top: 20px;
+  margin: 0;
 }
 .main > .homeContent > span {
   font-size: 2.5rem;
@@ -50,7 +51,6 @@
 .main > .homeContent > p {
   font-weight: 300;
   font-size: 1.4rem;
-  margin-bottom: 20px;
 }
 .main > .homeContent > .socialNetworkContainer {
   display: flex;
@@ -58,7 +58,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  overflow: hidden;
+  margin-top: 20px;
 }
 .main > .homeContent > .socialNetworkContainer a {
   color: #f4f4f4;
@@ -159,4 +159,4 @@
   .main > #profileImageWrapper img {
     width: 400px;
   }
-}/*# sourceMappingURL=page.module.css.map */
+} /*# sourceMappingURL=page.module.css.map */

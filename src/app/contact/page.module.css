@@ -5,8 +5,9 @@
 .main > ul > li {
   font-size: 1.2rem;
 }
-.main > ul > li:nth-child(1)::before, .main > ul > li:nth-child(2)::before {
-  content: "@";
+.main > ul > li:nth-child(1)::before,
+.main > ul > li:nth-child(2)::before {
+  content: '@';
   font-size: 1.5rem;
   margin-right: 10px;
-}/*# sourceMappingURL=page.module.css.map */
+} /*# sourceMappingURL=page.module.css.map */

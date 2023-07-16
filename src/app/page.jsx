@@ -31,7 +31,10 @@ function Home() {
         <span id="profile-role">Web Applications Developer</span>
         <p>Based in Oviedo, Spain</p>
         <div className={styles.socialNetworkContainer}>
-          <Link href="https://www.linkedin.com/in/franciscocoya/" target='_blank'>
+          <Link
+            href="https://www.linkedin.com/in/franciscocoya/"
+            target="_blank"
+          >
             <SiLinkedin size={32} />
           </Link>
 

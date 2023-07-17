@@ -16,8 +16,8 @@ function Home() {
         <Image
           src="/assets/images/fc_profile_image_bg_b&w.png"
           alt="Francisco Coya"
-          width={600}
-          height={600}
+          width={736}
+          height={765}
         />
       </div>
 

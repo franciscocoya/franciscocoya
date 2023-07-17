@@ -27,9 +27,8 @@
   height: 100%;
   padding-left: 20%;
 }
-.main > .homeContent > h1::after,
-.main > .homeContent > h2::after {
-  content: '';
+.main > .homeContent > h1::after, .main > .homeContent > h2::after {
+  content: "";
 }
 .main > .homeContent > h1 {
   font-size: 6rem;
@@ -76,12 +75,10 @@
   justify-content: flex-end;
   align-items: flex-start;
   gap: 15px;
-  width: 100vw;
   height: 100vh;
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translateX(55%);
   z-index: 1;
 }
 .main > #profileImageWrapper img {
@@ -153,10 +150,12 @@
   .main > #profileImageWrapper {
     width: -moz-fit-content;
     width: fit-content;
-    transform: translateX(0) translateY(-53%);
+    margin-top: 50px;
     z-index: 0;
   }
   .main > #profileImageWrapper img {
-    width: 400px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
-} /*# sourceMappingURL=page.module.css.map */
+}/*# sourceMappingURL=page.module.css.map */

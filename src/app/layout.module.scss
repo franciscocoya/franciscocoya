@@ -2,13 +2,13 @@
 @use './_styles/mixins.scss' as mixins;
 
 .bodyWrapper {
-  @include mixins.flex('vertical', start, center, 0);
+  @include mixins.flex(vertical, start, center, 0);
 
   & > .header {
     height: fit-content;
-    position: absolute;
-    top: 25px;
-    right: 25px;
+    // position: absolute;
+    // top: 25px;
+    // right: 25px;
     background: transparent;
 
     z-index: vars.$z-index-navbar;

@@ -1,11 +1,11 @@
 'use client'
 
-import BaseCardWithImage from '@/components/cards/baseCardWithImage'
+import BaseCardWithImage from '@/components/cards/baseCardWithImage/baseCardWithImage'
 import { readJSON } from '@/lib/jsonReader'
 import { useMemo, useState } from 'react'
 import styles from './page.module.scss'
 import { formatCvExperienceDates } from '@/lib/textFormatter'
-import BaseLayout from '@/layouts/BaseLayout'
+import SecondaryLayout from '@/layouts/SecondaryLayout'
 
 function AboutPage() {
   const [cvData, setCvData] = useState(null)
@@ -21,7 +21,7 @@ function AboutPage() {
   }, [])
 
   return (
-    <BaseLayout>
+    <SecondaryLayout>
       <main className={styles.main}>
         <h1 className={styles.title}>About</h1>
         <div className={styles.aboutWrapper}>
@@ -122,7 +122,7 @@ function AboutPage() {
           </section>
         </div>
       </main>
-    </BaseLayout>
+    </SecondaryLayout>
   )
 }
 

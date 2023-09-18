@@ -1,0 +1,28 @@
+@use "@/app/_styles/mixins.scss" as mixins;
+
+.workPageWrapper {
+    width: 100%;
+
+    & > .workFilterBar {
+        @include mixins.flex("horizontal", "start", "center", 15px);
+        padding: 50px 0;
+    }
+
+    & > .workCardGallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(600px, 1fr));
+        grid-template-rows: repeat(5, 1fr);
+        gap: 15px;
+
+        @media screen and (max-width: 1200px) {
+            // width: 80%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+    }
+
+    padding-bottom: 50px;
+}

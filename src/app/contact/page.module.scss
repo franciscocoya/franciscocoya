@@ -1,18 +1,26 @@
+@use '@/app/_styles/mixins.scss' as mixins;
+
 .main {
   & > ul {
+    @include mixins.flex("vertical", "start", "start", 30px);
     list-style-type: none;
-    line-height: 3;
-    & > li {
-      font-size: 1.2rem;
 
-      // Email with @ icon before
-      &:nth-child(1),
-      &:nth-child(2) {
-        &::before {
-          content: '@';
-          font-size: 1.5rem;
-          margin-right: 10px;
-        }
+    & > li {
+      @include mixins.flex("horizontal", "start", "center", 20px);
+      font-size: 2rem;
+      font-weight: 300;
+
+      & > a{
+        color: #FFF;
+      }
+
+      & > p {
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: clip;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-left: 10px;
       }
     }
   }

@@ -30,9 +30,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      </Head> */}
       <body className={lexend.className}>
         <div className={styles.bodyWrapper}>
           <BaseHeader />

@@ -5,6 +5,7 @@ $color-secondary-alpha: rgba(63, 0, 113, 0.2);
 $color-tertiary: #fec8dd;
 $color-dark: #121212;
 $color-light: #f4f4f4;
+$color-light-sec: #d9d9d9;
 
 // z-index
 $z-index-navbar: 10;
@@ -15,8 +16,13 @@ $breakpoint-mobile: 768px;
 $breakpoint-tablet: 1024px;
 $breakpoint-desktop: 1440px;
 
+// Border radius
+$border-radius: 10px;
+
 :export {
   breakpoint-mobile: $breakpoint-mobile;
   breakpoint-tablet: $breakpoint-tablet;
   breakpoint-desktop: $breakpoint-desktop;
+
+  border-radius: $border-radius;
 }

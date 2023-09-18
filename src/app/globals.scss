@@ -64,6 +64,15 @@ p {
 
 a {
   text-decoration: none;
+  color: vars.$color-primary;
+
+  &:visited, &:active, &:focus {
+    color: vars.$color-primary;
+  }
+
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 ::selection {

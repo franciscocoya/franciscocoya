@@ -2,6 +2,7 @@
   breakpoint-mobile: 768px;
   breakpoint-tablet: 1024px;
   breakpoint-desktop: 1440px;
+  border-radius: 10px;
 }
 
 * {
@@ -72,6 +73,13 @@ p {
 
 a {
   text-decoration: none;
+  color: #fb2576;
+}
+a:visited, a:active, a:focus {
+  color: #fb2576;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 ::-moz-selection {

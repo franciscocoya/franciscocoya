@@ -1,0 +1,163 @@
+:export {
+  breakpoint-mobile: 768px;
+  breakpoint-tablet: 1024px;
+  breakpoint-desktop: 1440px;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100vw;
+  height: 100vh;
+  background: url(/assets/images/home_background_mixed_layer.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main > .homeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  height: 100%;
+  padding-left: 20%;
+}
+.main > .homeContent > h1::after,
+.main > .homeContent > h2::after {
+  content: '';
+}
+.main > .homeContent > h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 5.7rem;
+}
+.main > .homeContent > h1 > span {
+  color: #fb2576;
+}
+.main > .homeContent > h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0;
+}
+.main > .homeContent > span {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.main > .homeContent > p {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.main > .homeContent > .socialNetworkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.main > .homeContent > .socialNetworkContainer a {
+  color: #f4f4f4;
+  font-size: 2rem;
+}
+.main > .homeContent > .socialNetworkContainer a > svg {
+  transition: fill 0.5s ease-in-out;
+}
+.main > .homeContent > .socialNetworkContainer a > svg:hover {
+  fill: #fec8dd;
+}
+.main > #profileImageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 15px;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.main > #profileImageWrapper img {
+  width: 90vh;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .main > .homeContent {
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 200px;
+    z-index: 1;
+  }
+  .main > .homeContent > h1 {
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+  .main > .homeContent > h2 {
+    font-size: 2rem;
+  }
+  .main > .homeContent > span {
+    font-size: 2rem;
+  }
+  .main > .homeContent > p {
+    font-size: 1rem;
+  }
+  .main > #profileImageWrapper {
+    width: 100vw;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateX(0) translateY(-60%);
+    z-index: 0;
+  }
+  .main > #profileImageWrapper img {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    z-index: 1;
+  }
+  .main > .homeContent {
+    padding-top: 300px;
+  }
+  .main > .homeContent > h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+  .main > .homeContent > h2 {
+    font-size: 1.5rem;
+  }
+  .main > .homeContent > span {
+    font-size: 1.3rem;
+  }
+  .main > .homeContent > p {
+    font-size: 0.8rem;
+  }
+  .main > #profileImageWrapper {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 50px;
+    z-index: 0;
+  }
+  .main > #profileImageWrapper img {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+} /*# sourceMappingURL=page.module.css.map */

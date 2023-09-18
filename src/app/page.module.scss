@@ -1,0 +1,172 @@
+@use './_styles/variables.scss' as vars;
+@use './_styles/_mixins.scss' as mixins;
+
+.main {
+  @include mixins.flex('vertical', 'start', 'start', 15px);
+  width: 100vw;
+  height: 100vh;
+
+  background: url(/assets/images/home_background_mixed_layer.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  & > .homeContent {
+    @include mixins.flex('vertical', 'center', 'start', 15px);
+    height: 100%;
+    padding-left: 20%;
+
+    // Remove heading end point only for home page
+    & > h1,
+    & > h2 {
+      &::after {
+        content: '';
+      }
+    }
+
+    & > h1 {
+      font-size: 6rem;
+      font-weight: 400;
+      line-height: 5.7rem;
+      & > span {
+        color: vars.$color-primary;
+      }
+    }
+
+    & > h2 {
+      font-size: 2rem;
+      font-weight: 200;
+      margin: 0;
+    }
+
+    & > span {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    & > p {
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+
+    & > .socialNetworkContainer {
+      @include mixins.flex('horizontal', start, center, 15px);
+      margin-top: 20px;
+
+      & a {
+        color: vars.$color-light;
+        font-size: 2rem;
+
+        & > svg {
+          transition: fill 0.5s ease-in-out;
+
+          &:hover {
+            fill: vars.$color-tertiary;
+          }
+        }
+      }
+    }
+  }
+
+  // Profile image
+  & > #profileImageWrapper {
+    @include mixins.flex('vertical', end, start, 15px);
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    z-index: 1;
+
+    & img {
+      width: 90vh;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: vars.$breakpoint-tablet) {
+  .main {
+    @include mixins.flex('vertical', center, center, 15px);
+    & > .homeContent {
+      text-align: center;
+      align-items: center;
+      padding-left: 0;
+      padding-top: 200px;
+
+      z-index: 1;
+
+      & > h1 {
+        font-size: 4.5rem;
+        line-height: 4rem;
+      }
+
+      & > h2 {
+        font-size: 2rem;
+      }
+
+      & > span {
+        font-size: 2rem;
+      }
+
+      & > p {
+        font-size: 1rem;
+      }
+    }
+
+    & > #profileImageWrapper {
+      width: 100vw;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      transform: translateX(0) translateY(-60%);
+
+      z-index: 0;
+
+      & img {
+        width: 450px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: vars.$breakpoint-mobile) {
+  .main {
+    z-index: 1;
+
+    & > .homeContent {
+      padding-top: 300px;
+
+      & > h1 {
+        font-size: 3.5rem;
+        line-height: 3rem;
+      }
+
+      & > h2 {
+        font-size: 1.5rem;
+      }
+
+      & > span {
+        font-size: 1.3rem;
+      }
+
+      & > p {
+        font-size: 0.8rem;
+      }
+    }
+
+    & > #profileImageWrapper {
+      width: fit-content;
+      margin-top: 50px;
+
+      z-index: 0;
+
+      & img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

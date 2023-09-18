@@ -1,0 +1,7 @@
+.main > ul {
+  list-style-type: none;
+  line-height: 3;
+}
+.main > ul > li {
+  font-size: 1.2rem;
+} /*# sourceMappingURL=page.module.css.map */

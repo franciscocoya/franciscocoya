@@ -1,0 +1,27 @@
+@use '@/app/_styles/mixins.scss' as mixins;
+
+.main {
+  & > ul {
+    @include mixins.flex('vertical', 'start', 'start', 30px);
+    list-style-type: none;
+
+    & > li {
+      @include mixins.flex('horizontal', 'start', 'center', 20px);
+      font-size: 2rem;
+      font-weight: 300;
+
+      & > a {
+        color: #fff;
+      }
+
+      & > p {
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: clip;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-left: 10px;
+      }
+    }
+  }
+}

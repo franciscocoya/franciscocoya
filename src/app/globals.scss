@@ -9,26 +9,77 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 // Headings
-h1{
-  font-size: 5rem;
-  font-weight: 500;
-}
-
-h1, h2{
+h1,
+h2,
+h3 {
   color: vars.$color-light;
 
-  &::after{
+  &::after {
     content: '.';
     color: vars.$color-primary;
   }
 }
 
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: vars.$color-light;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
 a {
   text-decoration: none;
+  color: vars.$color-primary;
+
+  &:visited,
+  &:active,
+  &:focus {
+    color: vars.$color-primary;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+::selection {
+  background-color: vars.$color-primary;
+  color: vars.$color-light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,5 +88,3 @@ a {
     background-color: vars.$color-dark;
   }
 }
-
-

@@ -1,0 +1,21 @@
+@use './_styles/variables.scss' as vars;
+@use './_styles/mixins.scss' as mixins;
+
+.bodyWrapper {
+  @include mixins.flex(vertical, start, center, 0);
+
+  & > .header {
+    height: fit-content;
+    // position: absolute;
+    // top: 25px;
+    // right: 25px;
+    background: transparent;
+
+    z-index: vars.$z-index-navbar;
+  }
+
+  & > .bodyContent,
+  & > .bodyContentNoMargin {
+    margin: 0;
+  }
+}

@@ -1,0 +1,40 @@
+@use '@/app/_styles/_mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
+
+.navbar {
+  align-self: flex-end;
+  z-index: vars.$z-index-navbar;
+
+  & > ul {
+    @include mixins.flex('horizontal', start, center, 20px);
+    list-style-type: none;
+
+    & > li {
+      padding: 5px 20px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+
+      & > a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: vars.$color-light;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        background-color: vars.$color-secondary-alpha;
+        background-blend-mode: normal;
+
+        & > a {
+          color: vars.$color-primary;
+        }
+      }
+    }
+
+    @media screen and (max-width: vars.$breakpoint-tablet) {
+      display: none;
+    }
+  }
+}

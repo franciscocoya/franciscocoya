@@ -66,11 +66,13 @@ a {
   text-decoration: none;
   color: vars.$color-primary;
 
-  &:visited, &:active, &:focus {
+  &:visited,
+  &:active,
+  &:focus {
     color: vars.$color-primary;
   }
 
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 }

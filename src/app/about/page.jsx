@@ -1,22 +1,23 @@
 'use client'
 
 import BaseCardWithImage from '@/components/cards/baseCardWithImage/baseCardWithImage'
-import { readJSON } from '@/lib/jsonReader'
+// import { readJSON } from '@/lib/jsonReader'
 import { useMemo, useState } from 'react'
 import styles from './page.module.scss'
 import { formatCvExperienceDates } from '@/lib/textFormatter'
 import SecondaryLayout from '@/layouts/SecondaryLayout'
+import { readJSON } from '@/lib/jsonReader'
 
 function AboutPage() {
   const [cvData, setCvData] = useState(null)
 
   const getCvData = async () => {
-    readJSON('../../../data/cv.json').then((data) => {
+    await readJSON('/assets/data/cv.json').then((data) => {
       setCvData(data)
     })
   }
 
-  useMemo(() => {
+  useMemo(async () => {
     getCvData()
   }, [])
 

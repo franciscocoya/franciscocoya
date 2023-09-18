@@ -1,115 +1,114 @@
-@use "@/app/_styles/mixins.scss" as mixins;
-@use "@/app/_styles/variables.scss" as vars;
+@use '@/app/_styles/mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
 
 .workCard {
-    @include mixins.flex("vertical", "center", "center", 15px);
-    max-width: 600px;
-    width: 100%;
-    min-height: 300px;
-    height: 100%;
-    border-radius: vars.$border-radius;
-    position: relative;
-    padding: 20px;
+  @include mixins.flex('vertical', 'center', 'center', 15px);
+  max-width: 600px;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  border-radius: vars.$border-radius;
+  position: relative;
+  padding: 20px;
 
-    & > h2 {
-        font-size: 2.5rem;
-        max-width: 80%;
-        font-weight: 400;
-        text-align: center;
-        line-height: 1;
-        z-index: 2;
-        transition: all 0.1s ease-in-out;
-    }
+  & > h2 {
+    font-size: 2.5rem;
+    max-width: 80%;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    z-index: 2;
+    transition: all 0.1s ease-in-out;
+  }
 
-    & > span {
-        font-size: 1.3rem;
-        font-weight: 300;
-        text-align: center;
-        line-height: 1;
-        z-index: 2;
-    }
+  & > span {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1;
+    z-index: 2;
+  }
 
-    &:hover {
-        filter: brightness(1.1);
-        box-shadow: 0 0 10px 5px hwb(337 15% 2% / 0.3);
-
-        &::before {
-            background-color: hwb(337 15% 2% / 0.75);
-        }
-
-        & > .buttonsContainer > .workCard__github_button {
-            background-color: vars.$color-secondary;
-        }
-
-        h2{
-            mix-blend-mode: screen;
-            font-size: 2.8rem;
-            font-weight: 600;
-        }
-    }
+  &:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 10px 5px hwb(337 15% 2% / 0.3);
 
     &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: vars.$border-radius;
-        z-index: 0;
+      background-color: hwb(337 15% 2% / 0.75);
     }
 
-    & > .buttonsContainer {
-        @include mixins.flex("horizontal", "center", "center", 10px);
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        z-index: 2;
-
-        & > .workCard__button,
-        & > .workCard__github_button {
-            width: 81px;
-            height: 81px;
-            border-radius: 50%;
-            border: none;
-            transition: all 0.1s ease-in-out;
-
-            &:hover {
-                
-                cursor: pointer;
-            }
-        }
-        & > .workCard__button {
-            background-color: vars.$color-light-sec;
-
-            &:hover {
-                background-color: #fff;
-                transform: rotate3d(0, 0, 1, 45deg) scale(1.1);
-            }
-        }
-
-        & > .workCard__github_button {
-            background-color: vars.$color-primary;
-
-            &:hover {
-                transform: scale(1.1);
-                background-color: vars.$color-secondary;
-            }
-        }
+    & > .buttonsContainer > .workCard__github_button {
+      background-color: vars.$color-secondary;
     }
 
-    & > .workCard__techStack {
-        @include mixins.flex("horizontal", "start", "center", 5px);
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 2;
+    h2 {
+      mix-blend-mode: screen;
+      font-size: 2.8rem;
+      font-weight: 600;
     }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: vars.$border-radius;
+    z-index: 0;
+  }
+
+  & > .buttonsContainer {
+    @include mixins.flex('horizontal', 'center', 'center', 10px);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+
+    & > .workCard__button,
+    & > .workCard__github_button {
+      width: 81px;
+      height: 81px;
+      border-radius: 50%;
+      border: none;
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    & > .workCard__button {
+      background-color: vars.$color-light-sec;
+
+      &:hover {
+        background-color: #fff;
+        transform: rotate3d(0, 0, 1, 45deg) scale(1.1);
+      }
+    }
+
+    & > .workCard__github_button {
+      background-color: vars.$color-primary;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: vars.$color-secondary;
+      }
+    }
+  }
+
+  & > .workCard__techStack {
+    @include mixins.flex('horizontal', 'start', 'center', 5px);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+  }
 }
 
 .workCard__featured {
-    &::before {
-        background-color: rgba(157, 29, 29, 0.5);
-    }
+  &::before {
+    background-color: rgba(157, 29, 29, 0.5);
+  }
 }

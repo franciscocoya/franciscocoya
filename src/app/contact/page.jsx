@@ -34,10 +34,7 @@ function ContactPage() {
           </li>
           <li>
             <FaGithub size={32} />
-            <a
-              href="https://www.github.com/franciscocoya/"
-              target="_blank"
-            >
+            <a href="https://www.github.com/franciscocoya/" target="_blank">
               franciscocoya
             </a>
           </li>

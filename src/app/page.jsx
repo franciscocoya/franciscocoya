@@ -8,6 +8,7 @@ import { SiGithub, SiLinkedin } from 'react-icons/si'
 import Link from 'next/link'
 import BaseLayout from '@/layouts/BaseLayout'
 import Head from 'next/head'
+import useDeviceStore from '@/store/device.store'
 
 function Home() {
   const router = useRouter()

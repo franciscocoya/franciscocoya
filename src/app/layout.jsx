@@ -6,10 +6,8 @@ import { Lexend } from 'next/font/google'
 import './globals.scss'
 
 import BaseHeader from '@/components/headers/BaseHeader'
-import Head from 'next/head'
 import styles from './layout.module.scss'
 import Footer from '@/components/footer/Footer'
-import { useEffect } from 'react'
 
 const lexend = Lexend({ subsets: ['latin'] })
 
@@ -24,6 +22,36 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>
+          Francisco Coya 👨‍💻 Software Engineering Student, Web Applications
+          Developer
+        </title>
+        <meta
+          name="description"
+          content="Software Engineering Student and Web Applications Developer"
+        />
+
+        <meta
+          property="og:title"
+          content="Francisco Coya | Software Engineering Student | Web Applications Developer"
+        />
+        <meta
+          property="og:description"
+          content="Francisco Coya a Software Engineering Student and Web Applications Developer."
+        />
+        <meta
+          property="og:image"
+          content="https://franciscocoya.es/assets/images/opengraph.jpg"
+        />
+        <meta property="og:url" content="https://franciscocoya.es" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Francisco Coya" />
+        <meta property="og:locale" content="en_GB" />
+        <link rel="manifest" href="manifest.json" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      </head>
       <body className={lexend.className}>
         <div className={styles.bodyWrapper}>
           <BaseHeader />
@@ -35,37 +63,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   )
-}
-
-export const metadata = {
-  openGraph: {
-    title: 'Francisco Coya',
-    description: 'Web Aplication Developer and Software Engineering Student',
-    url: 'https://nextjs.org',
-    siteName:
-      'Francisco Coya | Software Engineering Student | Web Applications Developer',
-    images: [
-      {
-        url: '/assets/images/opengraph.jpg',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: '/assets/images/opengraph.jpg',
-        width: 1800,
-        height: 1600,
-        alt: 'Francisco Coya | Software Engineering Student | Web Applications Developer',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-    author: 'Francisco Coya',
-    themeColor: '#000',
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 1,
-    },
-    category: 'Software Engineering',
-  },
 }

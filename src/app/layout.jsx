@@ -24,9 +24,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      {/* <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head> */}
       <body className={lexend.className}>
         <div className={styles.bodyWrapper}>
           <BaseHeader />
@@ -38,4 +35,37 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   )
+}
+
+export const metadata = {
+  openGraph: {
+    title: 'Francisco Coya',
+    description: 'Web Aplication Developer and Software Engineering Student',
+    url: 'https://nextjs.org',
+    siteName:
+      'Francisco Coya | Software Engineering Student | Web Applications Developer',
+    images: [
+      {
+        url: '/assets/images/opengraph.jpg',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: '/assets/images/opengraph.jpg',
+        width: 1800,
+        height: 1600,
+        alt: 'Francisco Coya | Software Engineering Student | Web Applications Developer',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+    author: 'Francisco Coya',
+    themeColor: '#000',
+    viewport: {
+      width: 'device-width',
+      initialScale: 1,
+      maximumScale: 1,
+    },
+    category: 'Software Engineering',
+  },
 }

@@ -1,2 +1,5 @@
 User-Agent: *
 Allow: /
+
+Host: https://franciscocoya.dev
+Sitemap: https://franciscocoya.dev/sitemap.xml

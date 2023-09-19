@@ -24,7 +24,7 @@ h3 {
 h1::after,
 h2::after,
 h3::after {
-  content: '.';
+  content: ".";
   color: #fb2576;
 }
 
@@ -75,9 +75,7 @@ a {
   text-decoration: none;
   color: #fb2576;
 }
-a:visited,
-a:active,
-a:focus {
+a:visited, a:active, a:focus {
   color: #fb2576;
 }
 a:hover {
@@ -99,4 +97,4 @@ a:hover {
     color-scheme: dark;
     background-color: #121212;
   }
-} /*# sourceMappingURL=globals.css.map */
+}/*# sourceMappingURL=globals.css.map */

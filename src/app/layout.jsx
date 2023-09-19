@@ -13,12 +13,6 @@ import { useEffect } from 'react'
 
 const lexend = Lexend({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Francisco Coya Abajo | Software Engineering Student',
-  description: 'Web Apllications Developer and Software Engineer Student',
-  // TODO: Open Graph
-}
-
 export default function RootLayout({ children }) {
   const { showMobileMenu, isMobile, setShowMobileMenu } = useDeviceStore()
 

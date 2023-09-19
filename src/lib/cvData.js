@@ -110,6 +110,4 @@ const getCv = () => {
   return cv
 }
 
-export {
-  getCv
-}
+export { getCv }

@@ -11,7 +11,13 @@ function BaseCardWithImage({
 }) {
   return (
     <div className={styles.card}>
-      <Image src={cardImage} className="card-img-top" alt={cardImageAlt} width={500} height={500} />
+      <Image
+        src={cardImage}
+        className="card-img-top"
+        alt={cardImageAlt}
+        width={500}
+        height={500}
+      />
       <div className={styles.cardBody}>
         <h3 className="card-title">{cardTitle}</h3>
         {isTextLink ? (

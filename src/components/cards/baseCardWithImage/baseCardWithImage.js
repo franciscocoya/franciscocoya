@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './baseCardWithImage.module.scss'
 
 function BaseCardWithImage({
@@ -10,7 +11,7 @@ function BaseCardWithImage({
 }) {
   return (
     <div className={styles.card}>
-      <img src={cardImage} className="card-img-top" alt={cardImageAlt} />
+      <Image src={cardImage} className="card-img-top" alt={cardImageAlt} width={500} height={500} />
       <div className={styles.cardBody}>
         <h3 className="card-title">{cardTitle}</h3>
         {isTextLink ? (

@@ -1,7 +1,6 @@
 # About Me:
 
-Software Engineering student at University of Oviedo, Spain.<br>I'm consider myself a lover of ✨ web design and everything related to the front-end side of applications and websites.
-
+Software Engineering student at University of Oviedo, Spain.<br>Consider himself a web design fan and everything related to the front-end side of applications and websites. His interests include web application development, UI design and prototyping, as well as mobile applications. 
 ## 🌐 Socials:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/franciscocoya)

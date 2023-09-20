@@ -1,5 +1,5 @@
 'use client'
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
 import FullPageMenu from '@/components/menu/fullPageMenu'
 import useDeviceStore from '@/store/device.store'
 import { Lexend } from 'next/font/google'

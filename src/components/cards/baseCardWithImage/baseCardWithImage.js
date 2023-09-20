@@ -21,7 +21,12 @@ function BaseCardWithImage({
       <div className={styles.cardBody}>
         <h3 className="card-title">{cardTitle}</h3>
         {isTextLink ? (
-          <a href={cardText} target="_blank" className="btn btn-primary" rel='noopener noreferrer'>
+          <a
+            href={cardText}
+            target="_blank"
+            className="btn btn-primary"
+            rel="noopener noreferrer"
+          >
             {cardText}
           </a>
         ) : (

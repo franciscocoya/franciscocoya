@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Francisco Coya" />
         <meta property="og:locale" content="en_GB" />
-        <link rel="manifest" href="manifest.json" />
+        {/* <link rel="manifest" href="manifest.json" /> */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </head>
       <body className={lexend.className}>

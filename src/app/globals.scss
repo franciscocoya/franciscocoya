@@ -1,4 +1,4 @@
-@use './_styles/variables.scss' as vars;
+@use "./_styles/variables.scss" as vars;
 
 * {
   box-sizing: border-box;
@@ -18,7 +18,7 @@ h3 {
   color: vars.$color-light;
 
   &::after {
-    content: '.';
+    content: ".";
     color: vars.$color-primary;
   }
 }
@@ -28,7 +28,11 @@ h1 {
   font-weight: 500;
   margin-bottom: 50px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: vars.$breakpoint-tablet) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: vars.$breakpoint-mobile) {
     font-size: 4rem;
   }
 }

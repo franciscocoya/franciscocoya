@@ -33,6 +33,11 @@ h1 {
   font-weight: 500;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1024px) {
+  h1 {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 4rem;

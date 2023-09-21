@@ -1,12 +1,12 @@
-@use "@/app/_styles/mixins.scss" as mixins;
-@use "@/app/_styles/variables.scss" as vars;
+@use '@/app/_styles/mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
 
 .main {
   & > .aboutWrapper {
-    @include mixins.flex("vertical", "start", "start", 50px);
+    @include mixins.flex('vertical', 'start', 'start', 50px);
 
     & > .resumeContainer {
-      @include mixins.flex("vertical", "start", "start", 20px);
+      @include mixins.flex('vertical', 'start', 'start', 20px);
 
       & > p {
         line-height: 2;
@@ -15,11 +15,11 @@
 
     & > section {
       & > .cardSection {
-        @include mixins.flex("vertical", start, start, 20px);
+        @include mixins.flex('vertical', start, start, 20px);
       }
 
       & > .skillSection {
-        @include mixins.flex("horizontal", start, start, 20px);
+        @include mixins.flex('horizontal', start, start, 20px);
         flex-wrap: wrap;
 
         & > p {
@@ -47,7 +47,7 @@
             position: relative;
             // Separate each skill with a dot
             &:not(:last-child):after {
-              content: "";
+              content: '';
             }
           }
         }

@@ -1,11 +1,12 @@
-@use '@/app/_styles/mixins.scss' as mixins;
+@use "@/app/_styles/mixins.scss" as mixins;
+@use "@/app/_styles/variables.scss" as vars;
 
 .main {
   & > .aboutWrapper {
-    @include mixins.flex('vertical', 'start', 'start', 50px);
+    @include mixins.flex("vertical", "start", "start", 50px);
 
     & > .resumeContainer {
-      @include mixins.flex('vertical', 'start', 'start', 20px);
+      @include mixins.flex("vertical", "start", "start", 20px);
 
       & > p {
         line-height: 2;
@@ -14,27 +15,46 @@
 
     & > section {
       & > .cardSection {
-        @include mixins.flex('vertical', start, start, 20px);
+        @include mixins.flex("vertical", start, start, 20px);
       }
 
       & > .skillSection {
-        @include mixins.flex('horizontal', start, start, 50px);
+        @include mixins.flex("horizontal", start, start, 20px);
         flex-wrap: wrap;
 
         & > p {
           position: relative;
           // Separate each skill with a dot
-          &:not(:last-child):after {
-            content: '·';
-            position: absolute;
-            right: calc(50px / 2 * -1 - 2.5px);
-            bottom: 0;
-          }
+
+          background-color: transparent;
+          border: 1px solid vars.$color-light;
+          border-radius: 50px;
+          padding: 10px 20px;
         }
       }
     }
   }
 } // end main
+
+@media (max-width: vars.$breakpoint-mobile) {
+  .main {
+    & > .aboutWrapper {
+      & > section {
+        & > .skillSection {
+          gap: 10px;
+
+          & > p {
+            position: relative;
+            // Separate each skill with a dot
+            &:not(:last-child):after {
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .title {
   font-weight: 400;

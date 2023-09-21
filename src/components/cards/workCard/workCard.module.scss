@@ -1,8 +1,8 @@
-@use "@/app/_styles/mixins.scss" as mixins;
-@use "@/app/_styles/variables.scss" as vars;
+@use '@/app/_styles/mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
 
 .workCard {
-  @include mixins.flex("vertical", "center", "center", 15px);
+  @include mixins.flex('vertical', 'center', 'center', 15px);
   max-width: 600px;
   width: 100%;
   min-height: 300px;
@@ -49,7 +49,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@
   }
 
   & > .buttonsContainer {
-    @include mixins.flex("horizontal", "center", "center", 10px);
+    @include mixins.flex('horizontal', 'center', 'center', 10px);
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -109,7 +109,7 @@
   }
 
   & > .workCard__techStack {
-    @include mixins.flex("horizontal", "start", "center", 5px);
+    @include mixins.flex('horizontal', 'start', 'center', 5px);
     flex-wrap: wrap;
     position: absolute;
     top: 20px;

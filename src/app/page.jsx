@@ -1,5 +1,5 @@
 'use client'
-
+import { NextSeo } from 'next-seo'
 import BaseButton from '@/components/buttons/baseButton'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -7,49 +7,53 @@ import styles from './page.module.scss'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import Link from 'next/link'
 import BaseLayout from '@/layouts/BaseLayout'
-import Head from 'next/head'
-import useDeviceStore from '@/store/device.store'
 
 function Home() {
   const router = useRouter()
 
   return (
     <BaseLayout>
-      <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>
-          Francisco Coya | Software Engineering Student | Web Applications
-          Developer
-        </title>
-        <meta
-          name="description"
-          content="Francisco Coya | Software Engineering Student | Web Applications Developer"
-        />
+      <NextSeo
+        title="Francisco Coya 👨‍💻 Software Engineering Student"
+        description="Software Engineering Student and Web Applications Developer based in Oviedo, Spain"
+        canonical="https://franciscocoya/"
+        openGraph={{
+          url: 'https://franciscocoya/',
+          title: 'Francisco Coya 👨‍💻 Software Engineering Student',
+          description:
+            'Software Engineering Student and Web Applications Developer based in 📍 Oviedo, Spain',
+          images: [
+            {
+              url: '/assets/images/opengraph.jpg',
+              width: 800,
+              height: 600,
+              alt: 'Og Image Alt',
+              type: 'image/jpeg',
+            },
+            {
+              url: '/assets/images/opengraph.jpg',
+              width: 1200,
+              height: 630,
+              alt: 'Og Image Alt Second',
+              type: 'image/jpeg',
+            },
+          ],
+          siteName: 'SiteName',
+        }}
+        twitter={{
+          handle: '@handle',
+          site: '@site',
+          cardType: 'summary_large_image',
+        }}
+      />
 
-        <meta
-          property="og:title"
-          content="Francisco Coya | Software Engineering Student | Web Applications Developer"
-        />
-        <meta
-          property="og:description"
-          content="Francisco Coya a Software Engineering Student and Web Applications Developer."
-        />
-        <meta
-          property="og:image"
-          content="https://franciscocoya.es/assets/images/fc_profile_image_bg_b&w.png"
-        />
-        <meta property="og:url" content="https://franciscocoya.es" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Francisco Coya" />
-        <meta property="og:locale" content="en_GB" />
-      </Head>
       <main className={styles.main}>
         <div id={styles.profileImageWrapper}>
           <Image
             src="/assets/images/fc_profile_image_bg_b&w.png"
             alt="Francisco Coya"
             width={736}
-            height={765}
+            height={736}
           />
         </div>
 
@@ -74,7 +78,7 @@ function Home() {
               <SiGithub size={32} />
             </Link>
           </div>
-          <BaseButton text="View more" onClick={() => router.push('/about')} />
+          <BaseButton text="View more" onClick={() => router.push('/about')} type="white"/>
         </div>
       </main>
     </BaseLayout>

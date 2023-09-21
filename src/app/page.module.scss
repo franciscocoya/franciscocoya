@@ -1,10 +1,11 @@
-@use './_styles/variables.scss' as vars;
-@use './_styles/_mixins.scss' as mixins;
+@use "./_styles/variables.scss" as vars;
+@use "./_styles/_mixins.scss" as mixins;
 
 .main {
-  @include mixins.flex('vertical', 'start', 'start', 15px);
+  @include mixins.flex("vertical", "start", "start", 15px);
   width: 100vw;
   height: 100vh;
+  padding-bottom: 50px;
 
   background: url(/assets/images/home_background_mixed_layer.jpg);
   background-position: center center;
@@ -13,7 +14,7 @@
   position: relative;
 
   & > .homeContent {
-    @include mixins.flex('vertical', 'center', 'start', 15px);
+    @include mixins.flex("vertical", "center", "start", 15px);
     height: 100%;
     padding-left: 20%;
 
@@ -21,7 +22,7 @@
     & > h1,
     & > h2 {
       &::after {
-        content: '';
+        content: "";
       }
     }
 
@@ -51,7 +52,7 @@
     }
 
     & > .socialNetworkContainer {
-      @include mixins.flex('horizontal', start, center, 15px);
+      @include mixins.flex("horizontal", start, center, 15px);
       margin-top: 20px;
 
       & a {
@@ -71,8 +72,9 @@
 
   // Profile image
   & > #profileImageWrapper {
-    @include mixins.flex('vertical', end, start, 15px);
-    height: 100vh;
+    @include mixins.flex("vertical", end, end, 0);
+    width: 100%;
+    height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -80,20 +82,30 @@
     z-index: 1;
 
     & img {
-      width: 90vh;
+      width: 800px;
+      max-width: 800px;
       height: auto;
+      object-fit: contain;
     }
+  }
+}
+
+@media (max-width: vars.$breakpoint-desktop) {
+  .main{
+    height: 100vh;
   }
 }
 
 @media (max-width: vars.$breakpoint-tablet) {
   .main {
-    @include mixins.flex('vertical', center, center, 15px);
+    @include mixins.flex("vertical", center, center, 15px);
+    height: 100vh;
+
     & > .homeContent {
       text-align: center;
       align-items: center;
       padding-left: 0;
-      padding-top: 200px;
+      padding-top: 300px;
 
       z-index: 1;
 
@@ -116,17 +128,19 @@
     }
 
     & > #profileImageWrapper {
-      width: 100vw;
+      @include mixins.flex("vertical", start, center, 0);
+      width: 100%;
+      height: 100%;
       left: 0;
       top: 0;
-      bottom: 0;
-      transform: translateX(0) translateY(-60%);
-
+      //transform: translateX(calc(100% / 4)) translateY(-60%);
+      margin-top: 50px;
       z-index: 0;
 
       & img {
         width: 450px;
-        margin: 0 auto;
+        height: 450px;
+        object-fit: contain;
       }
     }
   }
@@ -135,6 +149,7 @@
 @media (max-width: vars.$breakpoint-mobile) {
   .main {
     z-index: 1;
+    height: 100vh;
 
     & > .homeContent {
       padding-top: 300px;
@@ -158,14 +173,55 @@
     }
 
     & > #profileImageWrapper {
-      width: fit-content;
-      margin-top: 50px;
-
+      margin-top: 20px;
       z-index: 0;
 
       & img {
-        width: 100%;
+        width: 400px;
+        height: 400px;
+        max-width: 100%;
         object-fit: contain;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// iPhone SE
+@media only screen and (max-width: vars.$breakpoint-mobile-iphoneSe) {
+  .main {
+    height: auto;
+    & > .homeContent {
+      padding-top: 200px;
+
+      & > h1 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+      }
+
+      & > h2 {
+        font-size: 1.3rem;
+      }
+
+      & > span {
+        font-size: 1.1rem;
+      }
+
+      & > p {
+        font-size: 0.7rem;
+      }
+    }
+
+    & > #profileImageWrapper {
+      margin-top: 20px;
+      z-index: 0;
+
+      & img {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+        object-fit: contain;
+        margin: 0 auto;
       }
     }
   }

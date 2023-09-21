@@ -13,6 +13,7 @@
   gap: 15px;
   width: 100vw;
   height: 100vh;
+  padding-bottom: 50px;
   background: url(/assets/images/home_background_mixed_layer.jpg);
   background-position: center center;
   background-size: cover;
@@ -28,9 +29,8 @@
   height: 100%;
   padding-left: 20%;
 }
-.main > .homeContent > h1::after,
-.main > .homeContent > h2::after {
-  content: '';
+.main > .homeContent > h1::after, .main > .homeContent > h2::after {
+  content: "";
 }
 .main > .homeContent > h1 {
   font-size: 6rem;
@@ -75,19 +75,28 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
-  gap: 15px;
-  height: 100vh;
+  align-items: flex-end;
+  gap: 0;
+  width: 100%;
+  height: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: 1;
 }
 .main > #profileImageWrapper img {
-  width: 90vh;
+  width: 800px;
+  max-width: 800px;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+@media (max-width: 1440px) {
+  .main {
+    height: 100vh;
+  }
+}
 @media (max-width: 1024px) {
   .main {
     display: flex;
@@ -95,12 +104,13 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    height: 100vh;
   }
   .main > .homeContent {
     text-align: center;
     align-items: center;
     padding-left: 0;
-    padding-top: 200px;
+    padding-top: 300px;
     z-index: 1;
   }
   .main > .homeContent > h1 {
@@ -117,21 +127,29 @@
     font-size: 1rem;
   }
   .main > #profileImageWrapper {
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
-    bottom: 0;
-    transform: translateX(0) translateY(-60%);
+    margin-top: 50px;
     z-index: 0;
   }
   .main > #profileImageWrapper img {
     width: 450px;
-    margin: 0 auto;
+    height: 450px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 @media (max-width: 768px) {
   .main {
     z-index: 1;
+    height: 100vh;
   }
   .main > .homeContent {
     padding-top: 300px;
@@ -150,14 +168,48 @@
     font-size: 0.8rem;
   }
   .main > #profileImageWrapper {
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-top: 50px;
+    margin-top: 20px;
     z-index: 0;
   }
   .main > #profileImageWrapper img {
-    width: 100%;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
+    margin: 0 auto;
   }
-} /*# sourceMappingURL=page.module.css.map */
+}
+@media only screen and (max-width: 320px) {
+  .main {
+    height: auto;
+  }
+  .main > .homeContent {
+    padding-top: 200px;
+  }
+  .main > .homeContent > h1 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+  .main > .homeContent > h2 {
+    font-size: 1.3rem;
+  }
+  .main > .homeContent > span {
+    font-size: 1.1rem;
+  }
+  .main > .homeContent > p {
+    font-size: 0.7rem;
+  }
+  .main > #profileImageWrapper {
+    margin-top: 20px;
+    z-index: 0;
+  }
+  .main > #profileImageWrapper img {
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=page.module.css.map */

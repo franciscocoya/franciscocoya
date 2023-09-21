@@ -1,12 +1,10 @@
 'use client'
 
 import BaseCardWithImage from '@/components/cards/baseCardWithImage/baseCardWithImage'
-// import { readJSON } from '@/lib/jsonReader'
 import { useMemo, useState } from 'react'
 import styles from './page.module.scss'
 import { formatCvExperienceDates } from '@/lib/textFormatter'
 import SecondaryLayout from '@/layouts/SecondaryLayout'
-import { readJSON } from '@/lib/jsonReader'
 
 import { getCv } from '@/lib/cvData'
 
@@ -14,10 +12,6 @@ function AboutPage() {
   const [cvData, setCvData] = useState(null)
 
   const getCvData = () => {
-    // await readJSON('/assets/data/cv.json').then((data) => {
-    //   setCvData(data)
-    // })
-
     setCvData(getCv())
   }
 
@@ -110,6 +104,7 @@ function AboutPage() {
                     cardTitle={certification.denomination}
                     cardText={certification.credentialId}
                     isTextLink={true}
+                    textContentLink="See credential"
                     cardExtraInformation={certification.issued}
                   />
                 )

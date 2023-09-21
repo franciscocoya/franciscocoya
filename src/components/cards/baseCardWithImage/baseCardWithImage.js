@@ -8,6 +8,7 @@ function BaseCardWithImage({
   cardText,
   cardExtraInformation,
   isTextLink,
+  textContentLink, // Custom text for the link
 }) {
   return (
     <div className={styles.card}>
@@ -27,7 +28,7 @@ function BaseCardWithImage({
             className="btn btn-primary"
             rel="noopener noreferrer"
           >
-            {cardText}
+            {textContentLink}
           </a>
         ) : (
           <p className="card-text">{cardText}</p>

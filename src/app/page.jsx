@@ -78,7 +78,11 @@ function Home() {
               <SiGithub size={32} />
             </Link>
           </div>
-          <BaseButton text="View more" onClick={() => router.push('/about')} type="white"/>
+          <BaseButton
+            text="View more"
+            onClick={() => router.push('/about')}
+            type="white"
+          />
         </div>
       </main>
     </BaseLayout>

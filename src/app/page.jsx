@@ -1,5 +1,5 @@
 'use client'
-import { NextSeo } from 'next-seo'
+// import { NextSeo } from 'next-seo'
 import BaseButton from '@/components/buttons/baseButton'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <BaseLayout>
-      <NextSeo
+      {/* <NextSeo
         title="Francisco Coya 👨‍💻 Software Engineering Student"
         description="Software Engineering Student and Web Applications Developer based in Oviedo, Spain"
         canonical="https://franciscocoya/"
@@ -45,7 +45,7 @@ function Home() {
           site: '@site',
           cardType: 'summary_large_image',
         }}
-      />
+      /> */}
 
       <main className={styles.main}>
         <div id={styles.profileImageWrapper}>

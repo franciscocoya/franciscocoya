@@ -1,8 +1,8 @@
-@use "./_styles/variables.scss" as vars;
-@use "./_styles/_mixins.scss" as mixins;
+@use './_styles/variables.scss' as vars;
+@use './_styles/_mixins.scss' as mixins;
 
 .main {
-  @include mixins.flex("vertical", "start", "start", 15px);
+  @include mixins.flex('vertical', 'start', 'start', 15px);
   width: 100vw;
   height: 100vh;
   padding-bottom: 50px;
@@ -14,7 +14,7 @@
   position: relative;
 
   & > .homeContent {
-    @include mixins.flex("vertical", "center", "start", 15px);
+    @include mixins.flex('vertical', 'center', 'start', 15px);
     height: 100%;
     padding-left: 20%;
 
@@ -22,7 +22,7 @@
     & > h1,
     & > h2 {
       &::after {
-        content: "";
+        content: '';
       }
     }
 
@@ -52,7 +52,7 @@
     }
 
     & > .socialNetworkContainer {
-      @include mixins.flex("horizontal", start, center, 15px);
+      @include mixins.flex('horizontal', start, center, 15px);
       margin-top: 20px;
       z-index: 1;
 
@@ -103,7 +103,7 @@
 
 @media (max-width: vars.$breakpoint-tablet) {
   .main {
-    @include mixins.flex("vertical", center, center, 15px);
+    @include mixins.flex('vertical', center, center, 15px);
     height: 100vh;
 
     & > .homeContent {
@@ -142,7 +142,7 @@
       background-color: transparent;
       mix-blend-mode: normal;
       filter: grayscale(100%) contrast(1) brightness(1.3);
-      
+
       z-index: 0;
 
       & img {

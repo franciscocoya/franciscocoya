@@ -11,6 +11,8 @@
   border: none;
   border-radius: 100px;
   transition: 0.2s ease-in-out;
+  z-index: 1; // To avoid the button to be overlapped by the profile image
+
   cursor: pointer;
 }
 

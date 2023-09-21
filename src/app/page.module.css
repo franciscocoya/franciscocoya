@@ -29,9 +29,8 @@
   height: 100%;
   padding-left: 20%;
 }
-.main > .homeContent > h1::after,
-.main > .homeContent > h2::after {
-  content: '';
+.main > .homeContent > h1::after, .main > .homeContent > h2::after {
+  content: "";
 }
 .main > .homeContent > h1 {
   font-size: 6rem;
@@ -61,6 +60,7 @@
   align-items: center;
   gap: 15px;
   margin-top: 20px;
+  z-index: 1;
 }
 .main > .homeContent > .socialNetworkContainer a {
   color: #f4f4f4;
@@ -76,21 +76,25 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   gap: 0;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 700px;
   position: absolute;
-  right: 0;
+  right: 100px;
   bottom: 0;
+  transform: translateY(-50%);
+  background-color: #121212;
+  mix-blend-mode: exclusion;
+  border-radius: 300px;
+  overflow: hidden;
   z-index: 1;
 }
 .main > #profileImageWrapper img {
-  width: 800px;
-  max-width: 800px;
+  width: 600px;
   height: auto;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 1440px) {
@@ -128,23 +132,20 @@
     font-size: 1rem;
   }
   .main > #profileImageWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
+    right: 0;
     top: 0;
-    margin-top: 50px;
+    margin: 0;
+    width: 400px;
+    height: 500px;
+    transform: translateX(-50%) translateY(20%);
+    background-color: transparent;
     z-index: 0;
   }
   .main > #profileImageWrapper img {
     width: 450px;
     height: 450px;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
   }
 }
 @media (max-width: 768px) {
@@ -169,16 +170,15 @@
     font-size: 0.8rem;
   }
   .main > #profileImageWrapper {
-    margin-top: 20px;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 300px;
+    transform: translateX(-25%) translateY(20%);
     z-index: 0;
   }
   .main > #profileImageWrapper img {
-    width: 400px;
-    height: 400px;
-    max-width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-    margin: 0 auto;
+    width: 300px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -210,7 +210,7 @@
     height: 300px;
     max-width: 100%;
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
     margin: 0 auto;
   }
-} /*# sourceMappingURL=page.module.css.map */
+}/*# sourceMappingURL=page.module.css.map */

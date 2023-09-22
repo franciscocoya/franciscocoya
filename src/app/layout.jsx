@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
         {showMobileMenu && isMobile ? <FullPageMenu /> : <Footer />}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   )

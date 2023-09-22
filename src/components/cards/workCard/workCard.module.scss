@@ -86,6 +86,11 @@
         background-color: #fff;
         transform: rotate3d(0, 0, 1, 45deg) scale(1.1);
       }
+
+      @media screen and (max-width: vars.$breakpoint-tablet) {
+        width: 61px;
+        height: 61px;
+      }
     }
 
     & > .workCard__github_button {
@@ -95,15 +100,52 @@
         transform: scale(1.1);
         background-color: vars.$color-secondary;
       }
+
+      @media screen and (max-width: vars.$breakpoint-tablet) {
+        width: 61px;
+        height: 61px;
+      }
     }
   }
 
   & > .workCard__techStack {
     @include mixins.flex('horizontal', 'start', 'center', 5px);
+    flex-wrap: wrap;
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 2;
+
+    @media screen and (max-width: vars.$breakpoint-mobile) {
+      position: static;
+      margin-bottom: 15px;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  // work card responsive
+  @media screen and (max-width: vars.$breakpoint-tablet) {
+    height: 500px;
+
+    & > h2 {
+      font-size: 2.5rem;
+    }
+
+    & > span {
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (max-width: vars.$breakpoint-mobile) {
+    height: 400px;
+
+    & > h2 {
+      font-size: 2rem;
+    }
+
+    & > span {
+      font-size: 1.1rem;
+    }
   }
 }
 

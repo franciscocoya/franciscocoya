@@ -1,25 +1,74 @@
 @use '@/app/_styles/variables.scss' as vars;
 
-.baseButton {
+.buttonPrimary,
+.buttonSecondary,
+.buttonTertiary,
+.buttonWhite {
   width: 250px;
   height: 75px;
   font-size: 1.2rem;
   outline: none;
-  background-color: vars.$color-primary;
   border: none;
   border-radius: 100px;
   transition: 0.2s ease-in-out;
+  z-index: 1; // To avoid the button to be overlapped by the profile image
+
   cursor: pointer;
+}
+
+.buttonPrimary {
+  background-color: vars.$color-primary;
+  color: vars.$color-light;
 
   &:hover {
     box-shadow: 0px 0px 20px 0px hwb(337 15% 2% / 0.5);
   }
 }
 
+.buttonSecondary {
+  background-color: vars.$color-secondary;
+  color: vars.$color-light;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 0px hwb(273 0% 56% / 0.5);
+  }
+}
+
+.buttonTertiary {
+  background-color: vars.$color-tertiary;
+  color: vars.$color-dark;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 0px hwb(337 15% 2% / 0.5);
+  }
+}
+
+.buttonWhite {
+  background-color: vars.$color-light;
+  color: vars.$color-dark;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 0px hwb(0 96% 4% / 0.5);
+  }
+}
+
 @media (max-width: vars.$breakpoint-tablet) {
-  .baseButton {
+  .buttonPrimary,
+  .buttonSecondary,
+  .buttonTertiary,
+  .buttonWhite {
     width: 200px;
     height: 60px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: vars.$breakpoint-mobile) {
+  .buttonPrimary,
+  .buttonSecondary,
+  .buttonTertiary,
+  .buttonWhite {
+    width: 150px;
+    height: 50px;
   }
 }

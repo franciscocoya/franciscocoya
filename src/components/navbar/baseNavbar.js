@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import styles from './baseNavbar.module.scss'
+import styles from './baseNavBar.module.scss'
 import HamburgerButton from './hamburgerButton/hamburgerButton'
 import { useEffect } from 'react'
 import useDeviceStore from '@/store/device.store'
@@ -12,19 +12,19 @@ function BaseNavbar() {
     useDeviceStore()
   const currentPathname = usePathname()
 
-  useEffect(() => {
-    window.addEventListener('load', () => {})
+  // useEffect(() => {
+  //   window.addEventListener('load', () => {})
 
-    window.addEventListener(
-      'resize',
-      () => {
-        setInnerWidth(window.innerWidth)
-        setInnerHeight(window.innerHeight)
-        setIsMobile(window.innerWidth <= breakpoints.laptop)
-      },
-      false,
-    )
-  }, [])
+  //   window.addEventListener(
+  //     'resize',
+  //     () => {
+  //       setInnerWidth(window.innerWidth)
+  //       setInnerHeight(window.innerHeight)
+  //       setIsMobile(window.innerWidth <= breakpoints.laptop)
+  //     },
+  //     false,
+  //   )
+  // }, [])
 
   return (
     <nav className={styles.navbar}>

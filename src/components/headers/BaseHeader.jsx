@@ -1,4 +1,4 @@
-import BaseNavbar from '../navbar/baseNavbar'
+import BaseNavbar from '@/components/navbar/baseNavbar'
 import styles from './baseHeader.module.scss'
 
 function BaseHeader() {

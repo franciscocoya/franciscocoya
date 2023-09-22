@@ -24,7 +24,7 @@ h3 {
 h1::after,
 h2::after,
 h3::after {
-  content: '.';
+  content: ".";
   color: #fb2576;
 }
 
@@ -32,6 +32,11 @@ h1 {
   font-size: 5rem;
   font-weight: 500;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -74,10 +79,9 @@ p {
 a {
   text-decoration: none;
   color: #fb2576;
+  padding: 0 5px;
 }
-a:visited,
-a:active,
-a:focus {
+a:visited, a:active, a:focus {
   color: #fb2576;
 }
 a:hover {
@@ -99,4 +103,4 @@ a:hover {
     color-scheme: dark;
     background-color: #121212;
   }
-} /*# sourceMappingURL=globals.css.map */
+}/*# sourceMappingURL=globals.css.map */

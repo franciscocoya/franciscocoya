@@ -1,52 +1,67 @@
-'use client'
+// 'use client'
 // import { NextSeo } from 'next-seo'
+import IconButton from '@/components/buttons/iconButton'
 import BaseButton from '@/components/buttons/baseButton'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 import styles from './page.module.scss'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
-import Link from 'next/link'
 import BaseLayout from '@/layouts/BaseLayout'
+import Link from 'next/link'
 
-function Home() {
-  const router = useRouter()
+export const metadata = {
+  title: 'Francisco Coya 👨‍💻 Software Engineering Student',
+  description:
+    'Software Engineering Student and Web Applications Developer based in Oviedo, Spain',
+  canonical: 'https://franciscocoya/',
+  openGraph: {
+    title: 'Francisco Coya 👨‍💻 Software Engineering Student',
+    description:
+      'Software Engineering Student and Web Applications Developer based in Oviedo, Spain',
+    url: 'https://franciscocoya/',
+    site_name: 'Francisco Coya',
+    images: [
+      {
+        url: '/assets/images/opengraph.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Francisco Coya',
+      },
+    ],
+
+    type: 'website',
+  },
+}
+
+export default function Home() {
+  // const router = useRouter()
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Francisco Coya',
+    url: 'https://franciscocoya/',
+    image: '/assets/images/fc_profile_image_bg_b&w.png',
+    sameAs: ['https://www.linkedin.com/in/franciscocoya/'],
+    jobTitle: 'Software Engineering Student',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Universidad de Oviedo',
+    },
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: 'Universidad de Oviedo',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Oviedo',
+      addressRegion: 'Asturias',
+      addressCountry: 'Spain',
+    },
+  }
 
   return (
     <BaseLayout>
-      {/* <NextSeo
-        title="Francisco Coya 👨‍💻 Software Engineering Student"
-        description="Software Engineering Student and Web Applications Developer based in Oviedo, Spain"
-        canonical="https://franciscocoya/"
-        openGraph={{
-          url: 'https://franciscocoya/',
-          title: 'Francisco Coya 👨‍💻 Software Engineering Student',
-          description:
-            'Software Engineering Student and Web Applications Developer based in 📍 Oviedo, Spain',
-          images: [
-            {
-              url: '/assets/images/opengraph.jpg',
-              width: 800,
-              height: 600,
-              alt: 'Og Image Alt',
-              type: 'image/jpeg',
-            },
-            {
-              url: '/assets/images/opengraph.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'Og Image Alt Second',
-              type: 'image/jpeg',
-            },
-          ],
-          siteName: 'SiteName',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      /> */}
-
       <main className={styles.main}>
         <div id={styles.profileImageWrapper}>
           <Image
@@ -65,28 +80,36 @@ function Home() {
           </h1>
           <h2>Software Engineering Student</h2>
           <span id="profile-role">Web Applications Developer</span>
-          <p>Based in Oviedo, Spain</p>
+          <h3>Based in Oviedo, Spain</h3>
           <div className={styles.socialNetworkContainer}>
             <Link
               href="https://www.linkedin.com/in/franciscocoya/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
             >
-              <SiLinkedin size={32} />
+              <SiLinkedin size={32} color="#f4f4f4" />
             </Link>
 
-            <Link href="https://github.com/franciscocoya" target="_blank">
-              <SiGithub size={32} />
+            <Link
+              href="https://github.com/franciscocoya"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Github"
+            >
+              <SiGithub size={32} color="#f4f4f4" />
             </Link>
           </div>
-          <BaseButton
-            text="View more"
-            onClick={() => router.push('/about')}
-            type="white"
-          />
+          <Link href="/about">
+            <BaseButton text="View more" type="white" />
+          </Link>
         </div>
       </main>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </BaseLayout>
   )
 }
-
-export default Home

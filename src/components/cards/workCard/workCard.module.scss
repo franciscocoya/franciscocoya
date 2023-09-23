@@ -10,6 +10,7 @@
   border-radius: vars.$border-radius;
   position: relative;
   padding: 20px;
+  filter: grayscale(1);
 
   & > h2 {
     font-size: 2.5rem;
@@ -30,7 +31,7 @@
   }
 
   &:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.1) grayscale(0);
     box-shadow: 0 0 10px 5px hwb(337 15% 2% / 0.3);
 
     &::before {

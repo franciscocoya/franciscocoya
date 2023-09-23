@@ -78,6 +78,7 @@ function WorkPage() {
             techStack={['ReactJS', 'NodeJS', 'SOLID', 'Firebase']}
             isFeatured={false}
             gridRowPosition="3 / 5"
+            gridColPosition="2"
             work_url="https://franciscocoya.github.io/lomapes05a_production/"
             githubRepo_url="https://github.com/Arquisoft/lomap_es5a"
           />
@@ -89,6 +90,7 @@ function WorkPage() {
             techStack={['Vue 3', 'SpringBoot', 'MySQL']}
             isFeatured={false}
             gridRowPosition="5 / 7"
+            gridColPosition="1"
             work_url="https://leoncamp.netlify.app/"
             githubRepo_url="https://github.com/franciscocoya/leoncamp-booking-app"
           />
@@ -109,9 +111,22 @@ function WorkPage() {
             status="Maintenance..."
             title="San Ignacio's School Website"
             techStack={['Joomla', 'Graphic Design']}
-            gridRowPosition="5 / 7"
+            gridRowPosition="5 / 6"
             isFeatured={false}
             work_url="https://www.sanignacioponferrada.com/"
+          />
+
+          <WorkCard
+            bgImage={
+              '/assets/images/work_thumbs/thumbnail_personal_website.jpg'
+            }
+            status="v0.0.1"
+            title="Personal Website"
+            techStack={['NextJS', 'SCSS', ]}
+            gridRowPosition="6 / 7"
+            isFeatured={false}
+            githubRepo_url={'https://github.com/franciscocoya/franciscocoya'}
+            work_url="https://www.franciscocoya.dev/"
           />
         </div>
       </div>

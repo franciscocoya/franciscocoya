@@ -33,6 +33,7 @@ function WorkCard({
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        backdropFilter: 'blur(10px)',
         gridRow: gridRowPosition,
         gridColumn: gridColPosition,
       }}

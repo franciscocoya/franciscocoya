@@ -3,12 +3,10 @@
 
 .bodyWrapper {
   @include mixins.flex(vertical, start, center, 0);
+  // width: 100%;
 
   & > .header {
     height: fit-content;
-    // position: absolute;
-    // top: 25px;
-    // right: 25px;
     background: transparent;
 
     z-index: vars.$z-index-navbar;
@@ -17,5 +15,6 @@
   & > .bodyContent,
   & > .bodyContentNoMargin {
     margin: 0;
+    width: 100%;
   }
 }

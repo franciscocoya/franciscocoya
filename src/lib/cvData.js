@@ -1,3 +1,8 @@
+/**
+ * Updated: 2023/09/23
+ * Author: Francisco Coya
+ * Description: This file contains the data of the CV.
+ */
 const cv = {
   version: '1.0.0',
   created: '2023-06-23T17:20:00Z',
@@ -69,10 +74,10 @@ const cv = {
   ],
   skills: [
     {
-      id: 'SK1',
-      denomination: 'Spring Boot',
-      icon: 'springboot',
-      category: 'backend',
+      id: 'SK6',
+      denomination: 'Next JS',
+      icon: 'nextjs',
+      category: 'frontend',
       type: 'technical',
     },
     {
@@ -90,6 +95,13 @@ const cv = {
       type: 'technical',
     },
     {
+      id: 'SK1',
+      denomination: 'Spring Boot',
+      icon: 'springboot',
+      category: 'backend',
+      type: 'technical',
+    },
+    {
       id: 'SK4',
       denomination: 'TypeScript',
       icon: 'typescript',
@@ -100,6 +112,13 @@ const cv = {
       id: 'SK5',
       denomination: 'Figma',
       icon: 'figma',
+      category: 'design',
+      type: 'technical',
+    },
+    {
+      id: 'SK7',
+      denomination: 'UI Design',
+      icon: 'design',
       category: 'design',
       type: 'technical',
     },

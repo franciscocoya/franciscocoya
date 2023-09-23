@@ -244,7 +244,7 @@ function WorkPage() {
 
           <WorkCard
             bgImage={
-              '/assets/images/work_thumbs/thumbnail_personal_website.jpg'
+              'https://res.cloudinary.com/dx94yprzj/image/upload/v1695492461/thumbnail_personal_website_wudutd.jpg'
             }
             status="v0.0.1"
             title="Personal Website"

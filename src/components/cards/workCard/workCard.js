@@ -10,6 +10,7 @@ function WorkCard({
   status,
   techStack,
   gridRowPosition,
+  gridColPosition,
   isFeatured,
   work_url,
   githubRepo_url,
@@ -32,7 +33,9 @@ function WorkCard({
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
+        backdropFilter: 'blur(10px)',
         gridRow: gridRowPosition,
+        gridColumn: gridColPosition,
       }}
     >
       <div className={styles.workCard__techStack}>

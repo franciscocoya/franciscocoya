@@ -2,11 +2,12 @@
 @use '@/app/_styles/_mixins.scss' as mixins;
 
 .fullWidthLayout {
-  width: 100%;
+  width: 75%;
   padding: 20px;
-  margin: 75px auto;
+  margin: 0 auto;
 
   @media (max-width: vars.$breakpoint-tablet) {
+    width: 100%;
     margin: 0;
   }
 

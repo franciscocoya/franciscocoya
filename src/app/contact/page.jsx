@@ -4,8 +4,10 @@ import styles from './page.module.scss'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { MdAlternateEmail } from 'react-icons/md'
+import { getJsonLd } from './microdata'
 
 function ContactPage() {
+  const jsonLd = getJsonLd()
   return (
     <SecondaryLayout>
       <main className={styles.main}>
@@ -44,6 +46,10 @@ function ContactPage() {
           </li>
         </ul>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </SecondaryLayout>
   )
 }

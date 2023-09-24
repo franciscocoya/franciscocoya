@@ -2,6 +2,7 @@
 
 .baseLayout {
   // width: 55%;
+  height: 100vh;
   margin-top: -80px;
 
   @media (max-width: vars.$breakpoint-tablet) {

@@ -1,4 +1,5 @@
-@use './_styles/variables.scss' as vars;
+@use "./_styles/variables.scss" as vars;
+@use "./_styles/_mixins.scss" as mixins;
 
 * {
   box-sizing: border-box;
@@ -8,6 +9,10 @@
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   max-width: 100vw;
 }
 
@@ -18,7 +23,7 @@ h3 {
   color: vars.$color-light;
 
   &::after {
-    content: '.';
+    content: ".";
     color: vars.$color-primary;
 
     @media (prefers-color-scheme: light) {

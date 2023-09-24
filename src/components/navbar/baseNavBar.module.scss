@@ -1,12 +1,12 @@
-@use "@/app/_styles/_mixins.scss" as mixins;
-@use "@/app/_styles/variables.scss" as vars;
+@use '@/app/_styles/_mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
 
 .navbar {
   align-self: flex-end;
   z-index: vars.$z-index-navbar;
 
   & > ul {
-    @include mixins.flex("horizontal", start, center, 20px);
+    @include mixins.flex('horizontal', start, center, 20px);
     list-style-type: none;
 
     & > li {
@@ -58,7 +58,7 @@
       display: none;
     }
   }
-  
+
   @media screen and (max-width: vars.$breakpoint-tablet) {
     align-self: center;
   }

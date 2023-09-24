@@ -21,6 +21,10 @@
     line-height: 1;
     z-index: 2;
     transition: all 0.1s ease-in-out;
+
+    @media (prefers-color-scheme: light) {
+      color: vars.$color-light;
+    }
   }
 
   & > span {

@@ -21,6 +21,10 @@ h3 {
     content: '.';
     color: vars.$color-primary;
   }
+
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-dark;
+  }
 }
 
 h1 {

@@ -20,6 +20,7 @@ const thumbnails_opt = {
 }
 
 const getWorkThumbnail = (work) =>
-  thumbnails_opt[work] ?? 'https://placehold.co/600x400@2x/webp?text=No+Image+Found'
+  thumbnails_opt[work] ??
+  'https://placehold.co/600x400@2x/webp?text=No+Image+Found'
 
 export { getWorkThumbnail }

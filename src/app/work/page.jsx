@@ -1,10 +1,32 @@
-'use client'
+// 'use client'
 
 import WorkCard from '@/components/cards/workCard/workCard'
-
 import styles from './page.module.scss'
 import FullWidthLayout from '@/layouts/FullWidthLayout'
 import { getJsonLd } from './microdata'
+import { getWorkThumbnail } from '@/lib/thumbs'
+
+export const metadata = {
+  title: 'Portfolio | Francisco Coya',
+  description: 'Francisco Coya portfolio',
+  canonical: 'https://franciscocoya.dev/work',
+  openGraph: {
+    title: 'Work',
+    description: 'Check out my projects 💡 I hope you like them!',
+    url: 'https://franciscocoya.dev/work',
+    site_name: 'Francisco Coya',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dx94yprzj/image/upload/v1695026674/work_thumbs/leoncamp_thumbnail_work_zzcgbt.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Portfolio',
+      },
+    ],
+
+    type: 'website',
+  },
+}
 
 function WorkPage() {
   /**
@@ -15,7 +37,7 @@ function WorkPage() {
     console.log(filterName)
   }
 
-  const jsonLd = getJsonLd();
+  const jsonLd = getJsonLd()
 
   return (
     <FullWidthLayout>
@@ -35,9 +57,7 @@ function WorkPage() {
 
         <div className={styles.workCardGallery}>
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1693414195/work_thumbs/thumbnail_spotify_clone_uly8vl.jpg'
-            }
+            bgImage={getWorkThumbnail('spotify_clone')}
             status="In Progress..."
             title="Spotify Clone"
             techStack={['NextJS', 'Recoil', 'Prisma', 'Firebase']}
@@ -46,27 +66,21 @@ function WorkPage() {
             githubRepo_url="https://github.com/franciscocoya/spotify_clone"
           />
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1693414195/work_thumbs/thumbnail_basic_crawler_ymfrwc.jpg'
-            }
+            bgImage={getWorkThumbnail('basic_crawler')}
             title="Basic Crawler"
             techStack={['Python']}
             isFeatured={false}
             githubRepo_url="https://github.com/franciscocoya/basic_crawler/tree/master"
           />
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1695026674/work_thumbs/mywallapop_thumbnail_work_v1uefd.jpg'
-            }
+            bgImage={getWorkThumbnail('mywallapop')}
             title="My Wallapop"
             techStack={['SpringBoot']}
             isFeatured={false}
             githubRepo_url="https://github.com/TomasArguelles/sdi-2223-entrega1-51"
           />
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1693414195/work_thumbs/thumbnail_helpme_android_app_tfxdos.jpg'
-            }
+            bgImage={getWorkThumbnail('helpme')}
             title="HelpMe"
             techStack={['Android', 'Java']}
             isFeatured={false}
@@ -74,9 +88,7 @@ function WorkPage() {
           />
 
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1695026674/work_thumbs/leoncamp_thumbnail_work_zzcgbt.jpg'
-            }
+            bgImage={getWorkThumbnail('lomap')}
             title="LoMap"
             techStack={['ReactJS', 'NodeJS', 'SOLID', 'Firebase']}
             isFeatured={false}
@@ -86,9 +98,7 @@ function WorkPage() {
             githubRepo_url="https://github.com/Arquisoft/lomap_es5a"
           />
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1693414195/work_thumbs/thumbnail_leoncamp_app_befypp.jpg'
-            }
+            bgImage={getWorkThumbnail('leoncamp')}
             title="LeonCamp"
             techStack={['Vue 3', 'SpringBoot', 'MySQL']}
             isFeatured={false}
@@ -98,9 +108,7 @@ function WorkPage() {
             githubRepo_url="https://github.com/franciscocoya/leoncamp-booking-app"
           />
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1695026674/work_thumbs/instagram_unfollower_thumbnail_work_c6e8el.jpg'
-            }
+            bgImage={getWorkThumbnail('instagram_unfollower')}
             title="Check Instagram Unfollowers"
             techStack={['Vue 3', 'TailwindCSS', 'Pinia']}
             isFeatured={false}
@@ -108,9 +116,7 @@ function WorkPage() {
             githubRepo_url="https://github.com/franciscocoya/instagram-unfollow"
           />
           <WorkCard
-            bgImage={
-              'https://www.sanignacioponferrada.com/images/web/2020/Fachada2.jpg'
-            }
+            bgImage={getWorkThumbnail('san_ignacio_school')}
             status="Maintenance..."
             title="San Ignacio's School Website"
             techStack={['Joomla', 'Graphic Design']}
@@ -120,9 +126,7 @@ function WorkPage() {
           />
 
           <WorkCard
-            bgImage={
-              'https://res.cloudinary.com/dx94yprzj/image/upload/v1695492461/thumbnail_personal_website_wudutd.jpg'
-            }
+            bgImage={getWorkThumbnail('personal_website')}
             status="v0.0.1"
             title="Personal Website"
             techStack={['NextJS', 'SCSS']}

@@ -6,6 +6,28 @@ import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { MdAlternateEmail } from 'react-icons/md'
 import { getJsonLd } from './microdata'
 
+export const metadata = {
+  title: 'Contact | Francisco Coya',
+  description: 'You can contact with Francisco Coya here 📧',
+  canonical: 'https://franciscocoya.dev/contact',
+  openGraph: {
+    title: 'Contact with me ! 👨‍💻',
+    description: 'You can contact Francisco Coya here 📧',
+    url: 'https://franciscocoya.dev/contact',
+    site_name: 'Francisco Coya',
+    images: [
+      {
+        url: '/assets/images/opengraph.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact',
+      },
+    ],
+
+    type: 'website',
+  },
+}
+
 function ContactPage() {
   const jsonLd = getJsonLd()
   return (

@@ -5,10 +5,6 @@
   margin-top: -80px;
 
   @media (max-width: vars.$breakpoint-tablet) {
-    width: 90%;
-  }
-
-  @media (max-width: vars.$breakpoint-mobile) {
-    width: 100vw;
+    width: 100%;
   }
 }

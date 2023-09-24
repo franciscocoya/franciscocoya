@@ -1,15 +1,15 @@
-@use "@/app/_styles/mixins.scss" as mixins;
-@use "@/app/_styles/variables.scss" as vars;
+@use '@/app/_styles/mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
 
 .main {
   height: 100vh;
 
   & > ul {
-    @include mixins.flex("vertical", "start", "start", 30px);
+    @include mixins.flex('vertical', 'start', 'start', 30px);
     list-style-type: none;
 
     & > li {
-      @include mixins.flex("horizontal", "start", "center", 20px);
+      @include mixins.flex('horizontal', 'start', 'center', 20px);
       font-size: 2rem;
       font-weight: 300;
 
@@ -41,7 +41,7 @@
   }
 
   @media screen and (max-width: vars.$breakpoint-tablet) {
-    @include mixins.flex("vertical", "start", "center", 0);
+    @include mixins.flex('vertical', 'start', 'center', 0);
     height: 75vh;
 
     & > ul {

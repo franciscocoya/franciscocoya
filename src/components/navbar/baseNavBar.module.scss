@@ -21,6 +21,14 @@
         color: vars.$color-light;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+
+        @media (prefers-color-scheme: light) {
+          color: vars.$color-dark;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-tablet) and (prefers-color-scheme: light) {
+          color: vars.$color-light;
+        }
       }
 
       &:hover {
@@ -29,12 +37,29 @@
 
         & > a {
           color: vars.$color-primary;
+
+          @media screen and (max-width: vars.$breakpoint-tablet) and (prefers-color-scheme: light) {
+            color: vars.$color-light;
+          }
+        }
+
+        @media (prefers-color-scheme: light) {
+          background-color: vars.$color-secondary;
+          background-blend-mode: normal;
+
+          & > a {
+            color: vars.$color-light;
+          }
         }
       }
     }
 
-    @media screen and (max-width: vars.$breakpoint-tablet) {
+    @media screen and (max-width: vars.$breakpoint-mobile) {
       display: none;
     }
+  }
+
+  @media screen and (max-width: vars.$breakpoint-tablet) {
+    align-self: center;
   }
 }

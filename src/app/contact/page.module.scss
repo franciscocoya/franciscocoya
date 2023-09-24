@@ -18,6 +18,14 @@
 
         &:hover {
           color: vars.$color-primary;
+
+          @media (prefers-color-scheme: light) {
+            color: vars.$color-secondary;
+          }
+        }
+
+        @media (prefers-color-scheme: light) {
+          color: vars.$color-dark;
         }
       }
 

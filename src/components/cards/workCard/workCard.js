@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './workCard.module.scss'
 
 import { FiArrowUpRight } from 'react-icons/fi'

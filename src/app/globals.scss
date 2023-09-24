@@ -1,4 +1,5 @@
-@use './_styles/variables.scss' as vars;
+@use "./_styles/variables.scss" as vars;
+@use "./_styles/_mixins.scss" as mixins;
 
 * {
   box-sizing: border-box;
@@ -8,6 +9,10 @@
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   max-width: 100vw;
 }
 
@@ -18,8 +23,16 @@ h3 {
   color: vars.$color-light;
 
   &::after {
-    content: '.';
+    content: ".";
     color: vars.$color-primary;
+
+    @media (prefers-color-scheme: light) {
+      color: vars.$color-secondary;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-dark;
   }
 }
 
@@ -64,6 +77,10 @@ p {
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
+
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-dark;
+  }
 }
 
 a {
@@ -71,10 +88,18 @@ a {
   color: vars.$color-primary;
   padding: 0 5px;
 
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-secondary;
+  }
+
   &:visited,
   &:active,
   &:focus {
     color: vars.$color-primary;
+
+    @media (prefers-color-scheme: light) {
+      color: vars.$color-secondary;
+    }
   }
 
   &:hover {
@@ -85,6 +110,11 @@ a {
 ::selection {
   background-color: vars.$color-primary;
   color: vars.$color-light;
+
+  @media (prefers-color-scheme: light) {
+    background-color: vars.$color-secondary;
+    color: vars.$color-light;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

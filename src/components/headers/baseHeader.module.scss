@@ -1,11 +1,36 @@
 @use '@/app/_styles/variables.scss' as vars;
+@use '@/app/_styles/mixins.scss' as mixins;
 
 .header {
+  @include mixins.flex(horizontal, center, center, 0);
   height: fit-content;
-  // position: absolute;
   margin: 20px 20px 0px 20px;
   background: transparent;
   align-self: flex-end;
 
   z-index: vars.$z-index-navbar;
+
+  @media screen and (max-width: vars.$breakpoint-tablet) {
+    @include mixins.flex(vertical, center, center, 15px);
+    width: 100%;
+    text-align: center;
+    align-self: center;
+
+    margin-top: 0;
+    height: 100px;
+
+    background-color: vars.$color-dark;
+
+    @media (prefers-color-scheme: light) {
+      background-color: vars.$color-secondary;
+      & li {
+        color: vars.$color-light;
+      }
+    }
+  }
+
+  // Hide navbar on mobile
+  @media screen and (max-width: vars.$breakpoint-mobile) {
+    display: none;
+  }
 }

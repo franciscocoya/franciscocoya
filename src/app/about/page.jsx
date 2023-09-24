@@ -7,9 +7,12 @@ import { formatCvExperienceDates } from '@/lib/textFormatter'
 import SecondaryLayout from '@/layouts/SecondaryLayout'
 
 import { getCv } from '@/lib/cvData'
+import { getJsonLd } from './microdata'
 
 function AboutPage() {
   const [cvData, setCvData] = useState(null)
+
+  const jsonLd = getJsonLd()
 
   const getCvData = () => {
     setCvData(getCv())
@@ -122,6 +125,10 @@ function AboutPage() {
           </section>
         </div>
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </SecondaryLayout>
   )
 }

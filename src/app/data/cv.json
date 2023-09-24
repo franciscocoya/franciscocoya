@@ -67,10 +67,10 @@
   ],
   "skills": [
     {
-      "id": "SK1",
-      "denomination": "Spring Boot",
-      "icon": "springboot",
-      "category": "backend",
+      "id": "SK5",
+      "denomination": "Next JS",
+      "icon": "nextjs",
+      "category": "frontend",
       "type": "technical"
     },
     {
@@ -85,6 +85,13 @@
       "denomination": "Vue 3",
       "icon": "vue",
       "category": "frontend",
+      "type": "technical"
+    },
+    {
+      "id": "SK1",
+      "denomination": "Spring Boot",
+      "icon": "springboot",
+      "category": "backend",
       "type": "technical"
     },
     {

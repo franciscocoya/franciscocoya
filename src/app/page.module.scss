@@ -106,8 +106,6 @@
       mix-blend-mode: normal;
       background-color: hwb(0 7% 93% / 0.451);
     }
-
-
   }
 
   @media (prefers-color-scheme: light) {
@@ -184,7 +182,6 @@
     height: 100vh;
 
     & > .homeContent {
-
       & > h1 {
         font-size: 3.5rem;
         line-height: 3rem;

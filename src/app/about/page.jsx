@@ -1,26 +1,35 @@
-'use client'
-
-import BaseCardWithImage from '@/components/cards/baseCardWithImage/baseCardWithImage'
-import { useMemo, useState } from 'react'
 import styles from './page.module.scss'
-import { formatCvExperienceDates } from '@/lib/textFormatter'
 import SecondaryLayout from '@/layouts/SecondaryLayout'
-
-import { getCv } from '@/lib/cvData'
 import { getJsonLd } from './microdata'
+import CvSection from './cvSection'
+
+export const metadata = {
+  title: 'About me 🔗| Francisco Coya',
+  description: 'About me',
+  keywords: 'about, cv, resume, skills, experience, studies',
+  robots: 'index,follow',
+  canonical: 'https://franciscocoya.dev/about',
+  image: '/assets/images/opengraph.jpg',
+  openGraph: {
+    title: 'About | Francisco Coya',
+    description: 'About me',
+    url: 'https://franciscocoya.dev/about',
+    site_name: 'Francisco Coya',
+    images: [
+      {
+        url: '/assets/images/opengraph.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'About',
+      },
+    ],
+
+    type: 'article',
+  },
+}
 
 function AboutPage() {
-  const [cvData, setCvData] = useState(null)
-
   const jsonLd = getJsonLd()
-
-  const getCvData = () => {
-    setCvData(getCv())
-  }
-
-  useMemo(async () => {
-    getCvData()
-  }, [])
 
   return (
     <SecondaryLayout>
@@ -50,79 +59,7 @@ function AboutPage() {
               design and design thinking as well.
             </p>
           </div>
-
-          <section>
-            <h2>Studies</h2>
-            <div className={styles.cardSection}>
-              {cvData?.studies.map((study) => {
-                return (
-                  <BaseCardWithImage
-                    key={study.id}
-                    cardImage={`/assets/images/logos/${study.logo_name}_logo.${study.logo_extension}`}
-                    cardImageAlt={`${study.organization} logo`}
-                    cardTitle={study.denomination}
-                    cardText={study.organization}
-                    cardExtraInformation={formatCvExperienceDates(
-                      study.dateStart,
-                      study.dateEnd,
-                      study.status,
-                    )}
-                  />
-                )
-              })}
-            </div>
-          </section>
-
-          <section>
-            <h2>Experience</h2>
-            <div className={styles.cardSection}>
-              {cvData?.experience.map((job) => {
-                return (
-                  <BaseCardWithImage
-                    key={job.id}
-                    cardImage={`/assets/images/logos/${job.shortname}_logo.png`}
-                    cardImageAlt={`${job.organization} logo`}
-                    cardTitle={job.denomination}
-                    cardText={job.organization}
-                    cardExtraInformation={formatCvExperienceDates(
-                      job.dateStart,
-                      job.dateEnd,
-                      job.status,
-                    )}
-                  />
-                )
-              })}
-            </div>
-          </section>
-
-          <section>
-            <h2>Certifications</h2>
-            <div className={styles.cardSection}>
-              {cvData?.certifications.map((certification) => {
-                return (
-                  <BaseCardWithImage
-                    key={certification.id}
-                    cardImage={`/assets/images/logos/${certification.logo_name}_logo.png`}
-                    cardImageAlt={`Logo de ${certification.organization}`}
-                    cardTitle={certification.denomination}
-                    cardText={certification.credentialId}
-                    isTextLink={true}
-                    textContentLink="See credential"
-                    cardExtraInformation={certification.issued}
-                  />
-                )
-              })}
-            </div>
-          </section>
-
-          <section>
-            <h2>Skills</h2>
-            <div className={styles.skillSection}>
-              {cvData?.skills.map((skill) => {
-                return <p key={skill.id}>{skill.denomination}</p>
-              })}
-            </div>
-          </section>
+          <CvSection />
         </div>
       </main>
       <script

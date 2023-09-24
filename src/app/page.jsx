@@ -10,6 +10,7 @@ export const metadata = {
   description:
     'Software Engineering Student and Web Applications Developer based in Oviedo, Spain',
   canonical: 'https://franciscocoya/',
+  robots: 'index,follow',
   openGraph: {
     title: 'Francisco Coya 👨‍💻 Software Engineering Student',
     description:

@@ -10,6 +10,7 @@ export const metadata = {
   title: 'Portfolio | Francisco Coya',
   description: 'Francisco Coya portfolio',
   canonical: 'https://franciscocoya.dev/work',
+  robots: 'index,follow',
   openGraph: {
     title: 'Work',
     description: 'Check out my projects 💡 I hope you like them!',

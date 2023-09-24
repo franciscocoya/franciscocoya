@@ -13,6 +13,10 @@
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   max-width: 100vw;
 }
 
@@ -24,8 +28,22 @@ h3 {
 h1::after,
 h2::after,
 h3::after {
-  content: '.';
+  content: ".";
   color: #fb2576;
+}
+@media (prefers-color-scheme: light) {
+  h1::after,
+  h2::after,
+  h3::after {
+    color: #270047;
+  }
+}
+@media (prefers-color-scheme: light) {
+  h1,
+  h2,
+  h3 {
+    color: #121212;
+  }
 }
 
 h1 {
@@ -75,16 +93,29 @@ p {
     font-size: 1rem;
   }
 }
+@media (prefers-color-scheme: light) {
+  p {
+    color: #121212;
+  }
+}
 
 a {
   text-decoration: none;
   color: #fb2576;
   padding: 0 5px;
 }
-a:visited,
-a:active,
-a:focus {
+@media (prefers-color-scheme: light) {
+  a {
+    color: #270047;
+  }
+}
+a:visited, a:active, a:focus {
   color: #fb2576;
+}
+@media (prefers-color-scheme: light) {
+  a:visited, a:active, a:focus {
+    color: #270047;
+  }
 }
 a:hover {
   text-decoration: underline;
@@ -99,10 +130,20 @@ a:hover {
   background-color: #fb2576;
   color: #f4f4f4;
 }
+@media (prefers-color-scheme: light) {
+  ::-moz-selection {
+    background-color: #270047;
+    color: #f4f4f4;
+  }
+  ::selection {
+    background-color: #270047;
+    color: #f4f4f4;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
     background-color: #121212;
   }
-} /*# sourceMappingURL=globals.css.map */
+}/*# sourceMappingURL=globals.css.map */

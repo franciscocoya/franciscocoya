@@ -10,10 +10,16 @@ function HamburgerButton() {
   }
 
   return (
-    <div className={styles.hamburgerButton} onClick={handleClick} role="button">
-      <div className={styles.hamburgerButtonLine}></div>
-      <div className={styles.hamburgerButtonLine}></div>
-      <div className={styles.hamburgerButtonLine}></div>
+    <div className={styles.hamburgerButtonWrapper}>
+      <div
+        className={styles.hamburgerButton}
+        onClick={handleClick}
+        role="button"
+      >
+        <div className={styles.hamburgerButtonLine}></div>
+        <div className={styles.hamburgerButtonLine}></div>
+        <div className={styles.hamburgerButtonLine}></div>
+      </div>
     </div>
   )
 }

@@ -1,8 +1,8 @@
-import BaseButton from '@/components/buttons/baseButton'
 import Image from 'next/image'
 import styles from './page.module.scss'
-import { SiGithub, SiLinkedin } from 'react-icons/si'
 import BaseLayout from '@/layouts/BaseLayout'
+import BaseSocialNetworkIcons from '@/components/socialnetworks/baseSocialNetworkIcons'
+import BaseButton from '@/components/buttons/baseButton'
 import Link from 'next/link'
 
 export const metadata = {
@@ -31,8 +31,6 @@ export const metadata = {
 }
 
 export default function Home() {
-  // const router = useRouter()
-
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -78,28 +76,17 @@ export default function Home() {
           <h2>Software Engineering Student</h2>
           <span id="profile-role">Web Applications Developer</span>
           <h3>Based in Oviedo, Spain</h3>
-          <div className={styles.socialNetworkContainer}>
-            <Link
-              href="https://www.linkedin.com/in/franciscocoya/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Linkedin"
-            >
-              <SiLinkedin size={32} color="#f4f4f4" />
-            </Link>
 
-            <Link
-              href="https://github.com/franciscocoya"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Github"
-            >
-              <SiGithub size={32} color="#f4f4f4" />
+          <BaseSocialNetworkIcons />
+
+          <div className={styles.shorcutsButtonGroup}>
+            <Link href="/about">
+              <BaseButton text="More about" type="white" />
+            </Link>
+            <Link href="/about">
+              <BaseButton text="Let's talk" type="primary_outlined" />
             </Link>
           </div>
-          <Link href="/about">
-            <BaseButton text="View more" type="white" />
-          </Link>
         </div>
       </main>
 

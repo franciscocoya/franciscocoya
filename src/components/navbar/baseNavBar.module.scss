@@ -62,4 +62,8 @@
   @media screen and (max-width: vars.$breakpoint-tablet) {
     align-self: center;
   }
+
+  @media screen and (max-width: vars.$breakpoint-mobile) {
+    align-self: end;
+  }
 }

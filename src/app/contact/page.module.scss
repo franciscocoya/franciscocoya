@@ -13,7 +13,12 @@
       font-size: 2rem;
       font-weight: 300;
 
-      & > a {
+      
+      @media screen and (max-width: vars.$breakpoint-mobile) {
+        font-size: 1.2rem;
+      }
+
+      & > a {   
         color: #fff;
 
         &:hover {
@@ -26,6 +31,10 @@
 
         @media (prefers-color-scheme: light) {
           color: vars.$color-dark;
+        }
+
+        @media screen and (max-width: vars.$breakpoint-mobile) {
+          font-size: 1.2rem;
         }
       }
 

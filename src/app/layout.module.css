@@ -18,7 +18,7 @@
   background: transparent;
   z-index: 10;
 }
-.bodyWrapper > .bodyContent,
-.bodyWrapper > .bodyContentNoMargin {
+.bodyWrapper > .bodyContent, .bodyWrapper > .bodyContentNoMargin {
   margin: 0;
-} /*# sourceMappingURL=layout.module.css.map */
+  width: 100%;
+}/*# sourceMappingURL=layout.module.css.map */

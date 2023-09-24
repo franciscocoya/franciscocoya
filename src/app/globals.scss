@@ -20,6 +20,10 @@ h3 {
   &::after {
     content: '.';
     color: vars.$color-primary;
+
+    @media (prefers-color-scheme: light) {
+      color: vars.$color-secondary;
+    }
   }
 
   @media (prefers-color-scheme: light) {
@@ -68,6 +72,10 @@ p {
   @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
+
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-dark;
+  }
 }
 
 a {
@@ -75,10 +83,18 @@ a {
   color: vars.$color-primary;
   padding: 0 5px;
 
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-secondary;
+  }
+
   &:visited,
   &:active,
   &:focus {
     color: vars.$color-primary;
+
+    @media (prefers-color-scheme: light) {
+      color: vars.$color-secondary;
+    }
   }
 
   &:hover {
@@ -89,6 +105,11 @@ a {
 ::selection {
   background-color: vars.$color-primary;
   color: vars.$color-light;
+
+  @media (prefers-color-scheme: light) {
+    background-color: vars.$color-secondary;
+    color: vars.$color-light;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

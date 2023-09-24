@@ -1,4 +1,4 @@
-@use '@/app/_styles/variables.scss' as vars;
+@use "@/app/_styles/variables.scss" as vars;
 
 .buttonPrimary,
 .buttonSecondary,
@@ -23,6 +23,14 @@
 
   &:hover {
     box-shadow: 0px 0px 20px 0px hwb(337 15% 2% / 0.5);
+
+    @media (prefers-color-scheme: light) {
+      box-shadow: 0px 0px 20px 0px hwb(120 7% 87% / 0.2);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: vars.$color-secondary;
   }
 }
 
@@ -32,6 +40,14 @@
 
   &:hover {
     box-shadow: 0px 0px 20px 0px hwb(273 0% 56% / 0.5);
+
+    @media (prefers-color-scheme: light) {
+      box-shadow: 0px 0px 20px 0px hwb(337 15% 2% / 0.2);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: vars.$color-primary;
   }
 }
 
@@ -50,6 +66,15 @@
 
   &:hover {
     box-shadow: 0px 0px 20px 0px hwb(0 96% 4% / 0.5);
+
+    @media (prefers-color-scheme: light) {
+      box-shadow: 0px 0px 20px 0px hwb(120 7% 87% / 0.2);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: vars.$color-dark;
+    color: vars.$color-light;
   }
 }
 

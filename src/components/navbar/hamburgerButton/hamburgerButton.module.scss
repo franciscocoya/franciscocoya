@@ -1,8 +1,8 @@
-@use "@/app/_styles/variables.scss" as vars;
-@use "@/app/_styles/_mixins.scss" as mixins;
+@use '@/app/_styles/variables.scss' as vars;
+@use '@/app/_styles/_mixins.scss' as mixins;
 
 .hamburgerButtonWrapper {
-  @include mixins.flex("vertical", center, center, 0);
+  @include mixins.flex('vertical', center, center, 0);
   width: 80px;
   height: 80px;
   align-self: flex-end;
@@ -21,7 +21,7 @@
   }
 
   & > .hamburgerButton {
-    @include mixins.flex("vertical", "end", end, 8px);
+    @include mixins.flex('vertical', 'end', end, 8px);
 
     transition: 0.4s ease-in-out 0.2s;
 

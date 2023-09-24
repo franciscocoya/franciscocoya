@@ -55,13 +55,13 @@
       font-size: 1.4rem;
     }
 
-    & > .shorcutsButtonGroup{
+    & > .shorcutsButtonGroup {
       @include mixins.flex('horizontal', 'center', 'center', 10px);
       margin-top: 30px;
 
       @media (max-width: vars.$breakpoint-tablet) {
         margin-top: 20px;
-      } 
+      }
     }
   }
 

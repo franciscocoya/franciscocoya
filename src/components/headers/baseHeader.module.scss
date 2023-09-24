@@ -10,9 +10,7 @@
 
   z-index: vars.$z-index-navbar;
 
-  @media screen and (max-width: vars.$breakpoint-tablet) and 
-    (min-width: vars.$breakpoint-mobile)
-  {
+  @media screen and (max-width: vars.$breakpoint-tablet) and (min-width: vars.$breakpoint-mobile) {
     @include mixins.flex(vertical, center, center, 15px);
     width: 100%;
     text-align: center;

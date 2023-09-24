@@ -83,7 +83,7 @@ export default function Home() {
             <Link href="/about">
               <BaseButton text="More about" type="white" />
             </Link>
-            <Link href="/about">
+            <Link href="/contact">
               <BaseButton text="Let's talk" type="primary_outlined" />
             </Link>
           </div>

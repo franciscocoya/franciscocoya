@@ -2,26 +2,26 @@
 @use '@/app/_styles/variables.scss' as vars;
 
 .socialNetworkContainer {
-    @include mixins.flex('horizontal', start, center, 15px);
-    margin-top: 20px;
-    z-index: 1;
+  @include mixins.flex('horizontal', start, center, 15px);
+  margin-top: 20px;
+  z-index: 1;
 
-    & button {
-      border: none;
-      background-color: transparent;
-      color: vars.$color-light;
-      font-size: 2rem;
+  & button {
+    border: none;
+    background-color: transparent;
+    color: vars.$color-light;
+    font-size: 2rem;
 
-      & > svg {
-        transition: fill 0.5s ease-in-out;
+    & > svg {
+      transition: fill 0.5s ease-in-out;
 
-        &:hover {
-          fill: vars.$color-tertiary;
-        }
-      }
-
-      @media (prefers-color-scheme: light) {
-        color: vars.$color-dark;
+      &:hover {
+        fill: vars.$color-tertiary;
       }
     }
+
+    @media (prefers-color-scheme: light) {
+      color: vars.$color-dark;
+    }
   }
+}

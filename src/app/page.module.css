@@ -173,7 +173,9 @@
 @media (max-width: 768px) {
   .main {
     z-index: 1;
-    height: 100vh;
+    min-height: -webkit-fill-available;
+    height: 100svh;
+    padding-bottom: 5px;
   }
   .main > .homeContent > h1 {
     font-size: 3.5rem;

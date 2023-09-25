@@ -2,8 +2,8 @@
 @use '@/app/_styles/_mixins.scss' as mixins;
 
 .footer {
-  @include mixins.flex('vertical', 'center', 'center', 15px);
-  height: 80px;
+  @include mixins.flex('vertical', 'center', 'center', 0);
+  //height: 80px;
   padding: 30px 0;
   background-color: #000;
 

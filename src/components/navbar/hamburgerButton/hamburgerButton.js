@@ -11,10 +11,7 @@ function HamburgerButton() {
 
   return (
     <div className={styles.hamburgerButtonWrapper} suppressHydrationWarning>
-      <div
-        className={styles.hamburgerButton}
-        onClick={handleClick} 
-      >
+      <div className={styles.hamburgerButton} onClick={handleClick}>
         <div className={styles.hamburgerButtonLine}></div>
         <div className={styles.hamburgerButtonLine}></div>
         <div className={styles.hamburgerButtonLine}></div>

@@ -17,4 +17,8 @@
     margin: 0;
     width: 100%;
   }
+
+  @media (max-width: vars.$breakpoint-mobile) {
+    @include mixins.flex(vertical, center, center, 0);
+  }
 }

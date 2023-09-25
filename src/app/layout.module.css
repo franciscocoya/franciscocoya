@@ -18,8 +18,16 @@
   background: transparent;
   z-index: 10;
 }
-.bodyWrapper > .bodyContent,
-.bodyWrapper > .bodyContentNoMargin {
+.bodyWrapper > .bodyContent, .bodyWrapper > .bodyContentNoMargin {
   margin: 0;
   width: 100%;
-} /*# sourceMappingURL=layout.module.css.map */
+}
+@media (max-width: 768px) {
+  .bodyWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+}/*# sourceMappingURL=layout.module.css.map */

@@ -171,7 +171,9 @@
 @media (max-width: vars.$breakpoint-mobile) {
   .main {
     z-index: 1;
-    height: 100vh;
+    min-height: -webkit-fill-available;
+    height: 100svh;
+    padding-bottom: 5px;
 
     & > .homeContent {
       & > h1 {

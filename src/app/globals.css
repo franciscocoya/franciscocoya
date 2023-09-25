@@ -28,7 +28,7 @@ h3 {
 h1::after,
 h2::after,
 h3::after {
-  content: ".";
+  content: '.';
   color: #fb2576;
 }
 @media (prefers-color-scheme: light) {
@@ -109,11 +109,15 @@ a {
     color: #270047;
   }
 }
-a:visited, a:active, a:focus {
+a:visited,
+a:active,
+a:focus {
   color: #fb2576;
 }
 @media (prefers-color-scheme: light) {
-  a:visited, a:active, a:focus {
+  a:visited,
+  a:active,
+  a:focus {
     color: #270047;
   }
 }
@@ -146,4 +150,4 @@ a:hover {
     color-scheme: dark;
     background-color: #121212;
   }
-}/*# sourceMappingURL=globals.css.map */
+} /*# sourceMappingURL=globals.css.map */

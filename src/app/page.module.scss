@@ -85,12 +85,12 @@
       height: auto;
       object-fit: contain;
 
-      @media (max-width: vars.$breakpoint-mobile){
+      @media (max-width: vars.$breakpoint-mobile) {
         display: none;
       }
     }
 
-    @media (max-width: vars.$breakpoint-mobile){
+    @media (max-width: vars.$breakpoint-mobile) {
       display: none;
     }
 

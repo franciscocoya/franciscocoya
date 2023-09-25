@@ -38,8 +38,8 @@ function ContactPage() {
         <ul>
           <li>
             <MdAlternateEmail size={32} />
-            <a href="mailto:contact@franciscocoya.es" target="_blank">
-              contact@franciscocoya.es
+            <a href="mailto:info@franciscocoya.dev" target="_blank">
+              info@franciscocoya.dev
             </a>
           </li>
           <li>

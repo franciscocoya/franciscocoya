@@ -19,6 +19,6 @@
   }
 
   @media (max-width: vars.$breakpoint-mobile) {
-    @include mixins.flex(vertical, center, center, 0);
+    @include mixins.flex(vertical, start, center, 0);
   }
 }

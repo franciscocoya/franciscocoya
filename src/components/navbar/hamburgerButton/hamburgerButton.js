@@ -2,19 +2,18 @@ import useDeviceStore from '@/store/device.store'
 import styles from './hamburgerButton.module.scss'
 
 function HamburgerButton() {
-  const { setShowMobileMenu } = useDeviceStore()
+  const { setIsMenuOpen } = useDeviceStore()
 
   // Show the mobile menu when the hamburger button is clicked
   const handleClick = () => {
-    setShowMobileMenu(true)
+    setIsMenuOpen(true)
   }
 
   return (
-    <div className={styles.hamburgerButtonWrapper}>
+    <div className={styles.hamburgerButtonWrapper} suppressHydrationWarning>
       <div
         className={styles.hamburgerButton}
-        onClick={handleClick}
-        role="button"
+        onClick={handleClick} 
       >
         <div className={styles.hamburgerButtonLine}></div>
         <div className={styles.hamburgerButtonLine}></div>

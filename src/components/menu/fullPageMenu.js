@@ -6,11 +6,11 @@ import styles from './fullPageMenu.module.scss'
 import useDeviceStore from '@/store/device.store'
 
 function FullPageMenu() {
-  const { setShowMobileMenu } = useDeviceStore()
+  const { setIsMenuOpen } = useDeviceStore()
   const currentPathname = usePathname()
 
   const handleCloseMobileMenu = () => {
-    setShowMobileMenu(false)
+    setIsMenuOpen(false)
   }
 
   return (

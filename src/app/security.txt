@@ -1,0 +1,6 @@
+# Contact information
+Contact: mailto:info@franciscocoya.dev
+Contact: https://franciscocoya.dev/contact
+
+Preferred-Languages: en, es
+Preferred-Contact: mailto:info@franciscocoya.dev

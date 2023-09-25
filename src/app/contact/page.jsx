@@ -10,6 +10,7 @@ export const metadata = {
   title: 'Contact | Francisco Coya',
   description: 'You can contact with Francisco Coya here 📧',
   canonical: 'https://franciscocoya.dev/contact',
+  robots: 'index,follow',
   openGraph: {
     title: 'Contact with me ! 👨‍💻',
     description: 'You can contact Francisco Coya here 📧',
@@ -24,7 +25,7 @@ export const metadata = {
       },
     ],
 
-    type: 'website',
+    type: 'article',
   },
 }
 

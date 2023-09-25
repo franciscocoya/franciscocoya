@@ -1,5 +1,5 @@
-@use "./_styles/variables.scss" as vars;
-@use "./_styles/_mixins.scss" as mixins;
+@use './_styles/variables.scss' as vars;
+@use './_styles/_mixins.scss' as mixins;
 
 * {
   box-sizing: border-box;
@@ -23,7 +23,7 @@ h3 {
   color: vars.$color-light;
 
   &::after {
-    content: ".";
+    content: '.';
     color: vars.$color-primary;
 
     @media (prefers-color-scheme: light) {

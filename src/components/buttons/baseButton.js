@@ -5,6 +5,8 @@ function BaseButton({ text, onClick, type }) {
     switch (type) {
       case 'primary':
         return styles.buttonPrimary
+      case 'primary_outlined':
+        return styles.buttonPrimaryOutlined
       case 'secondary':
         return styles.buttonSecondary
       case 'tertiary':

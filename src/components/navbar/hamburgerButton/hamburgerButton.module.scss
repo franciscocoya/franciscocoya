@@ -1,48 +1,71 @@
 @use '@/app/_styles/variables.scss' as vars;
 @use '@/app/_styles/_mixins.scss' as mixins;
 
-.hamburgerButton {
-  @include mixins.flex('vertical', 'end', end, 8px);
+.hamburgerButtonWrapper {
+  @include mixins.flex('vertical', center, center, 0);
+  width: 80px;
+  height: 80px;
   align-self: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
   z-index: vars.$z-index-navbar;
-  transition: 0.4s ease-in-out 0.2s;
 
-  &:hover {
-    cursor: pointer;
+  border-radius: 0 0 0 50%;
+
+  background-color: vars.$color-primary;
+  backdrop-filter: blur(10px);
+
+  @media (prefers-color-scheme: light) {
+    background-color: vars.$color-secondary;
+  }
+
+  & > .hamburgerButton {
+    @include mixins.flex('vertical', 'end', end, 8px);
+
+    transition: 0.4s ease-in-out 0.2s;
+
+    &:hover {
+      cursor: pointer;
+
+      & > .hamburgerButtonLine {
+        background-color: vars.$color-primary;
+
+        &:nth-child(1) {
+          width: 50px;
+        }
+
+        &:nth-child(2) {
+          width: calc(50px / 3 * 2);
+        }
+
+        &:nth-child(3) {
+          width: calc(50px / 3);
+        }
+      }
+    }
 
     & > .hamburgerButtonLine {
-      background-color: vars.$color-primary;
+      height: 5px;
+      background-color: vars.$color-light;
+      border-radius: 30px;
+      transition: 0.4s;
 
       &:nth-child(1) {
-        width: 50px;
+        width: 40px;
       }
 
       &:nth-child(2) {
-        width: calc(50px / 3 * 2);
+        width: calc(40px / 3 * 2);
       }
 
       &:nth-child(3) {
-        width: calc(50px / 3);
+        width: calc(40px / 3);
       }
-    }
-  }
 
-  & > .hamburgerButtonLine {
-    height: 5px;
-    background-color: vars.$color-tertiary;
-    border-radius: 30px;
-    transition: 0.4s;
-
-    &:nth-child(1) {
-      width: 40px;
-    }
-
-    &:nth-child(2) {
-      width: calc(40px / 3 * 2);
-    }
-
-    &:nth-child(3) {
-      width: calc(40px / 3);
+      @media (prefers-color-scheme: light) {
+        background-color: vars.$color-light;
+      }
     }
   }
 }

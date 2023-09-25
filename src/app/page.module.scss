@@ -55,28 +55,12 @@
       font-size: 1.4rem;
     }
 
-    & > .socialNetworkContainer {
-      @include mixins.flex('horizontal', start, center, 15px);
-      margin-top: 20px;
-      z-index: 1;
+    & > .shorcutsButtonGroup {
+      @include mixins.flex('horizontal', 'center', 'center', 10px);
+      margin-top: 30px;
 
-      & button {
-        border: none;
-        background-color: transparent;
-        color: vars.$color-light;
-        font-size: 2rem;
-
-        & > svg {
-          transition: fill 0.5s ease-in-out;
-
-          &:hover {
-            fill: vars.$color-tertiary;
-          }
-        }
-
-        @media (prefers-color-scheme: light) {
-          color: vars.$color-dark;
-        }
+      @media (max-width: vars.$breakpoint-tablet) {
+        margin-top: 20px;
       }
     }
   }
@@ -106,8 +90,6 @@
       mix-blend-mode: normal;
       background-color: hwb(0 7% 93% / 0.451);
     }
-
-
   }
 
   @media (prefers-color-scheme: light) {
@@ -184,7 +166,6 @@
     height: 100vh;
 
     & > .homeContent {
-
       & > h1 {
         font-size: 3.5rem;
         line-height: 3rem;

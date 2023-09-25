@@ -3,7 +3,8 @@
 .buttonPrimary,
 .buttonSecondary,
 .buttonTertiary,
-.buttonWhite {
+.buttonWhite,
+.buttonPrimaryOutlined {
   padding: 1.2rem 2.4rem;
   font-size: 1.2rem;
   outline: none;
@@ -76,11 +77,36 @@
   }
 }
 
+.buttonPrimaryOutlined {
+  background-color: transparent;
+  color: vars.$color-primary;
+  border: 2px solid vars.$color-primary;
+
+  &:hover {
+    background-color: vars.$color-primary;
+    color: vars.$color-light;
+
+    box-shadow: 0px 0px 20px 0px hwb(337 15% 2% / 0.5);
+
+    @media (prefers-color-scheme: light) {
+      background-color: vars.$color-secondary;
+      color: vars.$color-light;
+      box-shadow: 0px 0px 20px 0px hwb(120 7% 87% / 0.2);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-secondary;
+    border: 2px solid vars.$color-secondary;
+  }
+}
+
 @media (max-width: vars.$breakpoint-tablet) {
   .buttonPrimary,
   .buttonSecondary,
   .buttonTertiary,
-  .buttonWhite {
+  .buttonWhite,
+  .buttonPrimaryOutlined {
     padding: 1.1rem 2.2rem;
     font-size: 1.3rem;
   }
@@ -90,7 +116,8 @@
   .buttonPrimary,
   .buttonSecondary,
   .buttonTertiary,
-  .buttonWhite {
+  .buttonWhite,
+  .buttonPrimaryOutlined {
     padding: 1rem 2rem;
     font-size: 1.2rem;
   }

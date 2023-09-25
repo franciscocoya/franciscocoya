@@ -12,19 +12,19 @@ function BaseNavbar() {
     useDeviceStore()
   const currentPathname = usePathname()
 
-  // useEffect(() => {
-  //   window.addEventListener('load', () => {})
+  useEffect(() => {
+    window.addEventListener('load', () => {})
 
-  //   window.addEventListener(
-  //     'resize',
-  //     () => {
-  //       setInnerWidth(window.innerWidth)
-  //       setInnerHeight(window.innerHeight)
-  //       setIsMobile(window.innerWidth <= breakpoints.laptop)
-  //     },
-  //     false,
-  //   )
-  // }, [])
+    window.addEventListener(
+      'resize',
+      () => {
+        setInnerWidth(window.innerWidth)
+        setInnerHeight(window.innerHeight)
+        setIsMobile(window.innerWidth <= breakpoints.laptop)
+      },
+      false,
+    )
+  }, [])
 
   return (
     <nav className={styles.navbar}>

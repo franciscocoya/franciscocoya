@@ -1,0 +1,31 @@
+{
+  "Home": {
+    "subtitle1": "Sotware Engineering Student",
+    "subtitle2": "Web Applications Developer",
+    "location": "Based in Oviedo, Spain",
+    "about_button": "More about",
+    "lets_talk_button": "Let's talk"
+  },
+
+  "About": {
+    "title": "About",
+    "description": {
+      "p1": "Francisco Coya is a Software Engineering student at University Of Oviedo (Oviedo, Spain). He has always interested in software development, specially in how TI companies and firms create their products.",
+      "p2": "Francisco really likes Front-End development ! Discover new JS frameworks and try to learn technologies which using in the industry now. In particular, he considers himself a React enthusiast, focusing on create user-friendly interfaces. Also, from his back-end knowledge he would highlight the creation of API's, design patterns and a basic knowledge of CI/CD, among others.",
+      "p3": "On his spare time, he loves to take photographs, playing his acoustic guitar (Music is part of his life). Creativity needs to be constantly renewed ! All of that helps him to improve in UI design and design thinking as well."
+    },
+
+    "studies": {
+      "title": "Studies",
+      "s1": {
+        "title": "Software Engineering",
+        "subtitle": "University of Oviedo",
+        "duration": "Sept. 2016 - Jun. 2024"
+      }
+    }
+  },
+
+  "Footer": {
+    "content": "Francisco Coya. All Rights Reserved."
+  }
+}

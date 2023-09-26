@@ -1,0 +1,14 @@
+{
+    "Home": {
+      "title": "Francisco Coya",
+      "subtitle1": "Estudiante de Ingenieria informática",
+      "subtitle2": "Web Applications Developer",
+      "location": "Based in Oviedo, Spain",
+      "about_button": "Sobre mí",
+      "lets_talk_button": "Hablemos"
+    },
+  
+    "Footer": {
+      "content": "Francisco Coya. Todos los Derechos Reservados."
+    }
+  }

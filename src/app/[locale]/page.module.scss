@@ -1,5 +1,5 @@
-@use './_styles/variables.scss' as vars;
-@use './_styles/_mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
+@use '@/app/_styles/_mixins.scss' as mixins;
 
 .main {
   @include mixins.flex('vertical', 'start', 'start', 15px);

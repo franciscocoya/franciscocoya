@@ -1,4 +1,4 @@
-// 'use client'
+import { notFound } from 'next/navigation'
 
 import { Analytics } from '@vercel/analytics/react'
 import { Lexend } from 'next/font/google'
@@ -8,11 +8,17 @@ import BaseHeader from '@/components/headers/BaseHeader'
 import styles from './layout.module.scss'
 import Footer from '@/components/footer/Footer'
 
+const locales = ['en', 'es']
+
 const lexend = Lexend({ subsets: ['latin'] })
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { locale } }) {
+  
+  const isValidLocale = locales.some((cur) => cur === locale)
+  if (!isValidLocale) notFound()
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={lexend.className}>
         <div className={styles.bodyWrapper}>
           <BaseHeader />

@@ -5,10 +5,14 @@ import { formatCvExperienceDates } from '@/lib/textFormatter'
 import { useMemo, useState } from 'react'
 import { getCv } from '@/lib/cvData'
 
+import { useTranslations } from 'next-intl'
+
 import styles from './page.module.scss'
 
 function CvSection() {
   const [cvData, setCvData] = useState(null)
+
+  const t = useTranslations('About')
 
   const getCvData = () => {
     setCvData(getCv())

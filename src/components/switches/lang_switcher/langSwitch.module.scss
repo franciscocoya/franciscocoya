@@ -1,8 +1,11 @@
-@use '@/app/_styles/_mixins.scss' as mixins;
-@use '@/app/_styles/variables.scss' as vars;
+@use "@/app/_styles/_mixins.scss" as mixins;
+@use "@/app/_styles/variables.scss" as vars;
+
+$switcher-pos-x: 30px;
+$switcher-pos-y: 50px;
 
 .langSwitch {
-  @include mixins.flex('horizontal', center, center, 5px);
+  @include mixins.flex("horizontal", center, center, 5px);
   padding: 8px;
   max-width: 130px;
   background-color: vars.$color-primary-alpha;
@@ -11,8 +14,8 @@
   border-radius: 30px;
 
   position: fixed;
-  bottom: 50px;
-  right: 30px;
+  bottom: $switcher-pos-y;
+  right: $switcher-pos-x;
 
   z-index: vars.$z-index-lang-switch;
 
@@ -53,5 +56,29 @@
     padding: 5px;
 
     font-size: 0.8rem;
+  }
+}
+
+// Tooltip displayed on language switcher hover
+.langSwitchPopup {
+  position: fixed;
+  bottom: calc($switcher-pos-y + 60px);
+  right: $switcher-pos-x;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: vars.$color-light-alpha;
+  backdrop-filter: blur(10px);
+
+  z-index: vars.$z-index-lang-switch;
+  transition: all 0.3s ease-in-out;
+
+  @media (prefers-color-scheme: light) {
+    background-color: hwb(0 100% 0% / 0.75);
+    color: vars.$color-dark;
+  }
+
+  & > span {
+    font-weight: 300;
   }
 }

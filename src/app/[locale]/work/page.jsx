@@ -35,7 +35,7 @@ function WorkPage() {
   return (
     <FullWidthLayout>
       <div className={styles.workPageWrapper}>
-        <h1>Work</h1>
+        <h1>{t('title')}</h1>
 
         <div className={styles.workCardGallery}>
           <WorkCard
@@ -109,7 +109,6 @@ function WorkPage() {
 
           <WorkCard
             bgImage={getWorkThumbnail('personal_website')}
-            status="v0.0.1"
             title={t('projects.p9.title')}
             techStack={['NextJS', 'SCSS']}
             gridRowPosition="6 / 7"

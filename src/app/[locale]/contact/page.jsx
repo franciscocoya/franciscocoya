@@ -6,6 +6,9 @@ import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { MdAlternateEmail } from 'react-icons/md'
 import { getJsonLd } from './microdata'
 
+import { useTranslations } from 'next-intl'
+
+
 export const metadata = {
   title: 'Contact | Francisco Coya',
   description: 'You can contact with Francisco Coya here 📧',
@@ -30,11 +33,12 @@ export const metadata = {
 }
 
 function ContactPage() {
+  const t = useTranslations('Contact')
   const jsonLd = getJsonLd()
   return (
     <SecondaryLayout>
       <main className={styles.main}>
-        <h1>Contact</h1>
+        <h1>{t('title')}</h1>
         <ul>
           <li>
             <MdAlternateEmail size={32} />
@@ -65,7 +69,7 @@ function ContactPage() {
           </li>
           <li>
             <HiOutlineLocationMarker size={32} color="#fb2576" />
-            <p>Oviedo, Asturias (Spain)</p>
+            <p>{t('location')}</p>
           </li>
         </ul>
       </main>

@@ -79,7 +79,7 @@ function CvSection() {
                 cardTitle={certification.denomination}
                 cardText={certification.credentialId}
                 isTextLink={true}
-                textContentLink="See credential"
+                textContentLink={t('certifications.see_credential')}
                 cardExtraInformation={certification.issued}
               />
             )

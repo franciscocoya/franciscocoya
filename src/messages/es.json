@@ -52,7 +52,8 @@
         "title": "Benefiting from an IT Systems Security Degree Course",
         "organization": "University Of Oviedo",
         "issued": "jun. 2023"
-      }
+      },
+      "see_credential": "Ver certificado"
     },
     "skills": {
       "title": "Habilidades",
@@ -118,6 +119,11 @@
   "Contact": {
     "title": "Contacto",
     "location": "Oviedo, Asturias (España)"
+  },
+
+  "LanguageSwitcher":{
+    "lang": "Español",
+    "country": "España"
   },
 
   "Header": {

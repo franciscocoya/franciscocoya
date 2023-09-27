@@ -1,14 +1,133 @@
 {
-    "Home": {
-      "title": "Francisco Coya",
-      "subtitle1": "Estudiante de Ingenieria informática",
-      "subtitle2": "Web Applications Developer",
-      "location": "Based in Oviedo, Spain",
-      "about_button": "Sobre mí",
-      "lets_talk_button": "Hablemos"
+  "Home": {
+    "subtitle1": "Estudiante de Ing. Informática del Software",
+    "subtitle2": "Desarrollador de Aplicaciones Web",
+    "location": "Oviedo, Asturias (España)",
+    "about_button": "Conóceme",
+    "lets_talk_button": "Contactar"
+  },
+
+  "About": {
+    "title": "Sobre mí",
+    "description": {
+      "p1": "Francisco Coya estudia Ingeniería Informática del Software en la Universidad de Oviedo (Oviedo, España). Siempre ha estado interesado en el desarrollo de software, especialmente en cómo las empresas de IT crean sus productos.",
+      "p2": "¡A Francisco le gusta mucho el desarrollo Front-End! Descubrir nuevos frameworks de JS y tratar de aprender las últimas tecnologías que se utilizan en el sector. En particular, le gusta mucho React, centrándose en la creación de interfaces modernas y usables. Además, de sus conocimientos de back-end se destaca la creación de API's, uso patrones de diseño y conocimientos básicos de CI/CD, entre otros.",
+      "p3": "En su tiempo libre, le encanta hacer fotos, tocar su guitarra acústica (La música es parte de él). La creatividad necesita renovarse constantemente. Todo eso le ayuda a mejorar en su trabajo y plasmar estos conocimientos sobre el software que desarrolla."
     },
-  
-    "Footer": {
-      "content": "Francisco Coya. Todos los Derechos Reservados."
+
+    "studies": {
+      "title": "Educación",
+      "s1": {
+        "title": "Software Engineering",
+        "subtitle": "University of Oviedo",
+        "duration": "Sept. 2016 - Jun. 2024"
+      },
+      "s2": {
+        "title": "High level training cycle in Web Application Development",
+        "subtitle": "C.I.F.P. Ponferrada",
+        "duration": "Sept. 2020 - Jun. 2022"
+      }
+    },
+    "experience": {
+      "title": "Experiencia",
+      "e1": {
+        "title": "Internship - Programmer in R&D Department",
+        "subtitle": "Proconsi S.L.",
+        "duration": "Mar. 2022 - Jun. 2022"
+      }
+    },
+    "certifications": {
+      "title": "Certificaciones",
+      "c1": {
+        "title": "Programming for the Web with JavaScript",
+        "organization": "Penn Engineering",
+        "issued": "abr. 2021"
+      },
+      "c2": {
+        "title": "TypeScript Essentials",
+        "organization": "Open Webinars",
+        "issued": "mar. 2023"
+      },
+      "c3": {
+        "title": "Benefiting from an IT Systems Security Degree Course",
+        "organization": "University Of Oviedo",
+        "issued": "jun. 2023"
+      }
+    },
+    "skills": {
+      "title": "Habilidades",
+      "s1": {
+        "title": "NextJS"
+      },
+      "s2": {
+        "title": "ReactJS"
+      },
+      "s3": {
+        "title": "Vue 3"
+      },
+      "s4": {
+        "title": "Spring Boot"
+      },
+      "s5": {
+        "title": "TypeScript"
+      },
+      "s6": {
+        "title": "Figma"
+      },
+      "s7": {
+        "title": "Diseño UI"
+      }
     }
+  },
+
+  "Work": {
+    "title": "Portfolio",
+    "projects": {
+      "p1": {
+        "title": "Clone de Spotify",
+        "status": "En progreso..."
+      },
+      "p2": {
+        "title": "Crawler Básico"
+      },
+      "p3": {
+        "title": "Mi Wallapop"
+      },
+      "p4": {
+        "title": "HelpMe"
+      },
+      "p5": {
+        "title": "LoMap"
+      },
+      "p6": {
+        "title": "Comprobar Unfollowers de Instagram"
+      },
+      "p7": {
+        "title": "LeonCamp"
+      },
+      "p8": {
+        "title": "Web del Colegio S.Ignacio de Ponferrada",
+        "status": "En mantenimiento..."
+      },
+      "p9": {
+        "title": "Sitio Web Personal"
+      }
+    }
+  },
+
+  "Contact": {
+    "title": "Contacto",
+    "location": "Oviedo, Asturias (España)"
+  },
+
+  "Header":{
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "work": "Portfolio",
+    "contact": "Contacto"
+  },
+
+  "Footer": {
+    "content": "Francisco Coya. Todos los Derechos Reservados."
   }
+}

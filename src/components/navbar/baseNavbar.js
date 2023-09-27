@@ -2,27 +2,29 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import styles from './baseNavBar.module.scss'
+import { useTranslations } from 'next-intl'
 
 function BaseNavbar() {
   const currentPathname = usePathname()
+  const t = useTranslations('Header')
 
   return (
     <nav className={styles.navbar}>
       <ul>
         {currentPathname !== '/' && (
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/">{t('home')}</Link>
           </li>
         )}
 
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about">{t('about')}</Link>
         </li>
         <li>
-          <Link href="/work">Work</Link>
+          <Link href="/work">{t('work')}</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">{t('contact')}</Link>
         </li>
       </ul>
     </nav>

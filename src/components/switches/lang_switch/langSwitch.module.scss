@@ -1,0 +1,55 @@
+@use "@/app/_styles/_mixins.scss" as mixins;
+@use "@/app/_styles/variables.scss" as vars;
+
+.langSwitch {
+    @include mixins.flex("horizontal", center, center, 5px);
+    padding: 8px;
+    max-width: 130px;
+    background-color: vars.$color-primary-alpha;
+    backdrop-filter: blur(10px);
+    color: vars.$color-light;
+    border-radius: 30px;
+
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+
+    @media (prefers-color-scheme: light) {
+        background-color: vars.$color-secondary-alpha;
+        color: vars.$color-dark;
+    }
+
+    & > .langSwitchSelector {
+        padding: 8px;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover:not(.langSwitchSelectorSelected) {
+            background-color: vars.$color-light-alpha;
+
+            @media (prefers-color-scheme: light) {
+                background-color: vars.$color-dark-alpha;
+            }
+        }
+    }
+
+    & > .langSwitchSelectorSelected {
+        background-color: vars.$color-primary;
+
+        @media (prefers-color-scheme: light) {
+            background-color: vars.$color-secondary;
+            color: vars.$color-light;
+        }
+    }
+
+    @media (max-width: vars.$breakpoint-mobile) {
+        top: 15px;
+        left: 15px;
+        bottom: unset;
+        right: unset;
+
+        padding: 5px;
+
+        font-size: 0.8rem;
+    }
+}

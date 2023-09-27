@@ -1,11 +1,13 @@
 // Color palette
 $color-primary: #fb2576; //#FC75A9     - fb2576
-$color-primary-alpha: rgba(251, 37, 118, 0.2);
+$color-primary-alpha: hwb(337 15% 2% / 0.2);
 $color-secondary: #270047; //270047   -  3f0071
-$color-secondary-alpha: rgba(63, 0, 113, 0.2);
+$color-secondary-alpha: hwb(273 0% 56% / 0.2);
 $color-tertiary: #fec8dd;
 $color-dark: #121212;
+$color-dark-alpha: hwb(0 7% 93% / 0.2);
 $color-light: #f4f4f4;
+$color-light-alpha: hwb(0 96% 4% / 0.2);
 $color-light-sec: #d9d9d9;
 
 // z-index

@@ -3,7 +3,7 @@
     "subtitle1": "Sotware Engineering Student",
     "subtitle2": "Web Applications Developer",
     "location": "Based in Oviedo, Spain",
-    "about_button": "More about",
+    "about_button": "Learn more",
     "lets_talk_button": "Let's talk"
   },
 
@@ -21,8 +21,110 @@
         "title": "Software Engineering",
         "subtitle": "University of Oviedo",
         "duration": "Sept. 2016 - Jun. 2024"
+      },
+      "s2": {
+        "title": "High level training cycle in Web Application Development",
+        "subtitle": "C.I.F.P. Ponferrada",
+        "duration": "Sept. 2020 - Jun. 2022"
+      }
+    },
+    "experience": {
+      "title": "Experience",
+      "e1": {
+        "title": "Internship - Programmer in R&D Department",
+        "subtitle": "Proconsi S.L.",
+        "duration": "Mar. 2022 - Jun. 2022"
+      }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "c1": {
+        "title": "Programming for the Web with JavaScript",
+        "organization": "Penn Engineering",
+        "issued": "abr. 2021"
+      },
+      "c2": {
+        "title": "TypeScript Essentials",
+        "organization": "Open Webinars",
+        "issued": "mar. 2023"
+      },
+      "c3": {
+        "title": "Benefiting from an IT Systems Security Degree Course",
+        "organization": "University Of Oviedo",
+        "issued": "jun. 2023"
+      }
+    },
+    "skills": {
+      "title": "Skills",
+      "s1": {
+        "title": "NextJS"
+      },
+      "s2": {
+        "title": "ReactJS"
+      },
+      "s3": {
+        "title": "Vue 3"
+      },
+      "s4": {
+        "title": "Spring Boot"
+      },
+      "s5": {
+        "title": "TypeScript"
+      },
+      "s6": {
+        "title": "Figma"
+      },
+      "s7": {
+        "title": "UI Design"
       }
     }
+  },
+
+  "Work": {
+    "title": "Work",
+    "projects": {
+      "p1": {
+        "title": "Spotify Clone",
+        "status": "In progress..."
+      },
+      "p2": {
+        "title": "Basic Crawler"
+      },
+      "p3": {
+        "title": "My Wallapop"
+      },
+      "p4": {
+        "title": "HelpMe"
+      },
+      "p5": {
+        "title": "LoMap"
+      },
+      "p6": {
+        "title": "Check Instagram Unfollowers"
+      },
+      "p7": {
+        "title": "LeonCamp"
+      },
+      "p8": {
+        "title": "San Ignacio's School Website",
+        "status": "Maintenance..."
+      },
+      "p9": {
+        "title": "Personal Website"
+      }
+    }
+  },
+
+  "Contact": {
+    "title": "Contact",
+    "location": "Oviedo, Asturias (Spain)"
+  },
+
+  "Header":{
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
   },
 
   "Footer": {

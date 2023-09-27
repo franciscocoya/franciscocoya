@@ -1,13 +1,13 @@
-@use "@/app/_styles/_mixins.scss" as mixins;
-@use "@/app/_styles/variables.scss" as vars;
+@use '@/app/_styles/_mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
 
 .themeSwitcher {
-    @include mixins.flex("horizontal", "center", "center", 20px);
-    padding: 8px;
-    border-radius: 50px;
-    cursor: pointer;
+  @include mixins.flex('horizontal', 'center', 'center', 20px);
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
 
-    &:hover {
-        background-color: vars.$color-light;
-    }
+  &:hover {
+    background-color: vars.$color-light;
+  }
 }

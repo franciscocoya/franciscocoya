@@ -1,5 +1,5 @@
-@use './_styles/variables.scss' as vars;
-@use './_styles/mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
+@use '@/app/_styles/mixins.scss' as mixins;
 
 .bodyWrapper {
   @include mixins.flex(vertical, start, center, 0);
@@ -19,6 +19,6 @@
   }
 
   @media (max-width: vars.$breakpoint-mobile) {
-    @include mixins.flex(vertical, center, center, 0);
+    @include mixins.flex(vertical, start, center, 0);
   }
 }

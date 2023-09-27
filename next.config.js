@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const path = require('path')
 
+const withNextIntl = require('next-intl/plugin')('./src/i18n.js')
+
 const nextConfig = {
   async headers() {
     return [
@@ -44,11 +46,11 @@ const nextConfig = {
     ]
   },
 
-  i18n: {
-    locales: ['en-GB', 'es-ES'],
-    defaultLocale: 'en-GB',
-    localeDetection: false,
-  },
+  // i18n: {
+  //   locales: ['en-GB', 'es-ES'],
+  //   defaultLocale: 'en-GB',
+  //   localeDetection: false,
+  // },
 
   sassOptions: {
     includePaths: [path.join(__dirname, '_styles')],
@@ -58,4 +60,4 @@ const nextConfig = {
   poweredByHeader: false,
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig)

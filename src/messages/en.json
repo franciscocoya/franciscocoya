@@ -1,0 +1,139 @@
+{
+  "Home": {
+    "subtitle1": "Sotware Engineering Student",
+    "subtitle2": "Web Applications Developer",
+    "location": "Based in Oviedo, Spain",
+    "about_button": "Learn more",
+    "lets_talk_button": "Let's talk"
+  },
+
+  "About": {
+    "title": "About",
+    "description": {
+      "p1": "Francisco Coya is a Software Engineering student at University Of Oviedo (Oviedo, Spain). He has always interested in software development, specially in how TI companies and firms create their products.",
+      "p2": "Francisco really likes Front-End development ! Discover new JS frameworks and try to learn technologies which using in the industry now. In particular, he considers himself a React enthusiast, focusing on create user-friendly interfaces. Also, from his back-end knowledge he would highlight the creation of API's, design patterns and a basic knowledge of CI/CD, among others.",
+      "p3": "On his spare time, he loves to take photographs, playing his acoustic guitar (Music is part of his life). Creativity needs to be constantly renewed ! All of that helps him to improve in UI design and design thinking as well."
+    },
+
+    "studies": {
+      "title": "Studies",
+      "s1": {
+        "title": "Software Engineering",
+        "subtitle": "University of Oviedo",
+        "duration": "Sept. 2016 - Jun. 2024"
+      },
+      "s2": {
+        "title": "High level training cycle in Web Application Development",
+        "subtitle": "C.I.F.P. Ponferrada",
+        "duration": "Sept. 2020 - Jun. 2022"
+      }
+    },
+    "experience": {
+      "title": "Experience",
+      "e1": {
+        "title": "Internship - Programmer in R&D Department",
+        "subtitle": "Proconsi S.L.",
+        "duration": "Mar. 2022 - Jun. 2022"
+      }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "c1": {
+        "title": "Programming for the Web with JavaScript",
+        "organization": "Penn Engineering",
+        "issued": "abr. 2021"
+      },
+      "c2": {
+        "title": "TypeScript Essentials",
+        "organization": "Open Webinars",
+        "issued": "mar. 2023"
+      },
+      "c3": {
+        "title": "Benefiting from an IT Systems Security Degree Course",
+        "organization": "University Of Oviedo",
+        "issued": "jun. 2023"
+      },
+      "see_credential": "See credential"
+    },
+    "skills": {
+      "title": "Skills",
+      "s1": {
+        "title": "NextJS"
+      },
+      "s2": {
+        "title": "ReactJS"
+      },
+      "s3": {
+        "title": "Vue 3"
+      },
+      "s4": {
+        "title": "Spring Boot"
+      },
+      "s5": {
+        "title": "TypeScript"
+      },
+      "s6": {
+        "title": "Figma"
+      },
+      "s7": {
+        "title": "UI Design"
+      }
+    }
+  },
+
+  "Work": {
+    "title": "Work",
+    "projects": {
+      "p1": {
+        "title": "Spotify Clone",
+        "status": "In progress..."
+      },
+      "p2": {
+        "title": "Basic Crawler"
+      },
+      "p3": {
+        "title": "My Wallapop"
+      },
+      "p4": {
+        "title": "HelpMe"
+      },
+      "p5": {
+        "title": "LoMap"
+      },
+      "p6": {
+        "title": "Check Instagram Unfollowers"
+      },
+      "p7": {
+        "title": "LeonCamp"
+      },
+      "p8": {
+        "title": "San Ignacio's School Website",
+        "status": "Maintenance..."
+      },
+      "p9": {
+        "title": "Personal Website"
+      }
+    }
+  },
+
+  "Contact": {
+    "title": "Contact",
+    "location": "Oviedo, Asturias (Spain)"
+  },
+
+  "LanguageSwitcher":{
+    "lang": "English",
+    "country": "United Kingdom"
+  },
+
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+
+  "Footer": {
+    "content": "Francisco Coya. All rights reserved."
+  }
+}

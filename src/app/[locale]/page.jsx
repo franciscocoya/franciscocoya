@@ -4,6 +4,7 @@ import BaseLayout from '@/layouts/BaseLayout'
 import BaseSocialNetworkIcons from '@/components/socialnetworks/baseSocialNetworkIcons'
 import BaseButton from '@/components/buttons/baseButton'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 export const metadata = {
   title: 'Francisco Coya 👨‍💻 Software Engineering Student',
@@ -31,6 +32,8 @@ export const metadata = {
 }
 
 export default function Home() {
+  const t = useTranslations('Home')
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -73,18 +76,21 @@ export default function Home() {
             <br />
             Coya
           </h1>
-          <h2>Software Engineering Student</h2>
-          <span id="profile-role">Web Applications Developer</span>
-          <h3>Based in Oviedo, Spain</h3>
+          <h2>{t('subtitle1')}</h2>
+          <span id="profile-role">{t('subtitle2')}</span>
+          <h3>{t('location')}</h3>
 
           <BaseSocialNetworkIcons />
 
           <div className={styles.shorcutsButtonGroup}>
             <Link href="/about">
-              <BaseButton text="More about" type="white" />
+              <BaseButton text={t('about_button')} type="white" />
             </Link>
             <Link href="/contact">
-              <BaseButton text="Let's talk" type="primary_outlined" />
+              <BaseButton
+                text={t('lets_talk_button')}
+                type="primary_outlined"
+              />
             </Link>
           </div>
         </div>

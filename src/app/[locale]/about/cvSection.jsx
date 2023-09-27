@@ -5,13 +5,16 @@ import { formatCvExperienceDates } from '@/lib/textFormatter'
 import { useMemo, useState } from 'react'
 import { getCv } from '@/lib/cvData'
 
+import { useTranslations, useLocale } from 'next-intl'
 import styles from './page.module.scss'
 
 function CvSection() {
   const [cvData, setCvData] = useState(null)
+  const locale = useLocale()
+  const t = useTranslations('About')
 
   const getCvData = () => {
-    setCvData(getCv())
+    setCvData(getCv(locale))
   }
 
   useMemo(async () => {
@@ -19,9 +22,9 @@ function CvSection() {
   }, [])
 
   return (
-    <div className="cv-section">
+    <div className={styles.cvSection}>
       <section>
-        <h2>Studies</h2>
+        <h2>{t('studies.title')}</h2>
         <div className={styles.cardSection}>
           {cvData?.studies.map((study) => {
             return (
@@ -43,7 +46,7 @@ function CvSection() {
       </section>
 
       <section>
-        <h2>Experience</h2>
+        <h2>{t('experience.title')}</h2>
         <div className={styles.cardSection}>
           {cvData?.experience.map((job) => {
             return (
@@ -65,7 +68,7 @@ function CvSection() {
       </section>
 
       <section>
-        <h2>Certifications</h2>
+        <h2>{t('certifications.title')}</h2>
         <div className={styles.cardSection}>
           {cvData?.certifications.map((certification) => {
             return (
@@ -76,7 +79,7 @@ function CvSection() {
                 cardTitle={certification.denomination}
                 cardText={certification.credentialId}
                 isTextLink={true}
-                textContentLink="See credential"
+                textContentLink={t('certifications.see_credential')}
                 cardExtraInformation={certification.issued}
               />
             )
@@ -85,7 +88,7 @@ function CvSection() {
       </section>
 
       <section>
-        <h2>Skills</h2>
+        <h2>{t('skills.title')}</h2>
         <div className={styles.skillSection}>
           {cvData?.skills.map((skill) => {
             return <p key={skill.id}>{skill.denomination}</p>

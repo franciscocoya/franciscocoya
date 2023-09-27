@@ -1,10 +1,9 @@
-// 'use client'
-
 import WorkCard from '@/components/cards/workCard/workCard'
 import styles from './page.module.scss'
 import FullWidthLayout from '@/layouts/FullWidthLayout'
 import { getJsonLd } from './microdata'
 import { getWorkThumbnail } from '@/lib/thumbs'
+import { useTranslations } from 'next-intl'
 
 export const metadata = {
   title: 'Portfolio | Francisco Coya',
@@ -30,37 +29,19 @@ export const metadata = {
 }
 
 function WorkPage() {
-  /**
-   * Filter the work cards by the selected filter (tech stack)
-   * @param {*} filterName
-   */
-  const handleFilter = (filterName) => {
-    console.log(filterName)
-  }
-
+  const t = useTranslations('Work')
   const jsonLd = getJsonLd()
 
   return (
     <FullWidthLayout>
       <div className={styles.workPageWrapper}>
-        <h1>Work</h1>
-
-        {/* <div className={styles.workFilterBar}>
-        <BaseBadge
-          text="JavaScript"
-          color="lightgray"
-          onClick={() => handleFilter('JavaScript')}
-          isBig={true}
-        />
-        <BaseBadge text="Recoil" color="lightgray" isBig={true} />
-        <BaseBadge text="NextJS" color="lightgray" isBig={true} />
-      </div> */}
+        <h1>{t('title')}</h1>
 
         <div className={styles.workCardGallery}>
           <WorkCard
             bgImage={getWorkThumbnail('spotify_clone')}
-            status="In Progress..."
-            title="Spotify Clone"
+            status={t('projects.p1.status')}
+            title={t('projects.p1.title')}
             techStack={['NextJS', 'Recoil', 'Prisma', 'Firebase']}
             gridRowPosition="1 / 3"
             isFeatured={true}
@@ -68,21 +49,21 @@ function WorkPage() {
           />
           <WorkCard
             bgImage={getWorkThumbnail('basic_crawler')}
-            title="Basic Crawler"
+            title={t('projects.p2.title')}
             techStack={['Python']}
             isFeatured={false}
             githubRepo_url="https://github.com/franciscocoya/basic_crawler/tree/master"
           />
           <WorkCard
             bgImage={getWorkThumbnail('mywallapop')}
-            title="My Wallapop"
+            title={t('projects.p3.title')}
             techStack={['SpringBoot']}
             isFeatured={false}
             githubRepo_url="https://github.com/TomasArguelles/sdi-2223-entrega1-51"
           />
           <WorkCard
             bgImage={getWorkThumbnail('helpme')}
-            title="HelpMe"
+            title={t('projects.p4.title')}
             techStack={['Android', 'Java']}
             isFeatured={false}
             githubRepo_url="https://github.com/franciscocoya/HelpMe"
@@ -90,7 +71,7 @@ function WorkPage() {
 
           <WorkCard
             bgImage={getWorkThumbnail('lomap')}
-            title="LoMap"
+            title={t('projects.p5.title')}
             techStack={['ReactJS', 'NodeJS', 'SOLID', 'Firebase']}
             isFeatured={false}
             gridRowPosition="3 / 5"
@@ -100,7 +81,7 @@ function WorkPage() {
           />
           <WorkCard
             bgImage={getWorkThumbnail('leoncamp')}
-            title="LeonCamp"
+            title={t('projects.p7.title')}
             techStack={['Vue 3', 'SpringBoot', 'MySQL']}
             isFeatured={false}
             gridRowPosition="5 / 7"
@@ -110,7 +91,7 @@ function WorkPage() {
           />
           <WorkCard
             bgImage={getWorkThumbnail('instagram_unfollower')}
-            title="Check Instagram Unfollowers"
+            title={t('projects.p6.title')}
             techStack={['Vue 3', 'TailwindCSS', 'Pinia']}
             isFeatured={false}
             work_url="https://instagramunfollow.franciscocoya.dev/"
@@ -118,8 +99,8 @@ function WorkPage() {
           />
           <WorkCard
             bgImage={getWorkThumbnail('san_ignacio_school')}
-            status="Maintenance..."
-            title="San Ignacio's School Website"
+            status={t('projects.p8.status')}
+            title={t('projects.p8.title')}
             techStack={['Joomla', 'Graphic Design']}
             gridRowPosition="5 / 6"
             isFeatured={false}
@@ -128,8 +109,7 @@ function WorkPage() {
 
           <WorkCard
             bgImage={getWorkThumbnail('personal_website')}
-            status="v0.0.1"
-            title="Personal Website"
+            title={t('projects.p9.title')}
             techStack={['NextJS', 'SCSS']}
             gridRowPosition="6 / 7"
             isFeatured={false}

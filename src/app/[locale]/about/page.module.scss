@@ -13,6 +13,10 @@
       }
     }
 
+    & > .cvSection {
+      @include mixins.flex('vertical', 'start', 'start', 50px);
+    }
+
     & section {
       & > .cardSection {
         @include mixins.flex('vertical', start, start, 20px);

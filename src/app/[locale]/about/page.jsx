@@ -3,6 +3,8 @@ import SecondaryLayout from '@/layouts/SecondaryLayout'
 import { getJsonLd } from './microdata'
 import CvSection from './cvSection'
 
+import { useTranslations } from 'next-intl'
+
 export const metadata = {
   title: 'About me 🔗| Francisco Coya',
   description: 'About me',
@@ -31,33 +33,17 @@ export const metadata = {
 function AboutPage() {
   const jsonLd = getJsonLd()
 
+  const t = useTranslations('About')
+
   return (
     <SecondaryLayout>
       <main className={styles.main}>
-        <h1 className={styles.title}>About</h1>
+        <h1 className={styles.title}>{t('title')}</h1>
         <div className={styles.aboutWrapper}>
           <div className={styles.resumeContainer}>
-            <p>
-              Francisco Coya is a Software Engineering student at University Of
-              Oviedo (Oviedo, Spain). He has always interested in software
-              development, specially in how TI companies and firms create their
-              products.
-            </p>
-            <p>
-              Francisco really likes Front-End development ! Discover new JS
-              frameworks and try to learn technologies which using in the
-              industry now. In particular, he considers himself a React
-              enthusiast, focusing on create user-friendly interfaces. Also,
-              from his back-end knowledge he would highlight the creation of
-              API&apos;s, design patterns and a basic knowledge of CI/CD, among
-              others.
-            </p>
-            <p>
-              On his spare time, he loves to take photographs, playing his
-              acoustic guitar (Music is part of his life). Creativity needs to
-              be constantly renewed ! All of that helps him to improve in UI
-              design and design thinking as well.
-            </p>
+            <p>{t('description.p1')}</p>
+            <p>{t('description.p2')}</p>
+            <p>{t('description.p3')}</p>
           </div>
           <CvSection />
         </div>

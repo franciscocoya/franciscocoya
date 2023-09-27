@@ -20,8 +20,16 @@ function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <p>&copy; {new Date().getFullYear()} {t('content')}</p>
-      <Link href={`https://github.com/franciscocoya/franciscocoya/releases/${version}`} target='_blank' className={styles.repoVersion}>{version !== null && version}</Link>
+      <p>
+        &copy; {new Date().getFullYear()} {t('content')}
+      </p>
+      <Link
+        href={`https://github.com/franciscocoya/franciscocoya/releases/${version}`}
+        target="_blank"
+        className={styles.repoVersion}
+      >
+        {version !== null && version}
+      </Link>
     </footer>
   )
 }

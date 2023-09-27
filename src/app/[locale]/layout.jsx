@@ -7,7 +7,7 @@ import './globals.scss'
 import BaseHeader from '@/components/headers/BaseHeader'
 import styles from './layout.module.scss'
 import Footer from '@/components/footer/Footer'
-import LangSwitch from '@/components/switches/lang_switch/LangSwitch'
+import LangSwitch from '@/components/switches/lang_switcher/LangSwitcher'
 
 const locales = ['en', 'es']
 

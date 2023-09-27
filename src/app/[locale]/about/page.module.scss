@@ -13,7 +13,7 @@
       }
     }
 
-    & > .cvSection{
+    & > .cvSection {
       @include mixins.flex('vertical', 'start', 'start', 50px);
     }
 

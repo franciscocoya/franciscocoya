@@ -2,7 +2,9 @@
 @use '@/app/_styles/variables.scss' as vars;
 
 .navbar {
+  @include mixins.flex('horizontal', 'center', 'center', 20px);
   align-self: flex-end;
+  // margin-right: 20px;
   z-index: vars.$z-index-navbar;
 
   & > ul {

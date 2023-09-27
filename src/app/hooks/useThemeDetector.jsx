@@ -9,6 +9,10 @@ export const useThemeDetector = () => {
     setDarkMode(!!e.matches)
   }
 
+  const changeTheme = () => {
+    setDarkMode(!darkMode)
+  }
+
   useEffect(() => {
     const matchMedia = window.matchMedia('(prefers-color-scheme: dark)')
 

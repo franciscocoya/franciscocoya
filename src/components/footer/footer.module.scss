@@ -1,8 +1,8 @@
-@use "@/app/_styles/variables.scss" as vars;
-@use "@/app/_styles/_mixins.scss" as mixins;
+@use '@/app/_styles/variables.scss' as vars;
+@use '@/app/_styles/_mixins.scss' as mixins;
 
 .footer {
-  @include mixins.flex("horizontal", "center", "center", 10px);
+  @include mixins.flex('horizontal', 'center', 'center', 10px);
   //height: 80px;
   padding: 30px 0;
   background-color: #000;
@@ -19,7 +19,7 @@
     border-radius: 20px;
     background-color: vars.$color-light-alpha;
     transition: all 0.1s ease-in;
-    &:hover{
+    &:hover {
       background-color: vars.$color-light;
       color: vars.$color-dark;
     }

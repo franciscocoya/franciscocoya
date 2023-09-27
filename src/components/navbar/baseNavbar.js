@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import styles from './baseNavBar.module.scss'
 import { useTranslations } from 'next-intl'
+import ThemeSwitcher from '@/components/switches/lang_switcher/theme_switcher/ThemeSwitcher'
 
 function BaseNavbar() {
   const currentPathname = usePathname()
@@ -27,6 +28,7 @@ function BaseNavbar() {
           <Link href="/contact">{t('contact')}</Link>
         </li>
       </ul>
+      {/* <ThemeSwitcher /> */}
     </nav>
   )
 }

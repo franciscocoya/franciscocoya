@@ -7,7 +7,7 @@ import { usePathname, useRouter } from 'next-intl/client'
 import { useTransition } from 'react'
 
 function LangSwitch() {
-  const [,startTransition] = useTransition()
+  const [, startTransition] = useTransition()
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()

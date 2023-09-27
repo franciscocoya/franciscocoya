@@ -30,31 +30,12 @@ export const metadata = {
 
 function WorkPage() {
   const t = useTranslations('Work')
-  /**
-   * Filter the work cards by the selected filter (tech stack)
-   * @param {*} filterName
-   */
-  const handleFilter = (filterName) => {
-    console.log(filterName)
-  }
-
   const jsonLd = getJsonLd()
 
   return (
     <FullWidthLayout>
       <div className={styles.workPageWrapper}>
         <h1>Work</h1>
-
-        {/* <div className={styles.workFilterBar}>
-        <BaseBadge
-          text="JavaScript"
-          color="lightgray"
-          onClick={() => handleFilter('JavaScript')}
-          isBig={true}
-        />
-        <BaseBadge text="Recoil" color="lightgray" isBig={true} />
-        <BaseBadge text="NextJS" color="lightgray" isBig={true} />
-      </div> */}
 
         <div className={styles.workCardGallery}>
           <WorkCard

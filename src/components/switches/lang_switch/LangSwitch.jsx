@@ -1,16 +1,21 @@
 'use client'
-import Link from 'next/link'
+
 import styles from './langSwitch.module.scss'
 import { useLocale } from 'next-intl'
 import { usePathname, useRouter } from 'next-intl/client'
 
+import { useTransition } from 'react'
+
 function LangSwitch() {
+  const [,startTransition] = useTransition()
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
 
   const handleChangeLanguage = (selectedLocale) => {
-    router.replace(pathname, { locale: selectedLocale })
+    startTransition(() => {
+      router.replace(pathname, { locale: selectedLocale })
+    })
   }
 
   return (

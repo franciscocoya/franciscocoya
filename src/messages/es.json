@@ -106,7 +106,7 @@
         "title": "LeonCamp"
       },
       "p8": {
-        "title": "Web del Colegio S.Ignacio de Ponferrada",
+        "title": "Web Colegio S.Ignacio de Ponferrada",
         "status": "En mantenimiento..."
       },
       "p9": {
@@ -120,7 +120,7 @@
     "location": "Oviedo, Asturias (España)"
   },
 
-  "Header":{
+  "Header": {
     "home": "Inicio",
     "about": "Sobre mí",
     "work": "Portfolio",

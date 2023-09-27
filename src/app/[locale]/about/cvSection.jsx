@@ -5,16 +5,16 @@ import { formatCvExperienceDates } from '@/lib/textFormatter'
 import { useMemo, useState } from 'react'
 import { getCv } from '@/lib/cvData'
 
-import {useTranslations} from 'next-intl';
-
+import { useTranslations, useLocale } from 'next-intl'
 import styles from './page.module.scss'
 
 function CvSection() {
   const [cvData, setCvData] = useState(null)
-  const t = useTranslations('About');
+  const locale = useLocale()
+  const t = useTranslations('About')
 
   const getCvData = () => {
-    setCvData(getCv())
+    setCvData(getCv(locale))
   }
 
   useMemo(async () => {
@@ -22,7 +22,7 @@ function CvSection() {
   }, [])
 
   return (
-    <div className="cv-section">
+    <div className={styles.cvSection}>
       <section>
         <h2>{t('studies.title')}</h2>
         <div className={styles.cardSection}>

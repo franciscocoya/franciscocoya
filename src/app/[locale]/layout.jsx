@@ -14,7 +14,7 @@ const locales = ['en', 'es']
 const lexend = Lexend({ subsets: ['latin'] })
 
 export default async function RootLayout({ children, params: { locale } }) {
-  const isValidLocale = locales.some((cur) => cur === locale)
+  const isValidLocale = locales?.some((cur) => cur === locale)
   if (!isValidLocale) notFound()
 
   let messages

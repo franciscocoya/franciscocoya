@@ -7,7 +7,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  background: url(/assets/images/home_background_mixed_layer.jpg);
+  background: url('/assets/images/home_background_mixed_layer.webp');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@
   }
 
   @media (prefers-color-scheme: light) {
-    background-image: url('/assets/images/home_background_light.jpg');
+    background-image: url('/assets/images/home_background_light.webp');
   }
 }
 

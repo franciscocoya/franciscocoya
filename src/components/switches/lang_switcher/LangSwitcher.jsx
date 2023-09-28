@@ -1,10 +1,9 @@
 'use client'
 
 import styles from './langSwitch.module.scss'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { usePathname, useRouter } from 'next-intl/client'
-import { useState, useTransition } from 'react'
-import { useTranslations } from 'next-intl'
+import { useEffect, useState, useTransition } from 'react'
 
 function LangSwitch() {
   const [showTooltip, setShowTooltip] = useState(false)
@@ -16,6 +15,7 @@ function LangSwitch() {
 
   const handleChangeLanguage = (selectedLocale) => {
     startTransition(() => {
+      sessionStorage.setItem('lang', selectedLocale)
       router.replace(pathname, { locale: selectedLocale })
     })
   }
@@ -23,6 +23,18 @@ function LangSwitch() {
   const handleShowTooltip = (show) => {
     setShowTooltip(show)
   }
+
+  useEffect(() => {
+    // Prevents the selected language from being reset when the page is refreshed
+    const refreshLang = () => {
+      const lang = sessionStorage.getItem('lang')
+      if (lang && lang !== locale) {
+        handleChangeLanguage(lang)
+      }
+    }
+
+    refreshLang()
+  }, [sessionStorage.getItem('lang')])
 
   return (
     <>

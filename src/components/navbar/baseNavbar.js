@@ -17,24 +17,44 @@ function BaseNavbar() {
       <ul>
         {currentPathname !== '/' && (
           <li>
-            <Link href="/" aria-current="page" tabIndex={1} accessKey={t('access_key.home')}>
+            <Link
+              href="/"
+              aria-current="page"
+              tabIndex={1}
+              accessKey={t('access_key.home')}
+            >
               {t('home')}
             </Link>
           </li>
         )}
 
         <li>
-          <Link href="/about" aria-current="page" tabIndex={2} accessKey={t('access_key.about')}>
+          <Link
+            href="/about"
+            aria-current="page"
+            tabIndex={2}
+            accessKey={t('access_key.about')}
+          >
             {t('about')}
           </Link>
         </li>
         <li>
-          <Link href="/work" aria-current="page" tabIndex={3} accessKey={t('access_key.work')}>
+          <Link
+            href="/work"
+            aria-current="page"
+            tabIndex={3}
+            accessKey={t('access_key.work')}
+          >
             {t('work')}
           </Link>
         </li>
         <li>
-          <Link href="/contact" aria-current="page" tabIndex={4} accessKey={t('access_key.contact')}>
+          <Link
+            href="/contact"
+            aria-current="page"
+            tabIndex={4}
+            accessKey={t('access_key.contact')}
+          >
             {t('contact')}
           </Link>
         </li>

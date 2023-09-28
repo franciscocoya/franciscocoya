@@ -8,7 +8,7 @@ $switcher-pos-y: 50px;
   @include mixins.flex('horizontal', center, center, 5px);
   padding: 8px;
   max-width: 130px;
-  background-color: vars.$color-primary-alpha;
+  background-color: vars.$color-light-alpha;
   backdrop-filter: blur(10px);
   color: vars.$color-light;
   border-radius: 30px;
@@ -27,6 +27,7 @@ $switcher-pos-y: 50px;
   & > .langSwitchSelector {
     padding: 8px;
     border-radius: 50px;
+    color: vars.$color-dark;
     cursor: pointer;
 
     &:hover:not(.langSwitchSelectorSelected) {
@@ -39,7 +40,7 @@ $switcher-pos-y: 50px;
   }
 
   & > .langSwitchSelectorSelected {
-    background-color: vars.$color-primary;
+    background-color: vars.$color-light;
 
     @media (prefers-color-scheme: light) {
       background-color: vars.$color-secondary;

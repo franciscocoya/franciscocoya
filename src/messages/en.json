@@ -4,7 +4,8 @@
     "subtitle2": "Web Applications Developer",
     "location": "Based in Oviedo, Spain",
     "about_button": "Learn more",
-    "lets_talk_button": "Let's talk"
+    "lets_talk_button": "Let's talk",
+    "profile_image_alt": " An individual sporting glasses and a black t-shirt"
   },
 
   "About": {
@@ -78,6 +79,13 @@
       "s7": {
         "title": "UI Design"
       }
+    },
+    "alt": {
+      "cifp_ponferrada": "C.I.F.P. Ponferrada's logo",
+      "uniovi_b&w": "University of Oviedo's logo",
+      "proconsi": "Proconsi's logo",
+      "penn_enginnering": "Penn Engineering's logo",
+      "openwebinars": "Open Webinar's logo"
     }
   },
 
@@ -130,7 +138,13 @@
     "home": "Home",
     "about": "About",
     "work": "Work",
-    "contact": "Contact"
+    "contact": "Contact",
+    "access_key": {
+      "home": "h",
+      "about": "a",
+      "work": "w",
+      "contact": "c"
+    }
   },
 
   "Footer": {

@@ -64,7 +64,7 @@ export default function Home() {
         <div id={styles.profileImageWrapper}>
           <Image
             src="/assets/images/fc_profile_image_bg_b&w.png"
-            alt="Francisco Coya"
+            alt={t('profile_image_alt')}
             width={736}
             height={736}
           />
@@ -77,7 +77,9 @@ export default function Home() {
             Coya
           </h1>
           <h2>{t('subtitle1')}</h2>
-          <span id="profile-role" role='heading' aria-level="3">{t('subtitle2')}</span>
+          <span id="profile-role" role="heading" aria-level="3">
+            {t('subtitle2')}
+          </span>
           <h3>{t('location')}</h3>
 
           <BaseSocialNetworkIcons />

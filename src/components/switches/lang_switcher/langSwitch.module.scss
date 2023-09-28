@@ -1,11 +1,11 @@
-@use "@/app/_styles/_mixins.scss" as mixins;
-@use "@/app/_styles/variables.scss" as vars;
+@use '@/app/_styles/_mixins.scss' as mixins;
+@use '@/app/_styles/variables.scss' as vars;
 
 $switcher-pos-x: 30px;
 $switcher-pos-y: 50px;
 
 .langSwitch {
-  @include mixins.flex("horizontal", center, center, 5px);
+  @include mixins.flex('horizontal', center, center, 5px);
   padding: 8px;
   max-width: 130px;
   background-color: vars.$color-primary-alpha;

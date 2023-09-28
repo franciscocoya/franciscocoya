@@ -75,7 +75,7 @@ function CvSection() {
               <BaseCardWithImage
                 key={certification.id}
                 cardImage={`/assets/images/logos/${certification.logo_name}_logo.png`}
-                cardImageAlt={`Logo de ${certification.organization}`}
+                cardImageAlt={t(`alt.${certification.logo_name}`)}
                 cardTitle={certification.denomination}
                 cardText={certification.credentialId}
                 isTextLink={true}

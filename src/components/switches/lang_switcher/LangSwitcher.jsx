@@ -6,7 +6,6 @@ import { usePathname, useRouter } from 'next-intl/client'
 import { useState, useTransition } from 'react'
 import { useTranslations } from 'next-intl'
 
-
 function LangSwitch() {
   const [showTooltip, setShowTooltip] = useState(false)
   const [, startTransition] = useTransition()
@@ -40,6 +39,8 @@ function LangSwitch() {
           onClick={() => handleChangeLanguage('en')}
           onMouseEnter={() => handleShowTooltip(locale === 'en')}
           onMouseLeave={() => handleShowTooltip(false)}
+          role="button"
+          tabindex="0"
         >
           EN
         </div>
@@ -50,6 +51,8 @@ function LangSwitch() {
           onClick={() => handleChangeLanguage('es')}
           onMouseEnter={() => handleShowTooltip(locale === 'es')}
           onMouseLeave={() => handleShowTooltip(false)}
+          role="button"
+          tabindex="0"
         >
           ES
         </div>

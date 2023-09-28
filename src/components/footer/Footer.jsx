@@ -27,6 +27,7 @@ function Footer() {
         href={`https://github.com/franciscocoya/franciscocoya/releases/${version}`}
         target="_blank"
         className={styles.repoVersion}
+        aria-label="GitHub repository version"
       >
         {version !== null && version}
       </Link>

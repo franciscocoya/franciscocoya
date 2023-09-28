@@ -4,7 +4,8 @@
     "subtitle2": "Desarrollador de Aplicaciones Web",
     "location": "Oviedo, Asturias (España)",
     "about_button": "Conóceme",
-    "lets_talk_button": "Contactar"
+    "lets_talk_button": "Contactar",
+    "profile_image_alt": " An individual sporting glasses and a black t-shirt"
   },
 
   "About": {
@@ -78,6 +79,13 @@
       "s7": {
         "title": "Diseño UI"
       }
+    },
+    "alt": {
+      "cifp": "Logo del Centro Integrado de Formación Profesional de Ponferrada",
+      "uo": "Logo de la Universidad de Oviedo",
+      "proconsi": "Logo de Proconsi",
+      "penn": "Logo de la Facultad de Ingeniería de la Universidad de Pennsylvania",
+      "openwebinars": "Logo de Open Webinars"
     }
   },
 
@@ -121,7 +129,7 @@
     "location": "Oviedo, Asturias (España)"
   },
 
-  "LanguageSwitcher":{
+  "LanguageSwitcher": {
     "lang": "Español",
     "country": "España"
   },
@@ -130,7 +138,13 @@
     "home": "Inicio",
     "about": "Sobre mí",
     "work": "Portfolio",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "access_key": {
+      "home": "i",
+      "about": "s",
+      "work": "p",
+      "contact": "c"
+    }
   },
 
   "Footer": {

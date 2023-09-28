@@ -8,7 +8,6 @@ import { getJsonLd } from './microdata'
 
 import { useTranslations } from 'next-intl'
 
-
 export const metadata = {
   title: 'Contact | Francisco Coya',
   description: 'You can contact with Francisco Coya here 📧',

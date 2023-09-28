@@ -9,25 +9,32 @@ function BaseNavbar() {
   const t = useTranslations('Header')
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} aria-labelledby="mainmenulabel">
       <ul>
         {currentPathname !== '/' && (
           <li>
-            <Link href="/">{t('home')}</Link>
+            <Link href="/" aria-current="page" tabIndex={1}>
+              {t('home')}
+            </Link>
           </li>
         )}
 
         <li>
-          <Link href="/about">{t('about')}</Link>
+          <Link href="/about" aria-current="page" tabIndex={2}>
+            {t('about')}
+          </Link>
         </li>
         <li>
-          <Link href="/work">{t('work')}</Link>
+          <Link href="/work" aria-current="page" tabIndex={3}>
+            {t('work')}
+          </Link>
         </li>
         <li>
-          <Link href="/contact">{t('contact')}</Link>
+          <Link href="/contact" aria-current="page" tabIndex={4}>
+            {t('contact')}
+          </Link>
         </li>
       </ul>
-      {/* <ThemeSwitcher /> */}
     </nav>
   )
 }

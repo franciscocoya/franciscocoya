@@ -1,7 +1,7 @@
 @use '@/app/_styles/mixins.scss' as mixins;
 @use '@/app/_styles/variables.scss' as vars;
 
-.workCard {
+div > .workCard {
   @include mixins.flex('vertical', 'center', 'center', 15px);
   max-width: 600px;
   width: 100%;

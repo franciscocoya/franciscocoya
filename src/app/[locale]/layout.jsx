@@ -30,7 +30,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className={styles.bodyWrapper}>
             <BaseHeader />
-            <div className={styles.bodyContentNoMargin}>{children}</div>
+              <div className={styles.bodyContentNoMargin}>{children}</div>
           </div>
           <Footer />
           <LangSwitch />

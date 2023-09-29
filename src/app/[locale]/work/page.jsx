@@ -46,6 +46,7 @@ function WorkPage() {
             gridRowPosition="1 / 3"
             isFeatured={true}
             githubRepo_url="https://github.com/franciscocoya/spotify_clone"
+            animationDelay={0.1}
           />
           <WorkCard
             bgImage={getWorkThumbnail('basic_crawler')}
@@ -53,6 +54,7 @@ function WorkPage() {
             techStack={['Python']}
             isFeatured={false}
             githubRepo_url="https://github.com/franciscocoya/basic_crawler/tree/master"
+            animationDelay={0.2}
           />
           <WorkCard
             bgImage={getWorkThumbnail('mywallapop')}
@@ -67,6 +69,7 @@ function WorkPage() {
             techStack={['Android', 'Java']}
             isFeatured={false}
             githubRepo_url="https://github.com/franciscocoya/HelpMe"
+            animationDelay={0.3}
           />
 
           <WorkCard
@@ -78,6 +81,7 @@ function WorkPage() {
             gridColPosition="2"
             work_url="https://franciscocoya.github.io/lomapes05a_production/"
             githubRepo_url="https://github.com/Arquisoft/lomap_es5a"
+            animationDelay={0.4}
           />
           <WorkCard
             bgImage={getWorkThumbnail('leoncamp')}
@@ -88,6 +92,7 @@ function WorkPage() {
             gridColPosition="1"
             work_url="https://leoncamp.netlify.app/"
             githubRepo_url="https://github.com/franciscocoya/leoncamp-booking-app"
+            animationDelay={0.5}
           />
           <WorkCard
             bgImage={getWorkThumbnail('instagram_unfollower')}
@@ -96,6 +101,7 @@ function WorkPage() {
             isFeatured={false}
             work_url="https://instagramunfollow.franciscocoya.dev/"
             githubRepo_url="https://github.com/franciscocoya/instagram-unfollow"
+            animationDelay={0.6}
           />
           <WorkCard
             bgImage={getWorkThumbnail('san_ignacio_school')}
@@ -105,6 +111,7 @@ function WorkPage() {
             gridRowPosition="5 / 6"
             isFeatured={false}
             work_url="https://www.sanignacioponferrada.com/"
+            animationDelay={0.7}
           />
 
           <WorkCard
@@ -115,6 +122,7 @@ function WorkPage() {
             isFeatured={false}
             githubRepo_url={'https://github.com/franciscocoya/franciscocoya'}
             work_url="https://www.franciscocoya.dev/"
+            animationDelay={0.8}
           />
         </div>
       </div>

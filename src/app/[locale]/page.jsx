@@ -6,6 +6,8 @@ import BaseButton from '@/components/buttons/baseButton'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
+import PageWrapper from './pageWrapper'
+
 export const metadata = {
   title: 'Francisco Coya 👨‍💻 Software Engineering Student',
   description:
@@ -71,30 +73,32 @@ export default function Home() {
         </div>
 
         <div className={styles.homeContent}>
-          <h1>
-            <span>Francisco</span>
-            <br />
-            Coya
-          </h1>
-          <h2>{t('subtitle1')}</h2>
-          <span role="heading" aria-level="3">
-            {t('subtitle2')}
-          </span>
-          <h3>{t('location')}</h3>
+          <PageWrapper>
+            <h1>
+              <span>Francisco</span>
+              <br />
+              Coya
+            </h1>
+            <h2>{t('subtitle1')}</h2>
+            <span role="heading" aria-level="3">
+              {t('subtitle2')}
+            </span>
+            <h3>{t('location')}</h3>
 
-          <BaseSocialNetworkIcons />
+            <BaseSocialNetworkIcons />
 
-          <div className={styles.shorcutsButtonGroup}>
-            <Link href="/about">
-              <BaseButton text={t('about_button')} type="white" />
-            </Link>
-            <Link href="/contact">
-              <BaseButton
-                text={t('lets_talk_button')}
-                type="primary_outlined"
-              />
-            </Link>
-          </div>
+            <div className={styles.shorcutsButtonGroup}>
+              <Link href="/about">
+                <BaseButton text={t('about_button')} type="white" />
+              </Link>
+              <Link href="/contact">
+                <BaseButton
+                  text={t('lets_talk_button')}
+                  type="primary_outlined"
+                />
+              </Link>
+            </div>
+          </PageWrapper>
         </div>
       </main>
 

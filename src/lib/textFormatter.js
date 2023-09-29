@@ -1,4 +1,4 @@
-import { JOB_STATUS } from './constants.js'
+import { JOB_STATUS, COLOR_PALETTE } from './constants.js'
 
 /**
  * Output format: 'Jan 2019 - Present'
@@ -14,4 +14,20 @@ const formatCvExperienceDates = (dateStart, dateFinish, status) => {
     : `${dateStart} - ${dateFinish}`
 }
 
-export { formatCvExperienceDates }
+/**
+ * Print message to console with style.
+ * 
+ * @param {*} message Output message to console
+ */
+const getStylizedConsoleLogMessage = (message) => {
+  const fontStyle = [
+    `color: ${COLOR_PALETTE.light}`,
+    `background-color: ${COLOR_PALETTE.primary}`,
+    'padding: 1rem 2rem',
+    'font-size: 3rem'
+  ].join(';')
+
+  console.log(`%c ${message}`, fontStyle)
+}
+
+export { formatCvExperienceDates, getStylizedConsoleLogMessage }

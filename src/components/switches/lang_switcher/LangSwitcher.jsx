@@ -34,7 +34,7 @@ function LangSwitch() {
     }
 
     refreshLang()
-  }, [sessionStorage.getItem('lang')])
+  }, [])
 
   return (
     <>

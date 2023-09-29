@@ -81,10 +81,10 @@
       }
     },
     "alt": {
-      "cifp": "Logo del Centro Integrado de Formación Profesional de Ponferrada",
-      "uo": "Logo de la Universidad de Oviedo",
+      "cifp_ponferrada": "Logo del Centro Integrado de Formación Profesional de Ponferrada",
+      "uniovi_b&w": "Logo de la Universidad de Oviedo",
       "proconsi": "Logo de Proconsi",
-      "penn": "Logo de la Facultad de Ingeniería de la Universidad de Pennsylvania",
+      "penn_enginnering": "Logo de la Facultad de Ingeniería Informática de la Universidad de Pennsylvania",
       "openwebinars": "Logo de Open Webinars"
     }
   },

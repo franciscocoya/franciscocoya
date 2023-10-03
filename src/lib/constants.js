@@ -11,12 +11,22 @@ export const COLOR_PALETTE = {
   light: '#f4f4f4',
 }
 
-export const skills = {
-  NEXTJS: 'Next.js',
-  REACTJS: 'React.js',
-  VUEJS: 'Vue.js',
-  SPRINGBOOT: 'Spring Boot',
-  TYPESCRIPT: 'TypeScript',
-  FIGMA: 'Figma',
-  UI_DESIGN: 'UI Design',
+export const SKILLS = {
+  nextjs: 'Next.js',
+  reactjs: 'React.js',
+  vuejs: 'Vue.js',
+  springboot: 'Spring Boot',
+  typescript: 'TypeScript',
+  figma: 'Figma',
+  uidesign: 'UI Design',
+}
+
+export const LOGO_IMAGES = {
+  NEXTJS: 'nextjs',
+  REACTJS: 'reactjs',
+  VUEJS: 'vuejs',
+  SPRINGBOOT: 'springboot',
+  TYPESCRIPT: 'typescript',
+  FIGMA: 'figma',
+  UI_DESIGN: 'ui-design',
 }

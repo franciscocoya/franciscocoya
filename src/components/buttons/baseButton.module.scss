@@ -4,7 +4,8 @@
 .buttonSecondary,
 .buttonTertiary,
 .buttonWhite,
-.buttonPrimaryOutlined {
+.buttonPrimaryOutlined,
+.buttonWhiteOutlined {
   padding: 1.2rem 2.4rem;
   font-size: 1.2rem;
   outline: none;
@@ -77,10 +78,40 @@
   }
 }
 
-.buttonPrimaryOutlined {
+.buttonWhiteOutlined,
+.buttonPrimaryOutlined{
   background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.buttonWhiteOutlined {
+
+  color: vars.$color-light;
+  border-color: vars.$color-light;
+
+  &:hover {
+    background-color: vars.$color-light;
+    color: vars.$color-dark;
+
+    box-shadow: 0px 0px 20px 0px hwb(0 96% 4% / 0.5);
+
+    @media (prefers-color-scheme: light) {
+      background-color: vars.$color-dark;
+      color: vars.$color-light;
+      box-shadow: 0px 0px 20px 0px hwb(120 7% 87% / 0.2);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: vars.$color-secondary;
+    border: 2px solid vars.$color-secondary;
+  }
+}
+
+.buttonPrimaryOutlined {
   color: vars.$color-primary;
-  border: 2px solid vars.$color-primary;
+  border-color: vars.$color-primary;
 
   &:hover {
     background-color: vars.$color-primary;

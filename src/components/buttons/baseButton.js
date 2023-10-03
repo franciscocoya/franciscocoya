@@ -13,6 +13,10 @@ function BaseButton({ text, onClick, type }) {
         return styles.buttonTertiary
       case 'white':
         return styles.buttonWhite
+
+      case 'white_outlined':
+        return styles.buttonWhiteOutlined
+
       default:
         return styles.buttonPrimary
     }

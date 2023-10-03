@@ -5,6 +5,7 @@
   @include mixins.flex('horizontal', 'center', 'center', 20px);
   align-self: flex-end;
   // margin-right: 20px;
+  height: 100%;
   z-index: vars.$z-index-navbar;
 
   & > ul {

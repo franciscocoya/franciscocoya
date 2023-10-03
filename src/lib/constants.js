@@ -10,3 +10,13 @@ export const COLOR_PALETTE = {
   tertiary: '#fec8dd',
   light: '#f4f4f4',
 }
+
+export const skills = {
+  NEXTJS: 'Next.js',
+  REACTJS: 'React.js',
+  VUEJS: 'Vue.js',
+  SPRINGBOOT: 'Spring Boot',
+  TYPESCRIPT: 'TypeScript',
+  FIGMA: 'Figma',
+  UI_DESIGN: 'UI Design',
+}

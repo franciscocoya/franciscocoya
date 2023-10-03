@@ -261,5 +261,4 @@ const getCv = (lang) => {
       return cv_enGB
   }
 }
-
 export { getCv }

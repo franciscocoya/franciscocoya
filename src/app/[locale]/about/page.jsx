@@ -1,7 +1,8 @@
-import styles from './page.module.scss'
 import SecondaryLayout from '@/layouts/SecondaryLayout'
-import { getJsonLd } from './microdata'
 import CvSection from './cvSection'
+import { getJsonLd } from './microdata'
+import styles from './page.module.scss'
+import AboutSummarySection from './summarySection'
 
 import { useTranslations } from 'next-intl'
 
@@ -40,11 +41,7 @@ function AboutPage() {
       <main className={styles.main}>
         <h1 className={styles.title}>{t('title')}</h1>
         <div className={styles.aboutWrapper}>
-          <div className={styles.resumeContainer}>
-            <p>{t('description.p1')}</p>
-            <p>{t('description.p2')}</p>
-            <p>{t('description.p3')}</p>
-          </div>
+          <AboutSummarySection />
           <CvSection />
         </div>
       </main>

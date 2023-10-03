@@ -3,8 +3,9 @@
 
 .header {
   @include mixins.flex(horizontal, center, center, 0);
-  height: fit-content;
-  margin: 20px 20px 0px 20px;
+  height: 80px;
+  padding-right: 20px;
+  //margin: 20px 20px 0px 20px;
   background: transparent;
   align-self: flex-end;
 

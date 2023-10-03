@@ -2,7 +2,7 @@
 @use '@/app/_styles/variables.scss' as vars;
 
 .main {
-  height: 100vh;
+  // height: 100vh;
 
   & > ul {
     @include mixins.flex('vertical', 'start', 'start', 30px);

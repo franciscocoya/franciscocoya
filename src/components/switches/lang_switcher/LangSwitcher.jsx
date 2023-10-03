@@ -5,6 +5,8 @@ import { useLocale, useTranslations } from 'next-intl'
 import { usePathname, useRouter } from 'next-intl/client'
 import { useEffect, useState, useTransition } from 'react'
 
+import { motion } from 'framer-motion'
+
 function LangSwitch() {
   const [showTooltip, setShowTooltip] = useState(false)
   const [, startTransition] = useTransition()
@@ -43,8 +45,22 @@ function LangSwitch() {
           {t('lang')} · <span>{t('country')}</span>
         </div>
       )}
-      <div className={styles.langSwitch}>
-        <div
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+
+        
+
+        className={styles.langSwitch}
+      >
+        <motion.div
+          whileTap={{
+            scale: 0.9,
+          }}
+          whileHover={{
+            scale: 1.1,
+          }}
           className={`${styles.langSwitchSelector} ${
             locale === 'en' && styles.langSwitchSelectorSelected
           }`}
@@ -55,8 +71,14 @@ function LangSwitch() {
           tabindex="0"
         >
           EN
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          whileTap={{
+            scale: 0.9,
+          }}
+          whileHover={{
+            scale: 1.1,
+          }}
           className={`${styles.langSwitchSelector} ${
             locale === 'es' && styles.langSwitchSelectorSelected
           }`}
@@ -67,8 +89,8 @@ function LangSwitch() {
           tabindex="0"
         >
           ES
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   )
 }

@@ -16,7 +16,7 @@ const formatCvExperienceDates = (dateStart, dateFinish, status) => {
 
 /**
  * Print message to console with style.
- * 
+ *
  * @param {*} message Output message to console
  */
 const getStylizedConsoleLogMessage = (message) => {
@@ -24,7 +24,7 @@ const getStylizedConsoleLogMessage = (message) => {
     `color: ${COLOR_PALETTE.light}`,
     `background-color: ${COLOR_PALETTE.primary}`,
     'padding: 1rem 2rem',
-    'font-size: 3rem'
+    'font-size: 3rem',
   ].join(';')
 
   console.log(`%c ${message}`, fontStyle)

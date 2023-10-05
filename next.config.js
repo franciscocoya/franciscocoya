@@ -46,6 +46,10 @@ const nextConfig = {
     ]
   },
 
+  images: {
+    domains: ['res.cloudinary.com', 'placehold.co'],
+  },
+
   sassOptions: {
     includePaths: [path.join(__dirname, '_styles')],
   },

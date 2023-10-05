@@ -1,0 +1,38 @@
+@use "@/app/_styles/mixins.scss" as mixins;
+@use "@/app/_styles/variables.scss" as vars;
+
+.shareIconsContainer {
+    @include mixins.flex("horizontal", "start", "center", 8px);
+    width: 100%;
+    & svg {
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+        padding: 5px;
+        border-radius: 30px;
+
+        @media (prefers-color-scheme: light) {
+            fill: gray;
+        }
+
+        &:hover {
+            background-color: vars.$color-light-alpha;
+            
+            @media (prefers-color-scheme: light) {
+                fill: vars.$color-dark;
+                background-color: vars.$color-light;
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: vars.$color-primary-alpha;
+        margin: 0 10px;
+
+        @media (prefers-color-scheme: light) {
+            background-color: vars.$color-secondary-alpha;
+        }
+    }
+}

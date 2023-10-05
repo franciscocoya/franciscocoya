@@ -3,7 +3,6 @@
 import styles from './baseSocialNetworkIcons.module.scss'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import Link from 'next/link'
-import { useEffect } from 'react'
 import { useThemeDetector } from '@/app/hooks/useThemeDetector'
 
 function BaseSocialNetworkIcons() {

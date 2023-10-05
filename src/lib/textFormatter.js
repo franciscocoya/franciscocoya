@@ -30,4 +30,17 @@ const getStylizedConsoleLogMessage = (message) => {
   console.log(`%c ${message}`, fontStyle)
 }
 
-export { formatCvExperienceDates, getStylizedConsoleLogMessage }
+/**
+ * i.e. 'Hello World' => 'Hello%20World'
+ * @param {*} str Word with spaces
+ * @returns Word with spaces replaced with '%20'
+ */
+const replateTextSpacesWithPercent20 = (str) => {
+  return str.replace(/\s/g, '%20')
+}
+
+export {
+  formatCvExperienceDates,
+  getStylizedConsoleLogMessage,
+  replateTextSpacesWithPercent20,
+}

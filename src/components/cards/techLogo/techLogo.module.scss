@@ -1,0 +1,5 @@
+@use "@/app/_styles/_mixins.scss" as mixins;
+
+.techLogo {
+    @include mixins.flex("vertical", "center", "center", 15px);
+}

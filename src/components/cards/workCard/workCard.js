@@ -6,10 +6,12 @@ import { FiArrowUpRight } from 'react-icons/fi'
 import { PiGithubLogoFill } from 'react-icons/pi'
 import BaseBadge from '@/components/badges/BaseBadge'
 import { useEffect, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 
 function WorkCard({
   bgImage,
   title,
+  slug,
   status,
   techStack,
   gridRowPosition,
@@ -19,6 +21,7 @@ function WorkCard({
   githubRepo_url,
   animationDelay = 0,
 }) {
+  const router = useRouter()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false, threshold: 0.1 })
 
@@ -30,6 +33,14 @@ function WorkCard({
 
   const handleRedirectToGiHubRepo = () => {
     window.open(githubRepo_url, '_blank')
+  }
+
+  /**
+   * Redirect to single work page.
+   * i.e. spotify-clone -> /work/spotify-clone or spotify clone -> /work/spotify-clone
+   */
+  const handleRedirectToSingleWorkPage = () => {
+    router.push(`/work/${slug.toLowerCase().replace(/ /g, '-')}`)
   }
 
   useEffect(() => {
@@ -45,6 +56,7 @@ function WorkCard({
         gridRow: gridRowPosition,
         gridColumn: gridColPosition,
       }}
+      onClick={handleRedirectToSingleWorkPage}
     >
       <motion.article
         variants={{

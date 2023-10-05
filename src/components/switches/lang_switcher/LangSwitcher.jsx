@@ -65,7 +65,7 @@ function LangSwitch() {
           onMouseEnter={() => handleShowTooltip(locale === 'en')}
           onMouseLeave={() => handleShowTooltip(false)}
           role="button"
-          tabindex="0"
+          tabIndex="0"
         >
           EN
         </motion.div>
@@ -83,7 +83,7 @@ function LangSwitch() {
           onMouseEnter={() => handleShowTooltip(locale === 'es')}
           onMouseLeave={() => handleShowTooltip(false)}
           role="button"
-          tabindex="0"
+          tabIndex="0"
         >
           ES
         </motion.div>

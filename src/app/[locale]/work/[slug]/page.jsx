@@ -4,7 +4,7 @@ import SingleWorkWrapper from './SingleWorkWrapper'
 function SingleWorkPage() {
   return (
     <SecondaryLayout>
-        <SingleWorkWrapper />
+      <SingleWorkWrapper />
     </SecondaryLayout>
   )
 }

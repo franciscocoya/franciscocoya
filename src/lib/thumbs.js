@@ -19,8 +19,8 @@ const thumbnails_opt = {
     'https://www.sanignacioponferrada.com/images/web/2020/Fachada2.jpg',
 }
 
-const getWorkThumbnail = (work) =>
-  thumbnails_opt[work] ??
+const getWorkThumbnail = (work_shortname) =>
+  thumbnails_opt[work_shortname] ??
   'https://placehold.co/600x400@2x/webp?text=No+Image+Found'
 
 export { getWorkThumbnail }

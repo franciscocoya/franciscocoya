@@ -1,62 +1,90 @@
 'use client'
 
-import styles from './page.module.scss'
-import Image from 'next/image'
 import BaseButton from '@/components/buttons/baseButton'
-import { usePathname } from 'next/navigation'
-import { useLocale } from 'next-intl'
-import { getPortfolioItemBySlug, getRelatedProjects } from '@/lib/portfolio'
+import TechLogo from '@/components/cards/techLogo/techLogo'
+import ShareIcons from '@/components/socialnetworks/shareIcons/shareIcons'
+import {
+  checkIsSlugValid,
+  getPortfolioItemBySlug,
+  getRelatedProjects,
+} from '@/lib/portfolio'
+import { getWorkThumbnail } from '@/lib/thumbs'
+import { useLocale, useTranslations } from 'next-intl'
+import Image from 'next/image'
+import { notFound, usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { BsArrowReturnLeft } from 'react-icons/bs'
+import styles from './page.module.scss'
 
 function SingleWorkWrapper() {
   const [workData, setWorkData] = useState(null)
   const pathname = usePathname()
+  const t = useTranslations('Work')
   const locale = useLocale()
+  const router = useRouter()
 
   const getWorkData = () => {
+    if (!checkIsSlugValid(_getSlugByLocale(pathname))) {
+      notFound()
+    }
+
     // i.e. /work/spotify-clone -> spotify-clone
     const singleWorkSlug = _getSlugByLocale(pathname)
+
     const workData = getPortfolioItemBySlug(singleWorkSlug)
+
+    const relatedProjects = getRelatedProjects(singleWorkSlug)
+    workData.relatedProjects = relatedProjects
+
     setWorkData(workData)
   }
 
   const _getSlugByLocale = (pathname) => {
+    const pathnameFormatted = pathname?.split('/').filter((item) => item !== '')
+
     switch (locale) {
       case 'en':
-        return pathname.split('/')[2] // i.e. /work/spotify-clone -> spotify-clone
+        return pathnameFormatted[1] // i.e. /work/spotify-clone -> spotify-clone
 
       case 'es':
-        return pathname.split('/')[3] // i.e. /es/work/spotify-clone -> spotify-clone
+        return pathnameFormatted[2] // i.e. /es/work/spotify-clone -> spotify-clone
 
       default:
-        return pathname.split('/')[2]
+        return pathnameFormatted[1]
     }
   }
 
-  const getWorkRelatedProjects = () => {
-    const singleWorkSlug = _getSlugByLocale(pathname)
-    const relatedProjects = getRelatedProjects(singleWorkSlug)
-    setWorkData({
-      ...workData,
-      relatedProjects,
-    })
+  const handleRedirectToLink = () => (link) => {
+    window.open(link, '_blank')
   }
 
   useEffect(() => {
     getWorkData()
-    getWorkRelatedProjects()
-  }, [workData])
+  }, [])
 
   return (
     <>
       {workData && (
         <div className={styles.singleWorkPageContainer}>
-          <h1>{workData.denomination}</h1>
+          <div className={styles.singleWorkHeading}>
+            <button title={t('go_back_button_title')} onClick={() => router.push(
+              locale === 'en' ? '/work' : `/${locale}/work`,
+            )}>
+              <BsArrowReturnLeft size={32} />
+            </button>
+            <h1>{workData.denomination}</h1>
+            <p>{workData.summary}</p>
+            <ShareIcons
+              pageUrlToShare={window?.location?.href}
+              iconSize="32"
+              iconColor="#FFF"
+            />
+          </div>
 
           {/* Banner with work thumbnail */}
           <div className={styles.singleWorkBanner}>
             <Image
-              src="/assets/images/work_thumbs/thumbnail_personal_website.jpg"
+              src={getWorkThumbnail(workData.shortname)}
               alt=""
               style={{ objectFit: 'cover', borderRadius: '20px' }}
               width={1018}
@@ -68,10 +96,23 @@ function SingleWorkWrapper() {
           </div>
 
           {/*  Work description and detailed data*/}
-          <div>
-            <div>
-              <BaseButton type="white" text="View Project" />
-              <BaseButton type="white_outlined" text="View Repo" />
+          <div className={styles.singleWork_DetailedDataSection}>
+            <div className={styles.singleWork_DetailedDataSection__buttons}>
+              {workData?.work_url && (
+                <BaseButton
+                  type="white"
+                  text="View Project"
+                  onClick={handleRedirectToLink(workData.work_url)}
+                />
+              )}
+
+              {workData?.githubRepo_url && (
+                <BaseButton
+                  type="white_outlined"
+                  text="View Repo"
+                  onClick={handleRedirectToLink(workData.githubRepo_url)}
+                />
+              )}
             </div>
             <section className={styles.singleWorkDescription}>
               <h2>Description</h2>
@@ -80,9 +121,17 @@ function SingleWorkWrapper() {
           </div>
 
           {/* Technologies */}
-          <section>
+          <section className={styles.singleWork__TechnologiesSection}>
             <h2>Technologies</h2>
-            <div className={styles.techStackContainer}></div>
+            <div className={styles.techStackContainer}>
+              {workData?.skills?.map((skill) => (
+                <TechLogo
+                  key={skill.name}
+                  name={skill.name}
+                  link={skill.link}
+                />
+              ))}
+            </div>
           </section>
 
           {/* related projects */}

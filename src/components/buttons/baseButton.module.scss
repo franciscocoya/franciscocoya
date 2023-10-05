@@ -79,14 +79,13 @@
 }
 
 .buttonWhiteOutlined,
-.buttonPrimaryOutlined{
+.buttonPrimaryOutlined {
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
 }
 
 .buttonWhiteOutlined {
-
   color: vars.$color-light;
   border-color: vars.$color-light;
 

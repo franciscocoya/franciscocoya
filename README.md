@@ -1,6 +1,6 @@
-# About Me:
+![github_franciscocoya_banner_readme](https://github.com/franciscocoya/franciscocoya/assets/56480356/80c2fc89-0cd4-4e63-8327-ed4366a11086)
 
-Software Engineering student at University of Oviedo, Spain.<br>Consider himself a web design fan and everything related to the front-end side of applications and websites. His interests include web application development, UI design and prototyping, as well as mobile applications. 
+
 ## 🌐 Socials:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/franciscocoya)

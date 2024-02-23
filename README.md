@@ -1,5 +1,6 @@
 ![github_franciscocoya_banner_readme](https://github.com/franciscocoya/franciscocoya/assets/56480356/80c2fc89-0cd4-4e63-8327-ed4366a11086)
 
+[![Profile Views](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Ffranciscocoya&label=Profile%20Views&labelColor=%23000000&countColor=%23ffffff&style=flat-square&labelStyle=upper)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Ffranciscocoya)
 
 ## 🌐 Socials:
 

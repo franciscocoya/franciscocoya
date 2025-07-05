@@ -8,8 +8,8 @@ import { JOB_STATUS } from './constants.js'
  * @param {*} status If status is 'finished', then output will be 'Jan 2019 - Dec 2019'
  * @returns
  */
-const formatCvExperienceDates = (dateStart, dateFinish, status) => {
-  if(!dateStart || !dateFinish) return "";
+const formatCvExperienceDates = (dateStart, dateFinish, status=null) => {
+  if(!dateStart || !dateFinish || !status) return "";
   
   return status === JOB_STATUS.current
     ? `${dateStart} - Present`

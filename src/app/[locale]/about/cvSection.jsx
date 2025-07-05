@@ -35,9 +35,9 @@ function CvSection() {
                 cardTitle={study.denomination}
                 cardText={study.organization}
                 cardExtraInformation={formatCvExperienceDates(
-                  study.dateStart,
-                  study.dateEnd,
-                  study.status,
+                  study?.dateStart || '',
+                  study?.dateEnd || '',
+                  study?.status || '',
                 )}
               />
             )
@@ -57,9 +57,9 @@ function CvSection() {
                 cardTitle={job.denomination}
                 cardText={job.organization}
                 cardExtraInformation={formatCvExperienceDates(
-                  job.dateStart,
-                  job.dateEnd,
-                  job.status,
+                  job?.dateStart,
+                  job?.dateEnd,
+                  job?.status,
                 )}
               />
             )

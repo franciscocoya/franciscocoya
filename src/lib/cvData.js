@@ -65,6 +65,35 @@ const cv_enGB = {
       dateEnd: 'Jun. 2022',
     },
   ],
+  certifications: [
+    {
+      id: 'C1',
+      logo_name: 'penn_enginnering',
+      denomination: 'Programming for the Web with JavaScript',
+      organization: 'Penn Engineering',
+      credentialId:
+        'https://courses.edx.org/certificates/bed6d48bdd8843cf9a2a9968170a10c5',
+      issued: 'abr. 2021',
+    },
+    {
+      id: 'C2',
+      logo_name: 'openwebinars',
+      denomination: 'TypeScript Essentials',
+      organization: 'OpenWebinars',
+      credentialId: 'https://openwebinars.net/cert/ea1Z',
+      issued: 'mar. 2023',
+    },
+    {
+      id: 'C3',
+      logo_name: 'uniovi_b&w',
+      denomination:
+        'Aprovechamiento de un curso de Grado de Seguridad de Sistemas Informáticos',
+      organization: 'Universidad de Oviedo',
+      credentialId:
+        'https://www.campusvirtual.uniovi.es/badges/badge.php?hash=de1d74c2519c29ca33fa3702b2a064dcd1539412&lang=en',
+      issued: 'jun. 2023',
+    },
+  ],
   skills: [
     {
       id: 'SK6',
@@ -186,6 +215,35 @@ const cv_esES = {
       status: 'finished',
       dateStart: 'ene. 2022',
       dateEnd: 'jun. 2022',
+    },
+  ],
+  certifications: [
+    {
+      id: 'C1',
+      logo_name: 'penn_enginnering',
+      denomination: 'Programming for the Web with JavaScript',
+      organization: 'Penn Engineering',
+      credentialId:
+        'https://courses.edx.org/certificates/bed6d48bdd8843cf9a2a9968170a10c5',
+      issued: 'abr. 2021',
+    },
+    {
+      id: 'C2',
+      logo_name: 'openwebinars',
+      denomination: 'TypeScript Essentials',
+      organization: 'OpenWebinars',
+      credentialId: 'https://openwebinars.net/cert/ea1Z',
+      issued: 'mar. 2023',
+    },
+    {
+      id: 'C3',
+      logo_name: 'uniovi_b&w',
+      denomination:
+        'Aprovechamiento de un curso de Grado de Seguridad de Sistemas Informáticos',
+      organization: 'Universidad de Oviedo',
+      credentialId:
+        'https://www.campusvirtual.uniovi.es/badges/badge.php?hash=de1d74c2519c29ca33fa3702b2a064dcd1539412&lang=en',
+      issued: 'jun. 2023',
     },
   ],
   skills: [

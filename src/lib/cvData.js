@@ -1,12 +1,12 @@
 /**
- * Updated: 2023/09/23
+ * Updated: 2025/07/05
  * Author: Francisco Coya
  * Description: This file contains the data of the CV.
  */
 const cv_enGB = {
-  version: '1.0.0',
+  version: '2.0.1',
   created: '2023-06-23T17:20:00Z',
-  updated: '2023-06-23T17:20:00Z',
+  updated: '2025-07-05T10:40:00Z',
   studies: [
     {
       id: 'S1',
@@ -15,9 +15,9 @@ const cv_enGB = {
       denomination: 'Degree in Software Engineering',
       organization: 'University of Oviedo',
       place: 'Oviedo, Spain',
-      status: 'in progress',
-      dateStart: 'Sept. 2016',
-      dateEnd: 'Jun. 2024',
+      status: '',
+      dateStart: '',
+      dateEnd: '',
     },
     {
       id: 'S2',
@@ -33,6 +33,27 @@ const cv_enGB = {
   ],
   experience: [
     {
+      id: 'E3',
+      shortname: 'freelance',
+      denomination: 'Full-Stack Web Developer (Freelance)',
+      organization: 'Self-employed',
+      website: 'https://www.franciscocoya.dev/',
+      place: 'Ponferrada, Spain',
+      status: 'current',
+      dateStart: 'Jun. 2024',
+      dateEnd: '',
+    },
+    {
+      id: 'E2',
+      shortname: 'san_ignacio',
+      denomination: 'Web Design & Development Assistant',
+      organization: 'Colegio San Ignacio Ponferrada',
+      place: 'Ponferrada, Spain',
+      status: 'finished',
+      dateStart: '2020',
+      dateEnd: '2023',
+    },
+    {
       id: 'E1',
       shortname: 'proconsi',
       denomination: 'Internship - Programmer in R&D Department',
@@ -40,36 +61,8 @@ const cv_enGB = {
       website: 'https://www.proconsi.com/',
       place: 'León, Spain',
       status: 'finished',
-      dateStart: 'Mar. 2022',
+      dateStart: 'Jan. 2022',
       dateEnd: 'Jun. 2022',
-    },
-  ],
-  certifications: [
-    {
-      id: 'C1',
-      logo_name: 'penn_enginnering',
-      denomination: 'Programming for the Web with JavaScript',
-      organization: 'Penn Engineering',
-      credentialId:
-        'https://courses.edx.org/certificates/bed6d48bdd8843cf9a2a9968170a10c5',
-      issued: 'abr. 2021',
-    },
-    {
-      id: 'C2',
-      logo_name: 'openwebinars',
-      denomination: 'TypeScript Essentials',
-      organization: 'OpenWebinars',
-      credentialId: 'https://openwebinars.net/cert/ea1Z',
-      issued: 'mar. 2023',
-    },
-    {
-      id: 'C3',
-      logo_name: 'uniovi_b&w',
-      denomination: 'Benefiting from an IT Systems Security Degree Course',
-      organization: 'University of Oviedo',
-      credentialId:
-        'https://www.campusvirtual.uniovi.es/badges/badge.php?hash=de1d74c2519c29ca33fa3702b2a064dcd1539412&lang=en',
-      issued: 'jun. 2023',
     },
   ],
   skills: [
@@ -122,6 +115,13 @@ const cv_enGB = {
       category: 'design',
       type: 'technical',
     },
+    {
+      id: 'SK8',
+      denomination: 'Angular',
+      icon: 'angular',
+      category: 'frontend',
+      type: 'technical',
+    },
   ],
 }
 
@@ -137,9 +137,9 @@ const cv_esES = {
       denomination: 'Grado en Ingeniería Informática del Software',
       organization: 'Universidad de Oviedo',
       place: 'Oviedo, España',
-      status: 'in progress', // not transalted for business logic reasons
-      dateStart: 'Sept. 2016',
-      dateEnd: 'Jun. 2024',
+      status: '',
+      dateStart: '',
+      dateEnd: '',
     },
     {
       id: 'S2',
@@ -156,6 +156,27 @@ const cv_esES = {
   ],
   experience: [
     {
+      id: 'E3',
+      shortname: 'freelance',
+      denomination: 'Desarrollador Web Full-Stack (Freelance)',
+      organization: 'Autónomo',
+      website: 'https://www.franciscocoya.dev/',
+      place: 'Ponferrada, España',
+      status: 'current',
+      dateStart: 'jun. 2024',
+      dateEnd: '',
+    },
+    {
+      id: 'E2',
+      shortname: 'san_ignacio',
+      denomination: 'Maquetación y Desarrollo Web',
+      organization: 'Colegio San Ignacio Ponferrada',
+      place: 'Ponferrada, España',
+      status: 'finished',
+      dateStart: '2020',
+      dateEnd: '2023',
+    },
+    {
       id: 'E1',
       shortname: 'proconsi',
       denomination: 'Prácticas - Programador en Departamento I+D',
@@ -163,37 +184,8 @@ const cv_esES = {
       website: 'https://www.proconsi.com/',
       place: 'León, España',
       status: 'finished',
-      dateStart: 'Mar. 2022',
-      dateEnd: 'Jun. 2022',
-    },
-  ],
-  certifications: [
-    {
-      id: 'C1',
-      logo_name: 'penn_enginnering',
-      denomination: 'Programming for the Web with JavaScript',
-      organization: 'Penn Engineering',
-      credentialId:
-        'https://courses.edx.org/certificates/bed6d48bdd8843cf9a2a9968170a10c5',
-      issued: 'abr. 2021',
-    },
-    {
-      id: 'C2',
-      logo_name: 'openwebinars',
-      denomination: 'TypeScript Essentials',
-      organization: 'OpenWebinars',
-      credentialId: 'https://openwebinars.net/cert/ea1Z',
-      issued: 'mar. 2023',
-    },
-    {
-      id: 'C3',
-      logo_name: 'uniovi_b&w',
-      denomination:
-        'Aprovechamiento de un curso de Grado de Seguridad de Sistemas Informáticos',
-      organization: 'Universidad de Oviedo',
-      credentialId:
-        'https://www.campusvirtual.uniovi.es/badges/badge.php?hash=de1d74c2519c29ca33fa3702b2a064dcd1539412&lang=en',
-      issued: 'jun. 2023',
+      dateStart: 'ene. 2022',
+      dateEnd: 'jun. 2022',
     },
   ],
   skills: [
@@ -244,6 +236,13 @@ const cv_esES = {
       denomination: 'Diseño UI',
       icon: 'design',
       category: 'design',
+      type: 'technical',
+    },
+    {
+      id: 'SK8',
+      denomination: 'Angular',
+      icon: 'angular',
+      category: 'frontend',
       type: 'technical',
     },
   ],

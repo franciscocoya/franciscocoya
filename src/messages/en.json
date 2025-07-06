@@ -7,7 +7,6 @@
     "lets_talk_button": "Get in Touch",
     "profile_image_alt": "Person with glasses and black t-shirt, web developer"
   },
-
   "About": {
     "title": "About Me",
     "description": {
@@ -15,7 +14,6 @@
       "p2": "I’m passionate about building accessible, clean, user-centered interfaces. I work with frameworks such as Angular, Next.js and React, applying best practices in performance optimization, usability and accessibility (WCAG 2.1 AA). I also have solid back-end knowledge with Node.js and Spring Boot, CI/CD and software design.",
       "p3": "In my free time I enjoy photography, design and music. Creativity and technology are the pillars I bring into all my projects."
     },
-
     "studies": {
       "title": "Education",
       "s1": {
@@ -29,7 +27,6 @@
         "duration": "Sept. 2020 - Jun. 2022"
       }
     },
-
     "experience": {
       "title": "Experience",
       "e1": {
@@ -48,7 +45,6 @@
         "duration": "Jan. 2022 - Jun. 2022"
       }
     },
-
     "certifications": {
       "title": "Certifications",
       "c1": {
@@ -68,7 +64,6 @@
       },
       "see_credential": "View Certificate"
     },
-
     "skills": {
       "title": "Skills",
       "s1": { "title": "Angular" },
@@ -80,7 +75,6 @@
       "s7": { "title": "Figma" },
       "s8": { "title": "UI Design" }
     },
-
     "alt": {
       "cifp": "Logo of the Integrated Vocational Training Center of Ponferrada",
       "uo": "Logo of the University of Oviedo",
@@ -89,60 +83,56 @@
       "openwebinars": "OpenWebinars Logo"
     }
   },
-
   "Work": {
     "title": "Portfolio",
     "projects": {
-  "p1": {
-    "title": "Urban Transport Web Application for SMT Ponferrada",
-    "status": "In Production"
+      "p1": {
+        "title": "Urban Transport Web Application for SMT Ponferrada",
+        "status": "In Production"
+      },
+      "p2": {
+        "title": "Management Software for Digital Signage Displays"
+      },
+      "p3": {
+        "title": "Spotify Clone | Upload Your Music Directly"
+      },
+      "p4": {
+        "title": "CMS Migration for S.D. Ponferradina"
+      },
+      "p5": {
+        "title": "LoMap – Decentralized Mapping Application (SOLID)"
+      },
+      "p6": {
+        "title": "Basic Crawler | Web Information Systems Assignment"
+      },
+      "p7": {
+        "title": "My Wallapop | E-commerce Prototype"
+      },
+      "p8": {
+        "title": "HelpMe | Android App for Student Peer Support"
+      },
+      "p9": {
+        "title": "LeonCamp | Tourist Accommodation Booking Platform"
+      },
+      "p10": {
+        "title": "Instagram Unfollower | See Who Isn’t Following You Back"
+      },
+      "p11": {
+        "title": "San Ignacio School Ponferrada Website"
+      },
+      "p12": {
+        "title": "Personal Website"
+      }
+    }
   },
-  "p2": {
-    "title": "Management Software for Digital Signage Displays"
-  },
-  "p3": {
-    "title": "Spotify Clone | Upload Your Music Directly"
-  },
-  "p4": {
-    "title": "CMS Migration for S.D. Ponferradina"
-  },
-  "p5": {
-    "title": "LoMap – Decentralized Mapping Application (SOLID)"
-  },
-  "p6": {
-    "title": "Basic Crawler | Web Information Systems Assignment"
-  },
-  "p7": {
-    "title": "My Wallapop | E-commerce Prototype"
-  },
-  "p8": {
-    "title": "HelpMe | Android App for Student Peer Support"
-  },
-  "p9": {
-    "title": "LeonCamp | Tourist Accommodation Booking Platform"
-  },
-  "p10": {
-    "title": "Instagram Unfollower | See Who Isn’t Following You Back"
-  },
-  "p11": {
-    "title": "San Ignacio School Ponferrada Website"
-  },
-  "p12": {
-    "title": "Personal Website"
-  }
-}
-  },
-
   "Contact": {
     "title": "Contact",
     "location": "Ponferrada, León (Spain)"
   },
-
   "LanguageSwitcher": {
     "lang": "English",
     "country": "Spain"
   },
-
   "Header": {
     "home": "Home",
     "about": "About",
@@ -155,7 +145,6 @@
       "contact": "c"
     }
   },
-
   "Footer": {
     "content": "Francisco Coya. All rights reserved."
   }

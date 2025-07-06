@@ -95,10 +95,16 @@
     "projects": {
       "p1": { "title": "Aplicación Web Transporte Urbano SMT Ponferrada", "status": "En producción" },
       "p2": { "title": "Software de Gestión para Pantallas Digitales (Digital Signage)" },
-      "p3": { "title": "LoMap - Aplicación de Mapas descentralizada (SOLID)" },
+      "p3": { "title": "Spotify Clone | Upload your music directly" },
       "p4": { "title": "Migración de CMS para la S.D. Ponferradina" },
-      "p5": { "title": "Web Colegio S. Ignacio de Ponferrada", "status": "En mantenimiento..." },
-      "p6": { "title": "Sitio Web Personal" }
+      "p5": { "title": "LoMap - Aplicación de Mapas descentralizada (SOLID)" },
+      "p6": { "title": "Basic Crawler | Asig. Sistemas Información para la Web" },
+      "p7": { "title": "My Wallapop | Ecommercep prototype" },
+      "p8": { "title": "HelpMe | Android App para ayuda entre estudiantes" },
+      "p9": { "title": "LeonCamp | Plataforma reserva alojamientos turísticos" },
+      "p10": { "title": "Instagram Unfollower | Conoce quién no te sigue" },
+      "p11": { "title": "Sitio Web Colegio San Ignacio Ponferrada" },
+      "p12": { "title": "Sitio Web Personal" }
     }
   },
 

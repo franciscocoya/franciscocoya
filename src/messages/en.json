@@ -93,26 +93,45 @@
   "Work": {
     "title": "Portfolio",
     "projects": {
-      "p1": {
-        "title": "Urban Transport Web Application for SMT Ponferrada",
-        "status": "In Production"
-      },
-      "p2": {
-        "title": "Management Software for Digital Signage Displays"
-      },
-      "p3": {
-        "title": "LoMap – Decentralized Mapping Application (SOLID)"
-      },
-      "p4": {
-        "title": "CMS Migration for S.D. Ponferradina"
-      },
-      "p5": {
-        "title": "San Ignacio School Ponferrada Website",
-        "status": "In Maintenance..."
-      },
-      "p6": {
-        "title": "Personal Website"
-      }
+  "p1": {
+    "title": "Urban Transport Web Application for SMT Ponferrada",
+    "status": "In Production"
+  },
+  "p2": {
+    "title": "Management Software for Digital Signage Displays"
+  },
+  "p3": {
+    "title": "Spotify Clone | Upload Your Music Directly"
+  },
+  "p4": {
+    "title": "CMS Migration for S.D. Ponferradina"
+  },
+  "p5": {
+    "title": "LoMap – Decentralized Mapping Application (SOLID)"
+  },
+  "p6": {
+    "title": "Basic Crawler | Web Information Systems Assignment"
+  },
+  "p7": {
+    "title": "My Wallapop | E-commerce Prototype"
+  },
+  "p8": {
+    "title": "HelpMe | Android App for Student Peer Support"
+  },
+  "p9": {
+    "title": "LeonCamp | Tourist Accommodation Booking Platform"
+  },
+  "p10": {
+    "title": "Instagram Unfollower | See Who Isn’t Following You Back"
+  },
+  "p11": {
+    "title": "San Ignacio School Ponferrada Website"
+  },
+  "p12": {
+    "title": "Personal Website"
+  }
+}
+
     }
   },
 

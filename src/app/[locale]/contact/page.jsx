@@ -46,12 +46,6 @@ function ContactPage() {
             </a>
           </li>
           <li>
-            <MdAlternateEmail size={32} />
-            <a href="mailto:franciscocoya@gmail.com" target="_blank">
-              franciscocoya@gmail.com
-            </a>
-          </li>
-          <li>
             <FaLinkedin size={32} />
             <a
               href="https://www.linkedin.com/in/franciscocoya/"

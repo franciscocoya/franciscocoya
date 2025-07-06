@@ -63,7 +63,7 @@ export default function Home() {
       <main className={styles.main}>
         <div id={styles.profileImageWrapper}>
           <Image
-            src="/assets/images/fc_profile_image_bg_b&w.png"
+            src="/assets/images/FOTO_PERFIL_1.jpg"
             alt={t('profile_image_alt')}
             width={736}
             height={736}

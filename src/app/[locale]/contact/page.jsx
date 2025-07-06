@@ -61,6 +61,15 @@ function ContactPage() {
             </a>
           </li>
           <li>
+            <FaWhatsapp size={32} />
+            <a
+              href="https://wa.me/34635534719"
+              target="_blank"
+            >
+              +34 635 53 47 19
+            </a>
+          </li>
+          <li>
             <HiOutlineLocationMarker size={32} color="#fb2576" />
             <p>{t('location')}</p>
           </li>

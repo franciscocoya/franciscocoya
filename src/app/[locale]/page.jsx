@@ -61,15 +61,6 @@ export default function Home() {
   return (
     <BaseLayout>
       <main className={styles.main}>
-        <div id={styles.profileImageWrapper}>
-          <Image
-            src="/assets/images/FOTO_PERFIL_1.jpg"
-            alt={t('profile_image_alt')}
-            width={736}
-            height={736}
-          />
-        </div>
-
         <div className={styles.homeContent}>
           <h1>
             <span>Francisco</span>

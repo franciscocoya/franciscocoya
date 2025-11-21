@@ -7,10 +7,12 @@
 
 I'm a **web developer specialized in front-end** with real-world experience in digital projects for public institutions. I focus on building **accessible**, **high-performance** and **modern** interfaces using technologies like **Angular**, **Next.js**, **TypeScript**, and **Spring Boot**.
 
-- 💼 Freelance Developer & Collaborator at Keiva Solutions S.L.  
+- Currently working at Vexiza S.L.
+  
+- 💼 Previous experience: Freelance Developer & Collaborator at Keiva Solutions S.L.  
 - 🎯 Obsessed with usability, accessibility (WCAG 2.1 AA) and good practices  
 - 🛠️ Experience with headless CMS, REST APIs, CI/CD and Digital Signage  
-- 🌍 Based in Ponferrada, Spain  
+- 🌍 Based in Spain  🇪🇸
 - 📫 Contact: [info@franciscocoya.dev](mailto:info@franciscocoya.dev) | [franciscocoya.dev](https://franciscocoya.dev)
 
 ---
